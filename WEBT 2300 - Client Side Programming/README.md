@@ -5,3 +5,7 @@ var a = document.getElementById('Help');
 ```
 
 Sample javascript code
+
+| Testing | Tables | Here
+|---------|:-------|:----:|
+| Pretty | Table | In MDs
