@@ -2,7 +2,7 @@
 ***
 
 ***
-### 1 Intro to the World of IT
+### 1 - Intro to the World of IT
 
 #### IT Roles
 + PC Repair
