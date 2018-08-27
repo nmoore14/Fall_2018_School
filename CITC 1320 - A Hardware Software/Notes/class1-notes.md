@@ -46,4 +46,3 @@
 + **Software**: An application consisting of a set of instructions that makes the hardware work.
 + **Terabyte**: (TB) Approximately 1 trillion bytes of information, or 2^40 (1,099,511,627,776 bytes)
 
-
