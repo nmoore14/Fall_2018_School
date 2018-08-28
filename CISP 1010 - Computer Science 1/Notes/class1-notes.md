@@ -46,9 +46,6 @@
 + **Cable Modem**: Uses the TV cable line maintained by the cable company. A cable modem is as fast as a DSL.
 + **Network Interface Card (NIC)**: A device to connect a computer to a local area network (LAN). The LAN is commonly used in business, universities, and government organizations. A typical type of NIC, called 10BaseT, can transfer data at 10 Mbps.
 
-### Complete the Self-Check after 1.2.6 Communication Devices
-
-
 ### 1.7 A Simple Java Program
 + **Console**: Refers to the input and output device of a computer.
 
@@ -61,3 +58,7 @@ public class Weclome {
 	}
 }
 ```
+
+### TODOs
+- [x] Complete the Self-Check after 1.2.6 Communication Devices
+- [ ] Complete Course Plan Book EC
