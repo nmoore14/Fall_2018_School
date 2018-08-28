@@ -46,3 +46,7 @@
 + **Software**: An application consisting of a set of instructions that makes the hardware work.
 + **Terabyte**: (TB) Approximately 1 trillion bytes of information, or 2^40 (1,099,511,627,776 bytes)
 
+## TODOs
+- [ ] Review Questions at the end of Chapter 1
+- [ ] CITC 1320 Class Notes Chapter 1
+- [ ] Read Chapter 2
