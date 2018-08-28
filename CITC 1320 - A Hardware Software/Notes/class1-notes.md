@@ -49,4 +49,5 @@
 ## TODOs
 - [ ] Review Questions at the end of Chapter 1
 - [ ] CITC 1320 Class Notes Chapter 1
+- [ ] Turn in Keyboard Lab
 - [ ] Read Chapter 2
