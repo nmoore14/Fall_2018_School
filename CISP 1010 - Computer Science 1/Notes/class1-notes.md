@@ -8,6 +8,10 @@
 + Click on student.
 + Using tempory access, good for 28 days from 8/27/2018.
 
+### TODOs
+- [x] Complete the Self-Check after 1.2.6 Communication Devices
+- [ ] Complete Course Plan Book EC
+
 ***
 ## 1 - Introductions to Computers and Java
 *The central theme of this book is to learn how to solve problems by writing a program.*
@@ -58,7 +62,3 @@ public class Weclome {
 	}
 }
 ```
-
-### TODOs
-- [x] Complete the Self-Check after 1.2.6 Communication Devices
-- [ ] Complete Course Plan Book EC
