@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>WEBT-2300 Create page with DOM</title>
+    <script language="JavaScript" type="text/javascript">
+
+        function newPage() {
+
+
+            var page = window.open("", "", "width=300,height=300,top=100,left=300,location=1,status=1,scrollbars=1,resizable=1")
+
+            //var text is the value of the form's text input
+            var name = document.form1.yourName.value;
+            var age = document.form1.yourAge.value;
+            var today_response = document.form1.today.value;
+
+            //var html is the string written to the new window. Includes the value of the text input
+            var html =
+                `
+                    <html>
+                        <head>
+                        </head>
+                        <body>
+                            <p>Hello, <strong>${name}</strong>.</p>
+                            <h4>You age is: </h4>
+                            <p>${age}</p>
+                            <h4>How are you today</h4>
+                            <p>${today_response}</p>
+                        </body>
+                    </html>
+                `
+            /* "<html><head><"+"/head><body>Hello, <b>"+ input_data + "<"+"/b>. <br />How are you today?"+ "<br />" + today_response +
+            "<"+"/body><"+"/html>";
+            */
+
+
+            //var name of window must be included for all three of the following methods so that
+            //javascript knows not to write the string to this window, but to the new window
+            page.document.open();
+            page.document.write(html);
+            page.document.close();
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2>Create a New Page with the DOM</h2>
+    <form name="form1" onSubmit="popUp(); return false">
+        <!-- call your function in the onSubmit handler followed by a 'return false' just in case the user presses "enter" key instead of the submit button -->
+
+        <input type="text" name="yourName" onFocus="select()" placeholder="Enter your Name">
+        <br />
+        <input type="text" name="yourAge" onFocus="select()" placeholder="Enter your Age">
+        <br />
+        <textarea col="100" row="100" name="today" placeholder="How are you today?"></textarea>
+        <br />
+        <input type="button" onClick="newPage()" value="Create New Page">
+    </form>
+</body>
+
+</html>
