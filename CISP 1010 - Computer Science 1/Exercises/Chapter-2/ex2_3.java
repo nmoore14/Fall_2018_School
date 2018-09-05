@@ -6,6 +6,11 @@ import java.util.Scanner;
  * 9-5-2018
  */
 public class ex2_3 {
+    /**
+     * 
+     * @param args
+     * 
+     */
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
