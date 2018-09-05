@@ -21,6 +21,6 @@ public class ex2_4 {
         // The results should tell the user their original and what it is in kilograms.
         // Display the results
         System.out.println(pound + " pound is " + kilogramConversion + " kilograms");
-        in.close();
+        input.close();
     }
 }
