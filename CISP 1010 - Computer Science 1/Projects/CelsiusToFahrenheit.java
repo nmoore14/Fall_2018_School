@@ -31,6 +31,8 @@ public class CelsiusToFahrenheit {
 		// TODO create a message that concatenates the tempConversion variable and a string to disply the results
 		System.out.println("Conversion in process...");
 		System.out.println(celsius + " degress celcius is: " + tempConversion + "F");
+
+		in.close();
     }
 
 }
