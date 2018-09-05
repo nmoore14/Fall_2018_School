@@ -27,7 +27,7 @@
                                 <h4>How are you today</h4>
                                 <p>${today_response}</p>
                             </body>
-                        </html>
+                    </html>
                     `
                 /* "<html><head><"+"/head><body>Hello, <b>"+ input_data + "<"+"/b>. <br />How are you today?"+ "<br />" + today_response +
                 "<"+"/body><"+"/html>";
@@ -43,6 +43,15 @@
             }
 
         </script>
+        <style>
+            html {
+                font-size: 12pt;
+            }
+
+            .form-input {
+                margin: .25rem;
+            }
+        </style>
     </head>
 
     <body>
@@ -50,11 +59,11 @@
         <form name="form1" onSubmit="popUp(); return false">
             <!-- call your function in the onSubmit handler followed by a 'return false' just in case the user presses "enter" key instead of the submit button -->
 
-            <input type="text" name="yourName" onFocus="select()" placeholder="Enter your Name">
+            <input type="text" class="form-input" name="yourName" onFocus="select()" placeholder="Enter your Name">
             <br />
-            <input type="text" name="yourAge" onFocus="select()" placeholder="Enter your Age">
+            <input type="text" class="form-input" name="yourAge" onFocus="select()" placeholder="Enter your Age">
             <br />
-            <textarea col="100" row="100" name="today" placeholder="How are you today?"></textarea>
+            <textarea col="100" row="100" class="form-input" name="today" placeholder="How are you today?"></textarea>
             <br />
             <input type="button" onClick="newPage()" value="Create New Page">
         </form>
