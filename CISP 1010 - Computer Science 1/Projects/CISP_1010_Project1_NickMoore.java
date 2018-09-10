@@ -5,7 +5,7 @@
  * ------------------------------------------------- 
  * Creator's name: Nick Moore
  * Email: nmoore2@northeaststate.edu Course and section: CISP 1010 A03 Creation
- * date: ${date} 
+ * date: 9-10-2018
  * -------------------------------------------------
  * 
  */
