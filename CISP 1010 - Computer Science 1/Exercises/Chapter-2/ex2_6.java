@@ -1,4 +1,4 @@
- import java.util.Scanner;
+import java.util.Scanner;
  
  /**
  * -------------------------------------------------
@@ -24,12 +24,36 @@
 
         if(userNumber > 0 && userNumber <= 1000)
         {
-            int lastDigit = userNumber % 10;
-            System.out.println(lastDigit);
+            if(userNumber == 0)
+            {
+                int finalTotal = 0;
+                System.out.println("The total of all the digits in your number is: " + finalTotal);
+            } 
+            else 
+            {
+                if(userNumber == 1000)
+                {
+                    int finalTotal = 1;
+                    System.out.println("The total of all the digits in your number is: " + finalTotal);
+                } 
+                else 
+                {
+                    int digit1 = userNumber % 10;
+
+                    int digit2 = userNumber / 10;
+                    int finalDigit2 = digit2 % 10;
+
+                    int digit3 = userNumber / 100;
+
+                    int finalTotal = digit1 + finalDigit2 + digit3;
+                    System.out.println("The total of all the digits in your number is: " + finalTotal);
+
+                }
+            }
+            
         }
 
-        
-        
+        input.close();
     }
      
  }
