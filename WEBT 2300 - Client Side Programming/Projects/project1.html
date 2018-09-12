@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Nick Moore | Project 1</title>
+
+		<!-- Fancy javascript magic happens here -->
+		<script type="text/javascript">
+			var my_count = '';
+			var guess_num = '';
+
+			function setGame() {
+				var startHint = "Please enter a MIN and MAX number to generate your number."
+				document.getElementById("game-hint-text").innerHTML = startHint;
+			}
+		
+		</script>
+
+		<!-- Let's make this look pretty -->
+		<style>
+			html {
+				background-color: #d9d9d9;
+				font-size: 12pt;
+			}
+
+			body {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(12, 1fr);
+				margin: 0;
+				padding: 0;
+			}
+
+			#my-game-container {
+				grid-column-start: 2;
+				grid-column-end: 12;
+				grid-row-start: 2;
+				grid-row-end: 12;
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(12, 1fr);
+				background-color: white;
+			}
+
+			#my-game-form {
+				grid-column-start: 2;
+				grid-column-end: 12;
+				grid-row-start: 2;
+				grid-row-end: 12;
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(12, 1fr);
+				grid-gap: .5rem;
+				background-color: #d9d9d9;
+			}
+
+			#game-hint {
+				grid-column-start: 4;
+				grid-column-end: 10;
+				grid-row-start: 1;
+				grid-row-end: 3;
+				background-color: white;
+				height: 5rem;
+				border-radius: 0 0 1rem 1rem;
+				filter: drop-shadow(0 5px 2px rgba(0, 0, 0, .5));
+			}
+
+			#game-hint-text {
+				text-align: center;
+			}
+
+			#user-min-number {
+				grid-column-start: 4;
+				grid-column-end: 6;
+				grid-row-start: 3;
+				grid-row-end: 6;
+				text-align: center;
+				justify-self: stretch;
+				align-self: center;
+			}
+
+			#user-max-number {
+				grid-column-start: 8;
+				grid-column-end: 10;
+				grid-row-start: 3;
+				grid-row-end: 6;
+				text-align: center;
+				justify-self: stretch;
+				align-self: center;
+			}
+
+			#user-min-number input, #user-max-number input {
+				width: 11rem;
+				height: 5rem;
+				text-align: center;
+				font-size: 3rem;
+			}
+
+			#min-max-label {
+				grid-column-start: 6;
+				grid-column-end: 8;
+				grid-row-start: 3;
+				grid-row-end: 6;
+				text-align: center;
+				justify-self: stretch;
+				align-self: center;
+				font-size: 2rem;
+				color: blue;
+			}
+		</style>
+    </head>
+    <body onload="setGame()">
+		<div id="my-game-container">
+			<form id="my-game-form">
+				<div class="game-form-item" id="game-hint">
+					<h3 id="game-hint-text" class="displayed-content"></h3>
+				</div>
+				<div class="game-form-item" id="user-min-number">
+					<input type="text" name="user-min" placeholder="#">
+					<label for="user-min">MIN</label>
+				</div>
+				<div id="min-max-label">
+					<label>TO</label>
+				</div>
+				<div class="game-form-item" id="user-max-number">
+					<input type="text" name="user-max" placeholder="#">
+					<label for="user-max">TO</label>
+				</div>
+			</form>
+		</div>
+    </body>
+</html>
