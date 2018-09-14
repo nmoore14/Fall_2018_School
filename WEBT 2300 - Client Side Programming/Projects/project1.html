@@ -8,13 +8,53 @@
 
 		<!-- Fancy javascript magic happens here -->
 		<script type="text/javascript">
-			var my_count = '';
-			var guess_num = '';
+			var guess_num;
+			var random_num = 0;
+			var guess_count = 0;
 
 			function setGame() {
-				var startHint = "Please enter a MIN and MAX number to generate your number."
+				var startHint = "Please enter a MIN and MAX number to generate your number.";
 				document.getElementById("game-hint-text").innerHTML = startHint;
 			}
+
+			function getRandomInt(from, to) {
+				from = Math.ceil(from);
+				to = Math.floor(to);
+				return Math.floor(Math.random() * (to - from + 1) + from);
+			}
+
+			function startGame() {
+				var num_from = document.myGameForm.userMin.value;
+				var num_to = document.myGameForm.userMax.value;
+
+				random_num = getRandomInt(num_from, num_to);
+				guess_count = 0;
+			}
+
+			
+			function guess() {
+				var user_guess = document.myGameForm.userGuess.value;
+				console.log(random_num);
+
+				if (user_guess < random_num) {
+					var gameHint = "Guess higher.";
+					document.getElementById("game-hint-text").innerHTML = gameHint;
+					console.log(guess_count);
+				} else if (user_guess > random_num) {
+					var gameHint = "Guess lower";
+					document.getElementById("game-hint-text").innerHTML = gameHint;
+					console.log(guess_count);
+				} else {
+					console.log(guess_count);
+					alert("Your guessed CORRECTLY!!! It took you " + guess_count + " guess(es)");	
+				}
+				document.getElementById("my-game-form").reset();
+				guess_count++;
+			}
+
+			
+
+			
 		
 		</script>
 
@@ -109,25 +149,56 @@
 				font-size: 2rem;
 				color: blue;
 			}
+
+			#game-startbtn-container {
+				grid-column-start: 6;
+				grid-column-end: 8;
+				grid-row-start: 5;
+				grid-row-end: 6;
+				justify-self: stretch;
+				align-self: center;
+			}
+			
+			.start-btn {
+				width: 100%;
+				height: 3rem;
+				border: none;
+				background-color: #18DCC4;
+				cursor: pointer;
+			}
+
 		</style>
     </head>
     <body onload="setGame()">
 		<div id="my-game-container">
-			<form id="my-game-form">
+			<form id="my-game-form" name="myGameForm">
 				<div class="game-form-item" id="game-hint">
 					<h3 id="game-hint-text" class="displayed-content"></h3>
 				</div>
 				<div class="game-form-item" id="user-min-number">
-					<input type="text" name="user-min" placeholder="#">
+					<input type="text" name="userMin" placeholder="#">
 					<label for="user-min">MIN</label>
 				</div>
 				<div id="min-max-label">
 					<label>TO</label>
 				</div>
 				<div class="game-form-item" id="user-max-number">
-					<input type="text" name="user-max" placeholder="#">
+					<input type="text" name="userMax" placeholder="#">
 					<label for="user-max">TO</label>
 				</div>
+				<div class="game-form-item" id="game-startbtn-container">
+					<input type="button" class="start-btn" onclick="startGame()" value="Start / Reset Game">
+				</div>
+				<div class="game-form-item" id="user-guess">
+					<input type="text" name="userGuess" id="userGeuss" placeholder="#">
+					<label for="user-max">Guess</label>
+				</div>
+				<div class="game-form-item" id="game-guessbtn-container">
+					<input type="button" onclick="guess()" value="Guess">
+				</div>
+			</form>
+			<form id="my-guess-form" name="myGuessForm">
+				
 			</form>
 		</div>
     </body>
