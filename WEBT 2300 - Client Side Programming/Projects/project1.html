@@ -31,11 +31,16 @@
 			function startGame() {
 				num_from = document.myGameForm.userMin.value;
 				num_to = document.myGameForm.userMax.value;
-				var num_range = "Range: " + num_from + " to " + num_to + ".";
-				var num_element = document.getElementById("game-hint-text").innerHTML = num_range;
+				if (num_to > 0 && num_to > num_from) {
+					var num_range = "Range: " + num_from + " to " + num_to + ".";
+					document.getElementById("game-hint-text").innerHTML = num_range;
 
-				random_num = getRandomInt(num_from, num_to);
-				guess_count = 0;
+					random_num = getRandomInt(num_from, num_to);
+					guess_count = 0;
+				} else {
+					alert("Please enter a max number greater than 0 and greater than your min number.");
+				}
+				
 			}
 
 			
@@ -57,6 +62,9 @@
 					guess_count++;
 					alert("Your guessed CORRECTLY!!! It took you " + guess_count + " guess(es)");
 					document.getElementById("guessesBox").innerHTML = guess_count;
+					var startHint = "Please enter a MIN and MAX number to generate your number.";
+					document.getElementById("game-hint-text").innerHTML = startHint;
+					document.getElementById("game-guess-hint").innerHTML = '';
 					document.getElementById("my-game-form").reset();
 					guess_count = 0;
 					random_num = 0;
@@ -64,8 +72,6 @@
 					num_to = 0;
 				}
 				document.getElementById("my-game-form").reset();
-				var startHint = "Please enter a MIN and MAX number to generate your number.";
-				document.getElementById("game-hint-text").innerHTML = startHint;
 				document.getElementById("guessesBox").innerHTML = guess_count;
 			}
 
