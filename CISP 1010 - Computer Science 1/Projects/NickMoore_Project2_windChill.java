@@ -51,7 +51,8 @@ public class NickMoore_Project2_windChill
                 System.out.println("Your wind velocity must be greater than 2.0 MPH.");
                 System.exit(1);
             }
-            else{
+			else
+			{
                 // If wind and temp check out calculate the wind-chill index
                 double windChill = 35.74 + 0.6215 * outsideTemp - 35.75 * Math.pow(velocity, 0.16)
                         + 0.4275 * outsideTemp * Math.pow(velocity, 0.16);
