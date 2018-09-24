@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * ------------------------------------------------- 
- * File name: inClass_2_92418 
+ * File name: inClass_1_92418 
  * Project name: Grade Checker
  * ------------------------------------------------- 
  * Creator's name: Nick Moore
@@ -12,7 +12,7 @@ import java.util.Scanner;
  * 
  */
 
-public class inClass_2_92418
+public class inClass_1_92418
 {
     public static void main(String[] args) 
     {
@@ -26,19 +26,8 @@ public class inClass_2_92418
         if (grade >= 90) 
         {
             System.out.println("Well Done. You got an A.");
-        } else if (grade >= 80 && grade < 90)
-        {
-            System.out.println("You could have done better. You got a B.");
-        } else if (grade >= 70 && grade < 80)
-        {
-            System.out.println("Are you even trying? You got a C.");
-        } else if (grade >= 65 && grade < 70)
-        {
-            System.out.println("Don't quit your day job. You got a D.");
-        } else 
-        {
-            System.out.println("You may need tutoring. You got an F.");
-        }
+        } 
+
         input.close();
     }
 
