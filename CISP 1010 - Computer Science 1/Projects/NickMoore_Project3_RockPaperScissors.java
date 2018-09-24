@@ -91,7 +91,7 @@ public class NickMoore_Project3_RockPaperScissors
                     System.out.println("SCISSORS lose to ROCK...HAL WINS!!!");
                 }
             }
-        }
+        } 
         input.close();
     }
     
