@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Raleway" rel="stylesheet">
+
+		<title>Nick Moore | Project 1</title>
+
+		<!-- Fancy javascript magic happens here -->
+		<script type="text/javascript">
+			var guess_num;
+			var random_num = 0;
+			var guess_count = 0;
+			var num_from;
+			var num_to;
+			var gameLog = [];
+
+			function load() {
+				var startHint = "Please enter a MIN and MAX number to generate your number.";
+				document.getElementById("game-hint-text").innerHTML = startHint;
+			}
+
+			function gameLogCount() {
+				gameLog.push(guess_count);
+				alert("You have played " + gameLog.length + " game(s).");
+			}
+
+			function getRandomInt(from, to) {
+				from = Math.ceil(from);
+				to = Math.floor(to);
+				return Math.floor(Math.random() * (to - from + 1) + from);
+			}
+
+			function startGame() {
+				num_from = document.myGameForm.userMin.value;
+				num_to = document.myGameForm.userMax.value;
+				if (num_to > 0 && num_to > num_from) {
+					var num_range = "Range: " + num_from + " to " + num_to + ".";
+					document.getElementById("game-hint-text").innerHTML = num_range;
+
+					random_num = getRandomInt(num_from, num_to);
+					guess_count = 0;
+				} else {
+					alert("Please enter a max number greater than 0 and greater than your min number.");
+				}
+				
+			}
+
+			
+			function guess() {
+				var user_guess = document.myGameForm.userGuess.value;
+				console.log(random_num);
+
+				if (user_guess < random_num) {
+					var gameHint = "My number is higher than " + user_guess;
+					document.getElementById("game-guess-hint").innerHTML = gameHint;
+					guess_count++;
+					console.log(guess_count);
+				} else if (user_guess > random_num) {
+					var gameHint = "My number is less than " + user_guess;
+					document.getElementById("game-guess-hint").innerHTML = gameHint;
+					guess_count++;
+					console.log(guess_count);
+				} else {
+					guess_count++;
+					alert("Your guessed CORRECTLY!!! It took you " + guess_count + " guess(es)");
+					gameLogCount();
+					document.getElementById("guessesBox").innerHTML = guess_count;
+					var startHint = "Please enter a MIN and MAX number to generate your number.";
+					document.getElementById("game-hint-text").innerHTML = startHint;
+					document.getElementById("game-guess-hint").innerHTML = '';
+					document.getElementById("my-game-form").reset();
+					guess_count = 0;
+					random_num = 0;
+					num_from = 0;
+					num_to = 0;
+				}
+				document.getElementById("my-game-form").reset();
+				document.getElementById("guessesBox").innerHTML = guess_count;
+			}
+
+			
+
+			
+		
+		</script>
+
+		<!-- Let's make this look pretty -->
+		<style>
+			/*
+				font-family: 'Raleway', sans-serif;
+				font-family: 'Press Start 2P', cursive;
+			*/
+			html {
+				background-color: #d9d9d9;
+				font-family: 'Raleway', sans-serif;
+				font-size: 12pt;
+			}
+
+			body {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(12, 1fr);
+				margin: 0;
+				padding: 0;
+			}
+
+			#game-hint {
+				grid-column-start: 4;
+				grid-column-end: 10;
+				grid-row-start: 1;
+				grid-row-end: 3;
+				background-color: white;
+				height: 5rem;
+				border-radius: 0 0 1rem 1rem;
+				filter: drop-shadow(0 5px 2px rgba(0, 0, 0, .5));
+			}
+
+			#game-hint-text {
+				text-align: center;
+				
+			}
+
+			.active {
+				font-size: 3rem;
+				font-weight: lighter;
+			}
+
+			#my-game-container {
+				grid-column-start: 2;
+				grid-column-end: 12;
+				grid-row-start: 2;
+				grid-row-end: 12;
+				display: grid;
+				height: 50rem;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(12, 1fr);
+				background-color: white;
+			}
+
+			#my-game-form {
+				grid-column-start: 2;
+				grid-column-end: 12;
+				grid-row-start: 2;
+				grid-row-end: 12;
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(12, 1fr);
+				grid-gap: .5rem;
+				background-color: #d9d9d9;
+			}
+
+			#user-min-number {
+				grid-column-start: 4;
+				grid-column-end: 6;
+				grid-row-start: 3;
+				grid-row-end: 6;
+				text-align: center;
+				justify-self: stretch;
+				align-self: center;
+			}
+
+			#user-max-number {
+				grid-column-start: 8;
+				grid-column-end: 10;
+				grid-row-start: 3;
+				grid-row-end: 6;
+				text-align: center;
+				justify-self: stretch;
+				align-self: center;
+			}
+
+			#user-min-number input, #user-max-number input {
+				width: 11rem;
+				height: 5rem;
+				text-align: center;
+				font-size: 3rem;
+				border: solid .13rem black;
+				border-radius: .5rem;
+			}
+
+			#min-max-label {
+				grid-column-start: 6;
+				grid-column-end: 8;
+				grid-row-start: 3;
+				grid-row-end: 6;
+				text-align: center;
+				justify-self: stretch;
+				align-self: center;
+				font-size: 2rem;
+				color: blue;
+			}
+
+			#game-startbtn-container {
+				grid-column-start: 6;
+				grid-column-end: 8;
+				grid-row-start: 5;
+				grid-row-end: 6;
+				justify-self: stretch;
+				align-self: center;
+			}
+			
+			.start-btn {
+				width: 100%;
+				height: 3rem;
+				border: none;
+				border-radius: .5rem;
+				background-color: #18DCC4;
+				font-size: 1rem;
+				cursor: pointer;
+			}
+
+			#user-guess {
+				grid-column-start: 3;
+				grid-column-end: 11;
+				grid-row-start: 7;
+				grid-row-end: 10;
+				background-color: rgba(0, 0, 0, 0.25);
+				border-radius: .5rem;
+				padding: 1rem;
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: repeat(12, 1fr);
+			}
+
+			.userGuessInput {
+				grid-column-start: 1;
+				grid-column-end: 4;
+				grid-row-start: 1;
+				grid-row-end: -1;
+				padding: 0;
+				margin: 0;
+				border-top: .13rem solid black;
+				border-bottom: .13rem solid black;
+				border-left: .13rem solid black;
+				border-radius: .5rem 0 0 .5rem;
+				text-align: center;
+				font-size: 2rem;
+				font-family: 'Raleway', sans-serif;
+			}
+
+			.guess-btn {
+				grid-column-start: 4;
+				grid-column-end: 5;
+				grid-row-start: 1;
+				grid-row-end: -1;
+				border: none;
+				border-top: .13rem solid black;
+				border-bottom: .13rem solid black;
+				border-right: .13rem solid black;
+				border-radius: 0 .5rem .5rem 0;
+				background-color: #18DCC4;
+			}
+
+			.class-btn {
+				grid-column-start: 4;
+				grid-column-end: 8;
+				grid-row-start: 1;
+				grid-row-end: -1;
+			}
+
+
+			#guess-count-container {
+				grid-column-start: 8;
+				grid-column-end: -1;
+				grid-row-start: 1;
+				grid-row-end: -1;
+				font-family: 'Press Start 2P', cursive;
+				background-color: black;
+				border-radius: .5rem;
+				padding: .35rem;
+				padding-top: 1rem;
+				text-align: center;
+				color: rgb(7, 204, 23);
+			}
+
+			.guesses_display {
+				font-size: 5rem;
+			}
+
+			#guess-hint {
+				grid-column-start: 4;
+				grid-column-end: 10;
+				grid-row-start: 12;
+				grid-row-end: -1;
+				background-color: white;
+				height: 5rem;
+				border-radius: 1rem 1rem 0 0;
+				border-top: .25rem solid #18DCC4;
+				border-left: .25rem solid #18DCC4;
+				border-right: .25rem solid #18DCC4;
+				text-align: center;
+				font-size: 2rem;
+				font-weight: lighter;
+				color: #18DCC4;
+			}
+
+		</style>
+    </head>
+    <body onload="load()">
+		<div id="my-game-container">
+			<div class="game-form-item" id="game-hint">
+				<h3 id="game-hint-text" class="displayed-content"></h3>
+			</div>
+			<form id="my-game-form" name="myGameForm">
+				<div class="game-form-item" id="user-min-number">
+					<input type="text" name="userMin" placeholder="#">
+					<label for="user-min">MIN</label>
+				</div>
+				<div id="min-max-label">
+					<label>TO</label>
+				</div>
+				<div class="game-form-item" id="user-max-number">
+					<input type="text" name="userMax" placeholder="#">
+					<label for="user-max">MAX</label>
+				</div>
+				<div class="game-form-item" id="game-startbtn-container">
+					<input type="button" class="start-btn" onclick="startGame()" value="Start / Reset Game">
+				</div>
+				<div class="game-form-item" id="user-guess">
+					<input type="text" name="userGuess" class="userGuessInput" placeholder="Enter Guess">
+					<input type="button" class="guess-btn" onclick="guess()" value="Guess">
+					<div class="game-form-item" id="guess-count-container">
+						<label class="guess_count_label">Guesses:</label><br/>
+						<label class="guesses_display" id="guessesBox">0</label>
+					</div>
+				</div>
+				<div class="game-form-item" id="guess-hint">
+					<h3 id="game-guess-hint" class="displayed-content"></h3>
+				</div>
+			</form>
+		</div>
+    </body>
+</html>
