@@ -7,7 +7,7 @@
 		
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Raleway" rel="stylesheet">
 
-		<title>Nick Moore | Project 1</title>
+		<title>Nick Moore | Project 2</title>
 
 		<!-- Fancy javascript magic happens here -->
 		<script type="text/javascript">
@@ -104,8 +104,25 @@
 				display: grid;
 				grid-template-columns: repeat(12, 1fr);
 				grid-template-rows: repeat(12, 1fr);
+				grid-gap: 1rem;
 				margin: 0;
 				padding: 0;
+			}
+
+			#game-menu {
+				grid-column-start: 2;
+				grid-column-end: 12;
+				grid-row-start: 1;
+				grid-row-end: 1;
+				background-color: blue;
+				padding: 0;
+				border-radius: 1rem;
+				height: 3rem;
+				align-self: center;
+			}
+
+			#game-menu h3 {
+				margin: 0;
 			}
 
 			#game-hint {
@@ -300,7 +317,10 @@
 
 		</style>
     </head>
-    <body onload="load()">
+	<body onload="load()">
+		<div id="game-menu" class="gameMenu">
+			<h3>Menu</h3>
+		</div>
 		<div id="my-game-container">
 			<div class="game-form-item" id="game-hint">
 				<h3 id="game-hint-text" class="displayed-content"></h3>
