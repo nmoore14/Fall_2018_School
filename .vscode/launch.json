@@ -2,6 +2,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NickMoore_Project4_CharacterCalculator",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "NickMoore_Project4_CharacterCalculator",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NickMoore_Project3_RockPaperScissors",
             "request": "launch",
             "cwd": "${workspaceFolder}",
