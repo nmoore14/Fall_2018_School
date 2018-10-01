@@ -41,7 +41,7 @@ public class NickMoore_Project4_CharacterCalculator
         System.out.print("Please enter a single character: ");
         String userInput = input.nextLine();
 
-        // TODO Check to make sure the user entered just 1 character.
+        // Check to make sure the user entered just 1 character.
         if (userInput.length() != 1)
         {
             System.out.println("Invalid Response.  Must be one character");
@@ -49,16 +49,16 @@ public class NickMoore_Project4_CharacterCalculator
         } 
         else
         {
-            // TODO Start the counter to see how long the application runs
+            // Start the counter to see how long the application runs
             double startTime = System.nanoTime();
 
-            // TODO Output the ASCII value of the character that the user entered.
+            // Output the ASCII value of the character that the user entered.
             char userChar = userInput.charAt(0);
             System.out.printf("%-50sYou entered: %s\n", "", userChar);
             int ascii = userChar;
             System.out.printf("ASCII Value: %s\n%-50s", ascii, "");
 
-            // TODO Check to see if the character is an Uppercase or Lowercase vowel.
+            // Check to see if the character is an Uppercase or Lowercase vowel.
             for (int i = 0; i < asciiUppercase.length; i++)
             {
                 if(ascii == asciiUppercase[i])
@@ -86,7 +86,7 @@ public class NickMoore_Project4_CharacterCalculator
                 System.out.printf("Not a Vowel\n");
             }
 
-            // TODO Check to see if the character that the user entered is an integer.
+            // Check to see if the character that the user entered is an integer.
             if (ascii >= 48 && ascii <= 57)
             {
                 System.out.printf("Character is an interger.\n%-50s", "");
@@ -96,7 +96,7 @@ public class NickMoore_Project4_CharacterCalculator
                 System.out.printf("Character is not an integer.\n%-50s", "");
             }
 
-            // TODO Check to see if the entered value is a space.
+            // Check to see if the entered value is a space.
             if (ascii == 32)
             {
                 System.out.printf("Character is a space.\n");
@@ -106,7 +106,7 @@ public class NickMoore_Project4_CharacterCalculator
                 System.out.printf("Character is not a space.\n");
             }
 
-            // TODO Check to see if the character is a "SPECIAL CHARACTER"
+            // Check to see if the character is a "SPECIAL CHARACTER"
             for (int i = 0; i < asciiSpecialChar.length; i++) {
                 if (ascii == asciiSpecialChar[i]) {
                     isSpecial = true;
@@ -122,7 +122,7 @@ public class NickMoore_Project4_CharacterCalculator
                 System.out.println("Character is not a SPECIAL CHARACTER.");
             }
 
-            // TODO Get the application end time and display the total time.
+            // Get the application end time and display the total time.
             double endTime = System.nanoTime();
             double duration = endTime - startTime;
             double finalDuration = duration / 1000000000;
