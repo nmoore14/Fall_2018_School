@@ -31,9 +31,10 @@ public class NickMoore_Project4_CharacterCalculator
         // TODO Ask the user to insert 1 character.
         System.out.print("Please enter a single character: ");
         String userInput = input.nextLine();
+        String outputIndent = "        ";
 
-        String userIO = "You entered: " + userInput;
-        System.out.format("You entered: %1d", userInput);
+        String userIO = outputIndent + "You entered: " + userInput;
+        System.out.printf("%-10s %s%n", userIO, userIO);
         // TODO Check to see if the character is an Uppercase or Lowercase vowel.
         // TODO Output the ASCII value of the character that the user entered.
         // TODO Check to see if the character that the user entered is an integer.
