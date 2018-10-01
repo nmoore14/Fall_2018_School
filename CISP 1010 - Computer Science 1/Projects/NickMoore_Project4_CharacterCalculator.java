@@ -1,6 +1,5 @@
 import java.util.Scanner;
-import java.lang.Object;
-import java.util.Arrays;
+
 
 /**
  * -------------------------------------------------
@@ -20,6 +19,8 @@ public class NickMoore_Project4_CharacterCalculator
     public static void main(String[] args) 
     {
         Scanner input = new Scanner(System.in);
+
+        boolean isSpecial = false;
 
         int[] asciiUppercase = {65, 69, 73, 79, 85};
         int[] asciiLowercase = {97, 101, 105, 111, 117};
@@ -47,6 +48,9 @@ public class NickMoore_Project4_CharacterCalculator
         } 
         else
         {
+            // TODO Start the counter to see how long the application runs
+            double startTime = System.nanoTime();
+
             // TODO Output the ASCII value of the character that the user entered.
             char userChar = userInput.charAt(0);
             System.out.println(userChar);
@@ -79,8 +83,37 @@ public class NickMoore_Project4_CharacterCalculator
             }
 
             // TODO Check to see if the entered value is a space.
+            if (ascii == 32)
+            {
+                System.out.println("Character is a space.");
+            }
+            else
+            {
+                System.out.println("Character is not a space.");
+            }
 
             // TODO Check to see if the character is a "SPECIAL CHARACTER"
+            for (int i = 0; i < asciiSpecialChar.length; i++) {
+                if (ascii == asciiSpecialChar[i]) {
+                    isSpecial = true;
+                }
+            }
+
+            if (isSpecial)
+            {
+                System.out.println("Character is a SPECIAL CHARACTER");
+            }
+            else
+            {
+                System.out.println("Character is not a SPECIAL CHARACTER");
+            }
+
+            // TODO Get the application end time and display the total time.
+            double endTime = System.nanoTime();
+            double duration = endTime - startTime;
+            double finalDuration = duration / 1000000000;
+
+            System.out.printf("Runtime in seconds: %.4f\n", finalDuration);
 
         }
 
