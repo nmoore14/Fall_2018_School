@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 /**
  * -------------------------------------------------
  * File name: NickMoore_Project4_CharacterCalculator.java
@@ -21,6 +20,8 @@ public class NickMoore_Project4_CharacterCalculator
         Scanner input = new Scanner(System.in);
 
         boolean isSpecial = false;
+        boolean isUppercaseVowel = false;
+        boolean isLowercaseVowel = false;
 
         int[] asciiUppercase = {65, 69, 73, 79, 85};
         int[] asciiLowercase = {97, 101, 105, 111, 117};
@@ -53,43 +54,56 @@ public class NickMoore_Project4_CharacterCalculator
 
             // TODO Output the ASCII value of the character that the user entered.
             char userChar = userInput.charAt(0);
-            System.out.println(userChar);
+            System.out.printf("%-50sYou entered: %s\n", "", userChar);
             int ascii = userChar;
-            System.out.println("ASCII: " + ascii);
+            System.out.printf("ASCII Value: %s\n%-50s", ascii, "");
 
             // TODO Check to see if the character is an Uppercase or Lowercase vowel.
             for (int i = 0; i < asciiUppercase.length; i++)
             {
                 if(ascii == asciiUppercase[i])
                 {
-                    System.out.println("Uppercase Vowel");
+                    isUppercaseVowel = true;
                 }
             }
 
             for (int i = 0; i < asciiLowercase.length; i++) {
                 if (ascii == asciiLowercase[i]) {
-                    System.out.println("Lowercase Vowel");
+                    isLowercaseVowel = true;
                 }
+            }
+
+            if (isUppercaseVowel)
+            {
+                System.out.printf("Uppercase Vowel\n");
+            }
+            else if (isLowercaseVowel)
+            {
+                System.out.printf("Lowercase Vowel\n");
+            }
+            else
+            {
+                System.out.printf("Not a Vowel\n");
             }
 
             // TODO Check to see if the character that the user entered is an integer.
             if (ascii >= 48 && ascii <= 57)
             {
-                System.out.println("Character is an interger.");
+                System.out.printf("Character is an interger.\n%-50s", "");
             }
             else
             {
-                System.out.println("Character is not an integer");
+                System.out.printf("Character is not an integer.\n%-50s", "");
             }
 
             // TODO Check to see if the entered value is a space.
             if (ascii == 32)
             {
-                System.out.println("Character is a space.");
+                System.out.printf("Character is a space.\n");
             }
             else
             {
-                System.out.println("Character is not a space.");
+                System.out.printf("Character is not a space.\n");
             }
 
             // TODO Check to see if the character is a "SPECIAL CHARACTER"
@@ -101,11 +115,11 @@ public class NickMoore_Project4_CharacterCalculator
 
             if (isSpecial)
             {
-                System.out.println("Character is a SPECIAL CHARACTER");
+                System.out.println("Character is a SPECIAL CHARACTER.");
             }
             else
             {
-                System.out.println("Character is not a SPECIAL CHARACTER");
+                System.out.println("Character is not a SPECIAL CHARACTER.");
             }
 
             // TODO Get the application end time and display the total time.
@@ -113,7 +127,7 @@ public class NickMoore_Project4_CharacterCalculator
             double duration = endTime - startTime;
             double finalDuration = duration / 1000000000;
 
-            System.out.printf("Runtime in seconds: %.4f\n", finalDuration);
+            System.out.printf("%-25sRuntime: %.4f seconds \n", "", finalDuration);
 
         }
 
