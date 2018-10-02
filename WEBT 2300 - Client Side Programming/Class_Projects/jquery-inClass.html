@@ -13,10 +13,12 @@
 			$(document).ready(function() {
 				$("#hideMe").click(function() {
 					$("p").hide();
+					$("#test").hide();
 				});
 				$("#showMe").click(function() {
 					$("p").show();
-				})
+					$("#test").show();
+				});
 			});
 
 		</script>
@@ -24,7 +26,7 @@
 		<!-- Links to CSS -->
 	</head>
 	<body>
-		<h2>WEBT-2300 JavaScript</h2>
+		<h2 id="test">WEBT-2300 JavaScript</h2>
 		<p>Hello World.</p>
 		<p>This is jQuery</p>
 
