@@ -9,10 +9,28 @@
 		<!-- Scripts that are needed before page load -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+		<script>
+			$(document).ready(function() {
+				$("#hideMe").click(function() {
+					$("p").hide();
+				});
+				$("#showMe").click(function() {
+					$("p").show();
+				})
+			});
+
+		</script>
+
 		<!-- Links to CSS -->
 	</head>
 	<body>
-		
+		<h2>WEBT-2300 JavaScript</h2>
+		<p>Hello World.</p>
+		<p>This is jQuery</p>
+
+		<button id="hideMe">Click Here</button>
+		<button id="showMe">Show</button>
+
 
 		<!-- At the bottom of the page to help with page loads -->
 		
