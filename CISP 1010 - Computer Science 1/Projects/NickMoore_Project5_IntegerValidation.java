@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * -------------------------------------------------
@@ -33,8 +33,40 @@ public class NickMoore_Project5_IntegerValidation
     {
         Scanner input = new Scanner(System.in);
 
+        // Create an array to store user input
+        List<String> userInts = new ArrayList<String>();
+        String userInput = "";
+        boolean keepGoing = true;
+
+        // Create variables to store average , sum, and total length of array.
+        int totalCount = 0;
+        int sum = 0;
+        double avg = 0;
+
         // Display the header information
         generateHeader();
+
+        // Display a message to tell the user what to do.
+        System.out.println("Please enter a positive interger. Enter 'D' or 'd' if you are done.");
+
+        // Create a while loop for the user to enter an int to add to their running array.
+
+        while(keepGoing)
+        {
+            if(userInput == "d" || userInput == "D")
+            {
+                keepGoing = false;
+            }
+            else
+            {
+                totalCount++;
+                System.out.printf("%-4sInterger %s: ", "", totalCount);
+                userInput = input.nextLine();
+                userInts.add(userInput);
+            }
+        }
+
+        System.out.println(userInts);
 
         input.close();
     }

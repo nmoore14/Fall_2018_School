@@ -16,12 +16,24 @@
     <body>
         <div id="grid-wrapper">
 			<h1 class="main-wrapper-header">Guess-A-Number</h1>
-			<button id="load-file-button">Load Game File</button>
+            <button id="load-file-button" onclick="loadGame()">Load Game File</button>
+            <button id="start-game-button" onclick="setGame()">Start</button>
 			<form id="form-grid-wrapper">
 				<span id="range-display">{{TEXT HERE}}</span>
-				<input type="text" name="userGuess" id="user-guess" placeholder="Enter Guess">
-				<input type="button" name="submitGuess" id="submit-guess" class="submitBtn" value="Submit">
-			</form>
+				<input type="text" name="userGuess" id="user-guess" placeholder="Enter Guess" autocomplete="off">
+                <input type="button" name="submitGuess" id="submit-guess" class="submitBtn" value="Submit">
+                <span id="hint-display">{{TEXT HERE}}</span>
+            </form>
+            <div id="display-wrapper">
+                <div id="display-left">
+                    <h4 id="displayHeaderL">Guess Count</h4>
+                    <span id="guess-display">10</span>
+                </div>
+                <div id="display-right">
+                    <h4 id="displayHeaderR">Game Count</h4>
+                    <span id="game-display">5</span>
+                </div>
+            </div>
         </div>
     </body>
 </html>
