@@ -43,12 +43,14 @@ public class NickMoore_Project5_IntegerValidation
         return keepGoing;
     }
 
-    public static boolean numberCheck(char a) {
+    public static boolean numberCheck(char a) 
+    {
         int value = a;
         boolean notANumber = false;
 
         if (value < 48 || value > 57) {
             notANumber = true;
+            return notANumber;
         }
 
         return notANumber;
@@ -88,10 +90,12 @@ public class NickMoore_Project5_IntegerValidation
             
             for(int i = 0; i < chars.length; i++)
             {
-                int numVal = chars[i];
-                System.out.println(chars[i] + ": " + numVal);
                 keepGoing = characterCheck(chars[i]);
                 notANumber = numberCheck(chars[i]);
+                if(notANumber)
+                {
+                    break;
+                }
             }
 
             if(keepGoing)
@@ -127,24 +131,23 @@ public class NickMoore_Project5_IntegerValidation
             intArray[j] = Integer.parseInt(strArray[j]);
         }
 
-        System.out.println(userInts);
-        System.out.println(totalCount);
+        System.out.println("\nStatistics:");
         for(int q = 0; q < intArray.length; q++)
         {
             sum += intArray[q];
         }
 
-        System.out.printf("Total: %.1f\n", sum);
+        System.out.printf("%-10sTotal: %.1f\n", "", sum);
 
         // Calculate the average of the entered values.
         avg = sum / totalCount;
-        System.out.printf("Average: %.2f\n", avg);
+        System.out.printf("%-10sAverage: %.2f\n", "", avg);
 
         // Sort the array to find the highest value in the array
         Arrays.sort(intArray);
         int arrayPoint = intArray.length - 1;
         highValue = intArray[arrayPoint];
-        System.out.printf("Highest Value: %s\n", highValue);
+        System.out.printf("%-10sHighest Value: %s\n", "", highValue);
         
     }
     
