@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.*;
 
 /**
  * -------------------------------------------------
@@ -29,6 +30,30 @@ public class NickMoore_Project5_IntegerValidation
         System.out.println("====================================================");
     }
 
+    public static boolean characterCheck(char a)
+    {
+        int value = a;
+        boolean keepGoing = true;
+        
+        if(value == 68 || value == 100)
+        {
+            keepGoing = false;
+        }
+
+        return keepGoing;
+    }
+
+    public static boolean numberCheck(char a) {
+        int value = a;
+        boolean notANumber = false;
+
+        if (value < 48 || value > 57) {
+            notANumber = true;
+        }
+
+        return notANumber;
+    }
+
     public static void main(String[] args) 
     {
         Scanner input = new Scanner(System.in);
@@ -37,38 +62,90 @@ public class NickMoore_Project5_IntegerValidation
         List<String> userInts = new ArrayList<String>();
         String userInput = "";
         boolean keepGoing = true;
+        boolean notANumber = false;
 
         // Create variables to store average , sum, and total length of array.
-        int totalCount = 0;
-        int sum = 0;
-        double avg = 0;
+        float totalCount = 0;
+        int itemCount = 0;
+        float sum = 0;
+        float avg = 0;
+        int highValue = 0;
 
         // Display the header information
         generateHeader();
 
         // Display a message to tell the user what to do.
-        System.out.println("Please enter a positive interger. Enter 'D' or 'd' if you are done.");
+        System.out.println("Please enter a positive, whole interger. Enter 'D' or 'd' if you are done.");
 
         // Create a while loop for the user to enter an int to add to their running array.
 
         while(keepGoing)
         {
-            if(userInput == "d" || userInput == "D")
+            itemCount++;
+            System.out.printf("%-4sInterger %s: ", "", itemCount);
+            userInput = input.nextLine();
+            char[] chars = userInput.toCharArray();
+            
+            for(int i = 0; i < chars.length; i++)
             {
-                keepGoing = false;
+                int numVal = chars[i];
+                System.out.println(chars[i] + ": " + numVal);
+                keepGoing = characterCheck(chars[i]);
+                notANumber = numberCheck(chars[i]);
             }
-            else
+
+            if(keepGoing)
             {
-                totalCount++;
-                System.out.printf("%-4sInterger %s: ", "", totalCount);
-                userInput = input.nextLine();
-                userInts.add(userInput);
+                if (notANumber) 
+                {
+                    itemCount--;
+                    System.out.println("Please enter a positive, whole number.");
+                } 
+                else 
+                {
+                    userInts.add(userInput);
+                }
             }
         }
 
-        System.out.println(userInts);
-
         input.close();
+
+        // Remove the last item from the list since this is a alphanumeric character and not an integer
+        // userInts.remove(userInts.size() - 1);
+        totalCount = userInts.size();
+
+        // Create an array to hold the list items
+        String[] strArray = new String[userInts.size()];
+
+        // Convert the new list to an array
+        strArray = userInts.toArray(strArray);
+
+        // Create an int array to hold the new converted int numbers
+        int[] intArray = new int[strArray.length];
+
+        for (int j = 0; j < strArray.length; j++) {
+            intArray[j] = Integer.parseInt(strArray[j]);
+        }
+
+        System.out.println(userInts);
+        System.out.println(totalCount);
+        for(int q = 0; q < intArray.length; q++)
+        {
+            sum += intArray[q];
+        }
+
+        System.out.printf("Total: %.1f\n", sum);
+
+        // Calculate the average of the entered values.
+        avg = sum / totalCount;
+        System.out.printf("Average: %.2f\n", avg);
+
+        // Sort the array to find the highest value in the array
+        Arrays.sort(intArray);
+        int arrayPoint = intArray.length - 1;
+        highValue = intArray[arrayPoint];
+        System.out.printf("Highest Value: %s\n", highValue);
+        
     }
     
 }
