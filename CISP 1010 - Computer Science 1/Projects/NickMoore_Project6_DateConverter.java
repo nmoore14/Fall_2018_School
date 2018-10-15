@@ -38,6 +38,79 @@ public class NickMoore_Project6_DateConverter
 
         return keepGoing;
     }
+
+    public static String dateOutput(String userDate)
+    {
+        // Split the string into 3 arrays with the breakpoints being the '/'
+        String array1[]= userDate.split("/");
+
+        // set the appropriate array index to the coresponding int value
+        int monthNum = Integer.parseInt(array1[0]);
+        int day = Integer.parseInt(array1[1]);
+        int year = Integer.parseInt(array1[2]);
+
+        // Create the month and dateFinal string to store the values after the switch case method.
+        String month;
+        String dateFinal;
+
+
+        // See what month the user entered.
+        switch (monthNum)
+        {
+            case 1:
+                month = "January";
+                break;
+            case 2:
+                month = "Feburary";
+                break;
+            case 3:
+                month = "March";
+                break;
+            case 4:
+                month = "April";
+                break;
+            case 5:
+                month = "May";
+                break;
+            case 6:
+                month = "June";
+                break;
+            case 7:
+                month = "July";
+                break;
+            case 8:
+                month = "August";
+                break;
+            case 9:
+                month = "September";
+                break;
+            case 10:
+                month = "October";
+                break;
+            case 11:
+                month = "November";
+                break;
+            case 12:
+                month = "December";
+                break;
+            default:
+                month = "Invalid month";
+        }
+
+        if (monthNum > 12 || day > 31)
+        {
+            dateFinal = "Please check your month and / or day number and re-enter.";
+        }
+        else
+        {
+            dateFinal = month + " " + day + ", " + year;
+
+        }
+    
+        return dateFinal;
+    }
+
+
     public static void main(String[] args) 
     {
         Scanner input = new Scanner(System.in);
@@ -55,7 +128,6 @@ public class NickMoore_Project6_DateConverter
 
             // Create a variable to store the users date.
             String userDate = input.nextLine();
-            System.out.println(userDate);
 
             // Check the length of user input to see if it could possibly be the exit character
             if(userDate.length() == 1)
@@ -69,6 +141,7 @@ public class NickMoore_Project6_DateConverter
             }
             else
             {
+                // Look for the first / in the string
                 if (userDate.indexOf('/') > 0 && userDate.indexOf('/') < 3)
                 {
                     int firstSlash = userDate.indexOf('/');
@@ -77,28 +150,22 @@ public class NickMoore_Project6_DateConverter
                     {
                         if(userDate.indexOf('/', 2) == 3 || userDate.indexOf('/', 2) == 4)
                         {
-                            System.out.println(firstSlash + " | " + userDate.indexOf('/',2));
+                            System.out.println(dateOutput(userDate));
                         }
                     }
                     else
                     {
                         if (userDate.indexOf('/', 3) == 4 || userDate.indexOf('/', 3) == 5) 
                         {
-                            System.out.println(firstSlash + " | " + userDate.indexOf('/', 3));
+                            System.out.println(dateOutput(userDate));
                         }
                     }
-                    System.out.println(userDate.indexOf('/', 3));
                 } 
                 else
                 {
                     System.out.println("Incorrect format.  Enter date as MM/DD/YYYY");
                 }
-            }
-
-
-            // Look for the first / in the string
-            
-            
+            }    
 
         }
         
