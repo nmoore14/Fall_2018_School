@@ -97,7 +97,7 @@ public class NickMoore_Project6_DateConverter
                 month = "Invalid month";
         }
 
-        if (monthNum > 12 || day > 31)
+        if (monthNum > 12 || monthNum < 1 || day < 1 || day > 31)
         {
             dateFinal = "Please check your month and / or day number and re-enter.";
         }
