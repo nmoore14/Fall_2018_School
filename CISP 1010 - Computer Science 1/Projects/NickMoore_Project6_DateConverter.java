@@ -51,12 +51,55 @@ public class NickMoore_Project6_DateConverter
         while(keepGoing)
         {
             // Ask the user for their date.
-            System.out.print("Please enter a date(i.e. 01/01/1989): ");
+            System.out.print("Please enter a date(i.e. 01/01/1989) or d / D to exit : ");
 
             // Create a variable to store the users date.
             String userDate = input.nextLine();
             System.out.println(userDate);
-            keepGoing = characterCheck(userDate);
+
+            // Check the length of user input to see if it could possibly be the exit character
+            if(userDate.length() == 1)
+            {
+                char userChar = userDate.charAt(0);
+                keepGoing = characterCheck(userChar);
+                
+                if (keepGoing) {
+                    System.out.println("Incorrect format.  Enter date as MM/DD/YYYY");
+                }
+            }
+            else
+            {
+                if (userDate.indexOf('/') > 0 && userDate.indexOf('/') < 3)
+                {
+                    int firstSlash = userDate.indexOf('/');
+
+                    if(firstSlash == 1)
+                    {
+                        if(userDate.indexOf('/', 2) == 3 || userDate.indexOf('/', 2) == 4)
+                        {
+                            System.out.println(firstSlash + " | " + userDate.indexOf('/',2));
+                        }
+                    }
+                    else
+                    {
+                        if (userDate.indexOf('/', 3) == 4 || userDate.indexOf('/', 3) == 5) 
+                        {
+                            System.out.println(firstSlash + " | " + userDate.indexOf('/', 3));
+                        }
+                    }
+                    System.out.println(userDate.indexOf('/', 3));
+                } 
+                else
+                {
+                    System.out.println("Incorrect format.  Enter date as MM/DD/YYYY");
+                }
+            }
+
+
+            // Look for the first / in the string
+            
+            
+
         }
         
         // Close the input
