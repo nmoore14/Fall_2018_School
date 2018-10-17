@@ -171,6 +171,7 @@ public class NickMoore_Project6_DateConverter
         
         // Close the input
         input.close();
+	System.out.println("Goodbye!");
     }
     
 }
