@@ -1,4 +1,11 @@
 html {
 	font-size: 12pt;
-	background-color: blue;
+	background: url(../images/bg2.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0);
 }
