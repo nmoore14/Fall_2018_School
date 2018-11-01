@@ -10,6 +10,19 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 }
 
+.main {
+	margin-top: 2rem;
+}
+
 .middleCol {
 	background-color: rgba(255, 255, 255, .5);
+	border-radius: 1rem;
+	border-bottom: .13rem solid white;
+	border-right: .13rem solid white;
+	border-top: .05rem solid #CFD8DC;
+	border-left: .05rem solid #CFD8DC;
+}
+
+.titleHeader {
+	text-align: center;
 }
