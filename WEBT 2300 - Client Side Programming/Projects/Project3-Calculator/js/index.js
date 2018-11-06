@@ -4,6 +4,7 @@ var running = [];
 var decimalCount = 0;
 var operatorCount = 0;
 var operators = ["CE", "C", "+/-", "÷", "x", "-", "+", "=", "."];
+var opPresses = [];
 
 $(document).ready(function () {
 	var decimalCount = 0;
@@ -36,22 +37,37 @@ $(document).ready(function () {
 		} else if (jQuery.inArray(buttonPressed, operators) == 1) {
 			calcNum = [];
 			running = [];
+			opPresses = [];
 			decimalCount = 0;
 			$('#display-span').html("0");
 		} else if (jQuery.inArray(buttonPressed, operators) > 1 && jQuery.inArray(buttonPressed, operators) != 8) {
 			var opSelect = jQuery.inArray(buttonPressed, operators);
 			if (running.length < 1 && opSelect != 7) {
+				opPresses.push(opSelect);
 				running.push(numString(calcNum));
 				calcNum = [];
 				decimalCount = 0;
-			} else if (running.length == 1) {
+			} else if (running.length == 1 && opSelect != 7) {
+				opPresses.push(opSelect);
 				running.push(numString(calcNum));
-				calcFinal = calculation(opSelect, running);
-				console.log(calcFinal);
-				$('#display-span').html(calcFinal);
+				var opIndex = opPresses.length - 2;
+				var finalCalc = calculation(opPresses[opIndex], running);
+				$('#display-span').html(finalCalc);
+				calcNum = [];
+				running = [];
+				running.push(finalCalc);
+			} else if (running.length == 1 && opSelect == 7) {
+				running.push(numString(calcNum));
+				var opIndex = opPresses.length - 1;
+				var finalCalc = calculation(opPresses[opIndex], running);
+				$('#display-span').html(finalCalc);
+				calcNum = [];
+				running = [];
+				running.push(finalCalc);
 			}
 			console.log(running);
 			console.log(calcNum);
+			console.log(opPresses);
 		}
 	})
 });
@@ -66,19 +82,19 @@ function calculation(op, running) {
 	var total;
 	switch(op) {
 		case 3:
-			total = parseInt(running[0]) / parseInt(running[1]);
+			total = parseFloat(running[0]) / parseFloat(running[1]);
 			return total;
 			break;
 		case 4:
-			total = parseInt(running[0]) * parseInt(running[1]);
+			total = parseFloat(running[0]) * parseFloat(running[1]);
 			return total;
 			break;
 		case 5:
-			total = parseInt(running[0]) - parseInt(running[1]);
+			total = parseFloat(running[0]) - parseFloat(running[1]);
 			return total;
 			break;
 		case 6:
-			total = parseInt(running[0]) + parseInt(running[1]);
+			total = parseFloat(running[0]) + parseFloat(running[1]);
 			return total;
 			break;
 	}
