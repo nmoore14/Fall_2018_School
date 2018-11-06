@@ -3,7 +3,8 @@ var calcFinal = 0;
 var running = [];
 var decimalCount = 0;
 var operatorCount = 0;
-var operators = ["CE", "C", "+/-", "÷", "x", "-", "+", "=", "."];
+var operators = ["CE", "C", "&gt;", "÷", "x", "-", "+", "=", "."
+];
 var opPresses = [];
 
 $(document).ready(function () {
@@ -11,6 +12,7 @@ $(document).ready(function () {
 	$('.btn').click(function (e) {
 		e.preventDefault();
 		var buttonPressed = $(this).html();
+		console.log(buttonPressed);
 
 		if (jQuery.inArray(buttonPressed, operators) == -1) { // Check to see if the button the user pressed is an operator.
 			calcNum.push(buttonPressed);
@@ -39,7 +41,10 @@ $(document).ready(function () {
 			opPresses = [];
 			decimalCount = 0;
 			$('#display-span').html("0");
-		} else if (jQuery.inArray(buttonPressed, operators) > 1 && jQuery.inArray(buttonPressed, operators) != 8) {
+		} else if (jQuery.inArray(buttonPressed, operators) == 2) {
+			calcNum.pop();
+			$('#display-span').html(numString(calcNum));
+		} else if (jQuery.inArray(buttonPressed, operators) > 2 && jQuery.inArray(buttonPressed, operators) != 8) {
 			var opSelect = jQuery.inArray(buttonPressed, operators);
 			if (running.length == 0 && opSelect != 7) {
 				opPresses.push(opSelect);
