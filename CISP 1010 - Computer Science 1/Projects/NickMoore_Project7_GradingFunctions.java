@@ -19,11 +19,13 @@ public class NickMoore_Project7_GradingFunctions
 		{
 			boolean validNumber = true;
 
-			for (int i = 0; i < gradeNum.length(); i++) {
+			for (int i = 0; i < gradeNum.length(); i++)
+			{
 				char validChar = gradeNum.charAt(i);
 				int validAscii = validChar;
 
-				if (validAscii >= 9 && validAscii != 46) {
+				if (validAscii >= 9 && validAscii != 46)
+				{
 					validNumber = false;
 				}
 				else
