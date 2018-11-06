@@ -12,11 +12,11 @@ $(document).ready(function () {
 		e.preventDefault();
 		var buttonPressed = $(this).html();
 
-		if (jQuery.inArray(buttonPressed, operators) == -1) {
+		if (jQuery.inArray(buttonPressed, operators) == -1) { // Check to see if the button the user pressed is an operator.
 			calcNum.push(buttonPressed);
 			$('#display-span').html(numString(calcNum));
 			console.log("This is the final number: " + numString(calcNum));
-		} else if (jQuery.inArray(buttonPressed, operators) == 8) {
+		} else if (jQuery.inArray(buttonPressed, operators) == 8) { // Insert a decimal and make sure only one is present.
 			if (decimalCount < 1) {
 				if (calcNum.length < 1) {
 					calcNum.push("0");
@@ -29,12 +29,11 @@ $(document).ready(function () {
 					decimalCount++;
 				}
 			}
-		} else if (jQuery.inArray(buttonPressed, operators) == 0) {
+		} else if (jQuery.inArray(buttonPressed, operators) == 0) { // Clear entry.
 			calcNum = [];
 			decimalCount = 0;
 			$('#display-span').html("0");
-			$("#btn-decimal").bind("click");
-		} else if (jQuery.inArray(buttonPressed, operators) == 1) {
+		} else if (jQuery.inArray(buttonPressed, operators) == 1) { // Clear everything.
 			calcNum = [];
 			running = [];
 			opPresses = [];
@@ -47,27 +46,33 @@ $(document).ready(function () {
 				running.push(numString(calcNum));
 				calcNum = [];
 				decimalCount = 0;
-			} else if (running.length == 1 && opSelect != 7) {
+			} else if (running.length < 2 && opSelect != 7) {
 				opPresses.push(opSelect);
 				running.push(numString(calcNum));
 				var opIndex = opPresses.length - 2;
 				var finalCalc = calculation(opPresses[opIndex], running);
 				$('#display-span').html(finalCalc);
 				calcNum = [];
-				running = [];
-				running.push(finalCalc);
+				running.unshift(finalCalc);
+				running.splice(1, 2);
+				console.log("OTHER")
+				console.log("running: " + running);
+				console.log("calcNum: " + calcNum);
+				console.log("opPresses: " + opPresses);
 			} else if (running.length == 1 && opSelect == 7) {
 				running.push(numString(calcNum));
 				var opIndex = opPresses.length - 1;
 				var finalCalc = calculation(opPresses[opIndex], running);
 				$('#display-span').html(finalCalc);
 				calcNum = [];
-				running = [];
-				running.push(finalCalc);
+				running.unshift(finalCalc);
+				running.splice(1, 2);
+				opPresses = [];
+				console.log("EQUALS")
+				console.log("running: " + running);
+				console.log("calcNum: " + calcNum);
+				console.log("opPresses: " + opPresses);
 			}
-			console.log(running);
-			console.log(calcNum);
-			console.log(opPresses);
 		}
 	})
 });
