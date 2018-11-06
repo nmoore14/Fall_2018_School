@@ -94,18 +94,14 @@ function calculation(op, running) {
 		case 3:
 			total = parseFloat(running[0]) / parseFloat(running[1]);
 			return total;
-			break;
 		case 4:
 			total = parseFloat(running[0]) * parseFloat(running[1]);
 			return total;
-			break;
 		case 5:
 			total = parseFloat(running[0]) - parseFloat(running[1]);
 			return total;
-			break;
 		case 6:
 			total = parseFloat(running[0]) + parseFloat(running[1]);
 			return total;
-			break;
 	}
 }
