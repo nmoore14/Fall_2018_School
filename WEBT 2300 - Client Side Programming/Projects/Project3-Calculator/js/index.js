@@ -41,37 +41,37 @@ $(document).ready(function () {
 			$('#display-span').html("0");
 		} else if (jQuery.inArray(buttonPressed, operators) > 1 && jQuery.inArray(buttonPressed, operators) != 8) {
 			var opSelect = jQuery.inArray(buttonPressed, operators);
-			if (running.length < 1 && opSelect != 7) {
+			if (running.length == 0 && opSelect != 7) {
 				opPresses.push(opSelect);
 				running.push(numString(calcNum));
 				calcNum = [];
 				decimalCount = 0;
-			} else if (running.length < 2 && opSelect != 7) {
+			} else if (running.length == 1 && opSelect != 7) {
 				opPresses.push(opSelect);
 				running.push(numString(calcNum));
 				var opIndex = opPresses.length - 2;
 				var finalCalc = calculation(opPresses[opIndex], running);
 				$('#display-span').html(finalCalc);
 				calcNum = [];
-				running.unshift(finalCalc);
-				running.splice(1, 2);
 				console.log("OTHER")
 				console.log("running: " + running);
 				console.log("calcNum: " + calcNum);
 				console.log("opPresses: " + opPresses);
+				running.splice(0, 2, finalCalc);
+				console.log("running: " + running);
 			} else if (running.length == 1 && opSelect == 7) {
 				running.push(numString(calcNum));
 				var opIndex = opPresses.length - 1;
 				var finalCalc = calculation(opPresses[opIndex], running);
 				$('#display-span').html(finalCalc);
 				calcNum = [];
-				running.unshift(finalCalc);
-				running.splice(1, 2);
 				opPresses = [];
 				console.log("EQUALS")
 				console.log("running: " + running);
 				console.log("calcNum: " + calcNum);
 				console.log("opPresses: " + opPresses);
+				running.splice(0, 2, finalCalc);
+				console.log("running: " + running);
 			}
 		}
 	})
