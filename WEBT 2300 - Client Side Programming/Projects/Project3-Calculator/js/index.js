@@ -16,7 +16,12 @@ $(document).ready(function () {
 
 		if (jQuery.inArray(buttonPressed, operators) == -1) { // Check to see if the button the user pressed is an operator.
 			calcNum.push(buttonPressed);
-			$('#display-span').html(numString(calcNum));
+			if(calcNum[0] === '0' && calcNum[1] != ".") {
+				calcNum.shift();
+				$('#display-span').html("0");
+			} else {
+				$('#display-span').html(numString(calcNum));
+			}
 			console.log("This is the final number: " + numString(calcNum));
 		} else if (jQuery.inArray(buttonPressed, operators) == 8) { // Insert a decimal and make sure only one is present.
 			if (decimalCount < 1) {
