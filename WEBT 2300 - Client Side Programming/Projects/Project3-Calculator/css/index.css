@@ -5,18 +5,17 @@ font-family: 'Josefin Sans', sans-serif;
 html {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 12pt;
-	background: url(../images/bg2.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	background-color: #eeeeee;
 }
 
 body {
+	margin: 0;
 	padding-bottom: 25rem;
+	padding-top: 5rem;
 }
 
 #calculator {
-	margin: 5rem auto;
+	margin: 0 auto;
 	width: 30rem;
 	height: 35rem;
 	font-size: 2rem;

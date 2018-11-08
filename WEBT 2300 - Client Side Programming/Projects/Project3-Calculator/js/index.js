@@ -22,7 +22,6 @@ $(document).ready(function () {
 			} else {
 				$('#display-span').html(numString(calcNum));
 			}
-			console.log("This is the final number: " + numString(calcNum));
 		} else if (jQuery.inArray(buttonPressed, operators) == 8) { // Insert a decimal and make sure only one is present.
 			if (decimalCount < 1) {
 				if (calcNum.length < 1) {
@@ -32,7 +31,6 @@ $(document).ready(function () {
 				} else {
 					calcNum.push(".");
 					$('#display-span').html(numString(calcNum));
-					console.log("This is the final number: " + numString(calcNum));
 					decimalCount++;
 				}
 			}
@@ -63,12 +61,7 @@ $(document).ready(function () {
 				var finalCalc = calculation(opPresses[opIndex], running);
 				$('#display-span').html(finalCalc);
 				calcNum = [];
-				console.log("OTHER")
-				console.log("running: " + running);
-				console.log("calcNum: " + calcNum);
-				console.log("opPresses: " + opPresses);
 				running.splice(0, 2, finalCalc);
-				console.log("running: " + running);
 			} else if (running.length == 1 && opSelect == 7) {
 				running.push(numString(calcNum));
 				var opIndex = opPresses.length - 1;
@@ -76,12 +69,7 @@ $(document).ready(function () {
 				$('#display-span').html(finalCalc);
 				calcNum = [];
 				opPresses = [];
-				console.log("EQUALS")
-				console.log("running: " + running);
-				console.log("calcNum: " + calcNum);
-				console.log("opPresses: " + opPresses);
 				running.splice(0, 2, finalCalc);
-				console.log("running: " + running);
 			}
 		}
 	})
