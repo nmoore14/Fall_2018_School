@@ -1,5 +1,7 @@
 import java.util.*;
 
+import javax.lang.model.util.ElementScanner6;
+
 /**
  * -------------------------------------------------
  * File name:  NickMoore_Project7_GradingFunctions
@@ -15,89 +17,227 @@ import java.util.*;
 
 public class NickMoore_Project7_GradingFunctions
 {
-		public static boolean isValidNumber(String gradeNum, boolean checkForFloat)
+
+	public static boolean checkGoing(String grade)
+	{
+		boolean going = true;
+
+		char check = grade.charAt(0);
+		int a = check;
+		
+		if( a == 68 || a == 100)
 		{
-			boolean validNumber = true;
+			going = false;
+		}
 
-			for (int i = 0; i < gradeNum.length(); i++)
+		return going;
+	}
+
+	public static boolean isValidNumber(String grade)
+	{
+		boolean isValid = true;
+		int decimalCount = 0;
+
+		for(int i = 0; i < grade.length(); i++)
+		{
+			char a = grade.charAt(i);
+			int b = a;
+
+			if(b != 46 && b < 48 || b > 57)
 			{
-				char validChar = gradeNum.charAt(i);
-				int validAscii = validChar;
+				isValid = false;
+				break;
+			}
 
-				if (validAscii >= 9 && validAscii != 46)
-				{
-					validNumber = false;
+			if(b == 46)
+			{
+				decimalCount++;
+			}
+
+			if(decimalCount > 1)
+			{
+				isValid = false;
+				break;
+			}
+		}
+
+		return isValid;
+	}
+
+	public static boolean checkDouble(String grade)
+	{
+		boolean isDouble = false;
+		int decimalCount = 0;
+
+		for (int j = 0; j < grade.length(); j++) {
+			char a = grade.charAt(j);
+			int b = a;
+
+			if (b == 46) 
+			{
+				decimalCount++;
+			}
+		}
+
+		if (decimalCount == 1) {
+			int decimalLocal = grade.indexOf('.') + 1;
+			int result = grade.length() - decimalLocal;
+			if(result <= 2)
+			{
+				isDouble = true;
+			}			
+		}
+
+		return isDouble;
+	}
+
+	public static boolean checkInt(String grade) {
+		boolean isInt = false;
+		int iGrade = Integer.parseInt(grade);
+
+		if(iGrade > 0 && iGrade <= 100)
+		{
+			isInt = true;
+		}
+
+		return isInt;
+	}
+
+	public static boolean checkDoubleRange(Double grade)
+	{
+		boolean inRange = false;
+
+		if(grade > 0.00 && grade <= 100.00)
+		{
+			inRange = true;
+		}
+
+		return inRange;
+	}
+
+	public static char getLetterGrade(Double grade)
+	{
+		char stuGrade;
+
+		if(grade >= 89.5)
+		{
+			stuGrade = 'A';
+		}
+		else if(grade >= 79.5 && grade < 89.5)
+		{
+			stuGrade = 'B';
+		}
+		else if(grade >= 69.5 && grade < 79.5)
+		{
+			stuGrade = 'C';
+		}
+		else if(grade >= 64.5 && grade < 69.5)
+		{
+			stuGrade = 'D';
+		}
+		else
+		{
+			stuGrade = 'F';
+		}
+			
+		return stuGrade;
+	}
+
+	public static char getLetterGrade(int grade) {
+		char stuGrade;
+
+		if (grade >= 90) 
+		{
+			stuGrade = 'A';
+		} 
+		else if (grade >= 80 && grade < 90) 
+		{
+			stuGrade = 'B';
+		} 
+		else if (grade >= 70 && grade < 80) 
+		{
+			stuGrade = 'C';
+		} 
+		else if (grade >= 65 && grade < 70)
+		{
+			stuGrade = 'D';
+		} 
+		else 
+		{
+			stuGrade = 'F';
+		}
+
+		return stuGrade;
+	}
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+
+		// Variables
+		boolean keepGoing = true;
+		boolean validNumber = false;
+		boolean validInt = false;
+		boolean validDouble = false;
+		boolean doubleInRange = true;
+
+		while(keepGoing)
+		{
+			System.out.printf("%-10sEnter a grade: ", "");
+			String grade = input.next();
+
+			// Check to see if the user has entered a single character and if so is it 'd' or 'D'.
+			if(grade.length() == 1)
+			{
+				keepGoing = checkGoing(grade);
+			}
+			else
+			{
+				// Pass the string to the validNumber function to see if it is an actual number
+				validNumber = isValidNumber(grade);
+				if (!validNumber) {
+					System.out.println("Invalid grade. Try again.");
 				}
 				else
 				{
-					validNumber = true;
-				}
-			}	
-			return validNumber;
-		}
-    public static void main(String[] args) 
-    {
-			Scanner input = new Scanner(System.in);
-			
-			// Declare local variables
-			boolean keepGoing = true;
-			boolean floatNumber = false;
-			String gradeNum;
-
-			while(keepGoing)
-			{
-				System.out.print("\tEnter a grade: ");
-				gradeNum = input.next();
-
-				// Check the length of the input to see if the user might have entered the escape character
-				if(gradeNum.length() == 1)
-				{
-					char userChar = gradeNum.charAt(0);
-					int ascii = userChar;
-
-					// Check to see if the character is D or d
-					if(ascii == 68 || ascii == 100)
+					validDouble = checkDouble(grade);
+					
+					if(validDouble)
 					{
-						keepGoing = false;
-					}
-				}
-
-				// Look for a decimal
-				for(int i = 0; i < gradeNum.length(); i++)
-				{
-					char floatChar = gradeNum.charAt(i);
-					int floatAscii = floatChar;
-					int decimalCount = 0;
-
-					if(decimalCount <= 1)
-					{
-						if (floatAscii == 46) 
+						double dGrade = Double.parseDouble(grade);
+						doubleInRange = checkDoubleRange(dGrade);
+						if(doubleInRange)
 						{
-							floatNumber = true;
-							decimalCount++;
+							char letterGrade = getLetterGrade(dGrade);
+							System.out.printf("%-7sLetter grade for double: %s\n", "", letterGrade);
 						}
+						else
+						{
+							System.out.printf("Grade for double must be between 0.0 and 100.00.\n", "");
+						}
+						
 					}
 					else
 					{
-						System.out.println("Invalid number format, try again");
+						validInt = checkInt(grade);
+						if (validInt) 
+						{
+							int iGrade = Integer.parseInt(grade);
+							char letterGrade = getLetterGrade(iGrade);
+							System.out.printf("%-7sLetter grade for integer: %s\n", "", letterGrade);
+						} 
+						else 
+						{
+							System.out.printf("Grade for integer must be between 0 and 100.\n", "");
+						}
 					}
-					
 				}
-
-				// Send the input to make sure it is a valid number
-				// boolean validNumber = isValidNumber(gradeNum, floatNumber);
-				// if(validNumber)
-				// {
-
-				// }
-				// else
-				// {
-
-				// }
 			}
-
-			input.close();
-			System.out.println("Thank you for playing");
-    }
+		}
+		
+		input.close();
+		System.out.printf("%-10sThanks for playing.\n", "");
+	}
     
 }
+
