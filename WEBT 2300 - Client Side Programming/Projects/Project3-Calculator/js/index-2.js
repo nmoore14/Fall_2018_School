@@ -22,6 +22,12 @@ function backspace(calcNum) {
 	calcNum.pop();
 }
 
+function numString(calcNum) {
+	var num = calcNum.toString();
+	var finalNum = num.replace(/,\s?/g, "");
+	return finalNum;
+}
+
 function calculation(btn, calcNum) {
 	var num1 = 0;
 	var num2 = 0;
@@ -67,25 +73,26 @@ $(document).ready(function () {
 		e.preventDefault();
 		var buttonPressed = $(this).html();
 		var btn = jQuery.inArray(buttonPressed, operators);
-
+		console.log(btn);
 		// Check to see what button the user has entered
-		if (btn == -1 || btn == 8) {
+		if (btn == -1) {
 			calcNum.push(buttonPressed);
 			if (calcNum[0] === '0' && calcNum[1] != ".") {
 				calcNum.shift();
 				$('#display-span').html("0");
 			} else {
-				// Check to make sure the user can only enter 1 decimal
-				if (decimalCount < 1) {
-					if (calcNum.length < 1) {
-						calcNum.push("0");
-						calcNum.push(".");
-						decimalCount++;
-					} else {
-						calcNum.push(".");
-						$('#display-span').html(numString(calcNum));
-						decimalCount++;
-					}
+				$('#display-span').html(numString(calcNum));
+			}
+		} else if (btn == 8) { // Insert a decimal and make sure only one is present.
+			if (decimalCount < 1) {
+				if (calcNum.length < 1) {
+					calcNum.push("0");
+					calcNum.push(".");
+					decimalCount++;
+				} else {
+					calcNum.push(".");
+					$('#display-span').html(numString(calcNum));
+					decimalCount++;
 				}
 			}
 		} else {
@@ -99,11 +106,21 @@ $(document).ready(function () {
 				backspace(calcNum);
 				$('#display-span').html(numString(calcNum));
 			} else {
+				calc.push(numString(calcNum));
 				if(btn != 7) {
 					opPresses.push(btn);
 				}
-				var total = calculation(btn, calc);
-				$('#display-span').html(total);
+				if(calc.length == 0 && btn != 7) {
+					calc.push(numString(calcNum));
+					calcNum = [];
+					decimalCount = 0;
+				} else {
+					calc.push(numString(calcNum));
+					calcNum = [];
+					var totalFinal = calculation(btn, calc);
+					$('#display-span').html(totalFinal);
+				}
+
 			}
 		}
 	})
