@@ -1,5 +1,7 @@
 import java.util.*;
 
+// 13 2 100 75 1 23 89 44 91 35 41 50
+
 /**
  * -------------------------------------------------
  * File name: NickMoore_Project8_ArrayManiputlation
@@ -62,7 +64,6 @@ public class NickMoore_Project8_ArrayManipulation
 		for (int j = 0; j < userArray.length; j++)
 		{
 			numArray[j] = Integer.parseInt(userArray[j]);
-			System.out.println(numArray[j]);
 		}
 		
 		return numArray;
@@ -82,10 +83,88 @@ public class NickMoore_Project8_ArrayManipulation
 		return minNum;
 	}
 
+	public static double findAverage(Integer[] userIntArray)
+	{
+		double sum = 0;
+		double avgNum = 0;
+		for (int v = 0; v < userIntArray.length; v++)
+		{
+			sum += userIntArray[v];
+		}
+
+		avgNum = sum / userIntArray.length;
+
+		return avgNum;
+	}
+
+	public static double findMedian(Integer[] userIntArray)
+	{
+		double medianNum = 0;
+
+		if (userIntArray.length % 2 == 0)
+		{
+			int num1index = (userIntArray.length / 2) - 1;
+			int num2index = num1index + 1;
+			double num1 = userIntArray[num1index];
+			double num2 = userIntArray[num2index];
+			medianNum = ( num1 + num2 ) / 2;
+		}
+		else
+		{
+			int medianNumIndex = 0;
+			medianNumIndex = Math.round(userIntArray.length / 2);
+			medianNum = userIntArray[medianNumIndex];
+		}
+
+		return medianNum;
+	}
+
+	public static void linearSearch(Integer[] userArray2, int searchNum)
+	{
+		int steps = 0;
+		for (int r = 0; r < userArray2.length; r++)
+		{
+			steps++;
+			if (userArray2[r] == searchNum)
+			{
+				System.out.printf("Linear counter: %s\n", steps);
+				System.out.printf("My Lineear search index: %s\n", r);
+			}
+		}
+	}
+
+	public static void binarySearch(Integer[] userIntArray, int searchInt)
+	{
+		int low = 0;
+		int high = userIntArray.length - 1;
+		int steps = 0;
+
+		while (low <= high)
+		{
+			int mid = (low + high) / 2;
+			if(userIntArray[mid] < searchInt)
+			{
+				low = mid + 1;
+			}
+			else if (userIntArray[mid] > searchInt)
+			{
+				high = mid -1;
+			}
+			else if (userIntArray[mid] == searchInt)
+			{
+				System.out.printf("Binary counter: %s\n", steps);
+				System.out.printf("My Binary search index: %s\n\n", mid);
+				break;
+			}
+			steps++;
+		}
+	}
+
 	public static void main(String[] args) 
 	{
 		// Create the new scanner input object
 		Scanner input = new Scanner(System.in);
+		Scanner input2 = new Scanner(System.in);
 
 		// Variables
 		boolean keepGoing = true;
@@ -109,16 +188,36 @@ public class NickMoore_Project8_ArrayManipulation
 				{
 					// Convert the user input into an array
 					Integer[] userIntArray = userArray(userInputList);
+					Integer[] userArray2 = userArray(userInputList);
 					Arrays.sort(userIntArray);
 
 					// Run the array throught the different methods
+					// Find the max number
 					int max = findMax(userIntArray);
-					System.out.printf("Maximum: %s\n", max);
+					System.out.printf("\nMaximum: %s\n", max);
 					
+					// Find the minimum numbet
 					int min = findMin(userIntArray);
 					System.out.printf("Minimum: %s\n", min);
 
-					System.out.printf("Ordered Array: %s\n", Arrays.toString(userIntArray));
+					// Find the average
+					double average = findAverage(userIntArray);
+					System.out.printf("Average: %s\n", average);
+
+					// Find the mediam
+					double median = findMedian(userIntArray);
+					System.out.printf("Median: %s\n", median);
+
+					String displayString = Arrays.toString(userIntArray).replaceAll(",", "").replaceAll("\\[", "").replaceAll("\\]","");;
+
+					System.out.printf("Ordered Array: %s\n\n", displayString);
+
+					System.out.print("Enter a number to search for from your list: ");
+					int searchNum = input2.nextInt();
+
+					linearSearch(userArray2, searchNum);
+					binarySearch(userIntArray, searchNum); 
+
 				}
 				else
 				{
@@ -129,6 +228,7 @@ public class NickMoore_Project8_ArrayManipulation
 		}
 		System.out.println("Thank your for playing.");
 		input.close();
+		input2.close();
 	}
     
 }
