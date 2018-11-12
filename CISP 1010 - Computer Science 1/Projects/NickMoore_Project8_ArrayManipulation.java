@@ -173,7 +173,9 @@ public class NickMoore_Project8_ArrayManipulation
 		while(keepGoing)
 		{
 			// Prompt the user to enter their values for the string array
-			System.out.println("Enter whole, positive integers seperated by a space:");
+			System.out.println("Enter whole, positive integers seperated by a space or 'D'/'d' to exit");
+			System.out.println("Ex: 13 2 100 75 1 23 89 44 91 35 41 50");
+			System.out.print(">>");
 			String userInputList = input.nextLine();
 
 			if(userInputList.length() == 1)
