@@ -66,8 +66,8 @@
 					</tr>
 				</thead>
 				<tbody id="faculty_staff_directory">
-					<tr v-for="(staff, key) in staffDir" :key="index">
-						<td class="p-2 cursor-pointer hover:text-blue"  @click="selectStaff(key)">{{ staff.name}}</td>
+					<tr v-for="(staff, key) in staffDir" :key="index" @click="selectStaff(key)" class="cursor-pointer hover:text-blue">
+						<td class="p-2 ">{{ staff.name}}</td>
 						<td class="p-2">{{ staff.title}}</td>
 						<td class="p-2 text-center">{{ staff.ext}}</td>
 						<td class="p-2 text-center">{{ staff.location}}</td>
