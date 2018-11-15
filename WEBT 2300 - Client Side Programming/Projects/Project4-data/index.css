@@ -1,0 +1,31 @@
+html {
+	background-color:#22292f;
+	font-size: 12pt;
+}
+
+.tableContainer {
+	margin-left: 25rem;
+}
+
+.myTable {
+	background: white;
+}
+
+.myTable tbody tr {
+	border-bottom: .05rem solid black;
+}
+
+.myTable tbody tr:nth-child(odd) {
+	background-color: #b8c2cc;
+}
+
+.myTable {
+	overflow: auto;
+	height: 100px;
+}
+
+.myTable thead th {
+	position: sticky;
+	top: 0;
+	background-color: #29B6F6;
+}

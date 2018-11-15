@@ -1,0 +1,96 @@
+<html>
+
+<head>
+	<title>Nick Moore | Project 4</title>
+	<meta charset="UTF-8">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Vue Library -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+	<!-- Axios Library -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+	<!-- TailwindCSS Library-->
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+
+	<!-- Custom CSS Link -->
+	<link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+	<div id="app" class="flex text-grey">
+		<div class="leftCol p-4 w-1/4 fixed min-h-screen flex-col items-stretch">
+			<div class="header text-center">
+				<h1 class="font-sans font-thin text-center">WEBT-2300 Project 4 <br />Nick Moore</h1>
+			</div>
+			<template v-if="staffSelect">
+				<div class="staffInfo items-center bg-grey rounded p-5 mr-5 mt-5">
+					<svg class="fill-current text-grey-darker ml-16" width="200" height="200" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+						<path d="M896 0q182 0 348 71t286 191 191 286 71 348q0 181-70.5 347t-190.5 286-286 191.5-349 
+						71.5-349-71-285.5-191.5-190.5-286-71-347.5 71-348 191-286 286-191 348-71zm619 1351q149-205 149-455 
+						0-156-61-298t-164-245-245-164-298-61-298 61-245 164-164 245-61 298q0 250 149 455 66-327 306-327 131 
+						128 313 128t313-128q240 0 306 327zm-235-647q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 
+						271.5 271.5 112.5 271.5-112.5 112.5-271.5z" />
+					</svg>
+					<h3 class="text-black text-center mt-3 font-sans font-normal text-3xl">{{ staffName }}</h3>
+					<p class="text-center text-black font-sans font-light">{{ staffTitle }}</p>
+					<p class="text-center text-black font-sans font-light mt-2">Ext: {{ staffExt }}</p>
+					<p class="text-center text-black font-sans font-light mt-2">Location: {{ staffLocation }}</p>
+					<p class="text-center text-black font-sans font-light mt-2">Email:</p>
+					<p class="text-center text-black font-sans font-light">{{ staffEmail }}</p>
+					<p class="text-center text-black font-sans font-light mt-2">Phone:</p>
+					<p class="text-center text-black font-sans font-light">{{ staffPhone }}</p>
+					<button class="bg-transparent hover:bg-blue text-blue-dark hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded ml-32 mt-5 text-light" @click="staffSelect = !staffSelect">Close</button>
+				</div>
+			</template>
+			<templat v-else>
+				<div class="staffInfo items-center bg-grey rounded p-5 mr-5 mt-5">
+					<h4 class="text-blue-darker font-sans font-light text-md text-center">Click on a Staff Name to see their info card</h4>
+				</div>
+			</templat>
+		</div>
+		<div class="tableContainer w-3/4 rounded mt-3">
+			<table class="table-auto myTable font-sans font-light">
+				<thead>
+					<tr>
+						<th class="pt-5 text-center font-sans font-normal text-2xl">Name</a></th>
+						<th class="pt-5 text-center font-sans font-normal text-2xl">Title</th>
+						<th class="pt-5 text-center font-sans font-normal text-2xl">Ext</th>
+						<th class="pt-5 text-center font-sans font-normal text-2xl">Location</th>
+						<th class="pt-5 text-center font-sans font-normal text-2xl">Email</th>
+						<th class="pt-5 text-center font-sans font-normal text-2xl">Phone</th>
+					</tr>
+				</thead>
+				<tbody id="faculty_staff_directory">
+					<tr v-for="(staff, key) in staffDir" :key="index">
+						<td class="p-2 cursor-pointer hover:text-blue"  @click="selectStaff(key)">{{ staff.name}}</td>
+						<td class="p-2">{{ staff.title}}</td>
+						<td class="p-2 text-center">{{ staff.ext}}</td>
+						<td class="p-2 text-center">{{ staff.location}}</td>
+						<td class="p-2 text-center">{{ staff.email}}</td>
+						<td class="p-2 text-center">{{ staff.phone}}</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>Title</th>
+						<th>Ext</th>
+						<th>Location</th>
+						<th>Email</th>
+						<th>Phone</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+	</div>
+	<!-- Custom js file - at the bottom to help with load times -->
+	<script src="./index.js"></script>
+</body>
+
+</html>
