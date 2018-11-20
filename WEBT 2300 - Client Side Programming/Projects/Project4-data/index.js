@@ -11,8 +11,8 @@ var app = new Vue({
 		staffPhone: ''
 	},
 	mounted() {
-			this.getStaff()
-		},
+		this.getStaff()
+	},
 	methods: {
 		getStaff() {
 			var vm = this
