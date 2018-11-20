@@ -1,0 +1,3946 @@
+{
+	"staff": [
+		{
+				"id": "1",
+				"name": "AB&T",
+				"title": "",
+				"ext": "3434",
+				"location": "F217",
+				"email": "",
+				"phone": "423.354.2434"
+		},
+		{
+				"id": "3",
+				"name": "Academic Advising",
+				"title": "",
+				"ext": "3214",
+				"location": "C2407",
+				"email": "advising@northeaststate.edu",
+				"phone": "423.323.0214"
+		},
+		{
+				"id": "1007",
+				"name": "Academic Affairs Office",
+				"title": "",
+				"ext": "7632",
+				"location": "F106",
+				"email": "",
+				"phone": "423.279.7632"
+		},
+		{
+				"id": "1008",
+				"name": "Accounts Payable",
+				"title": "",
+				"ext": "7634 or 3308",
+				"location": "P102",
+				"email": "",
+				"phone": "423.279.7634 or 423.354.2408"
+		},
+		{
+				"id": "4",
+				"name": "Adams, Amanda",
+				"title": "Director of Marketing",
+				"ext": "5143",
+				"location": "L301A",
+				"email": "acadams@northeaststate.edu",
+				"phone": "423.354.5143"
+		},
+		{
+				"id": "5",
+				"name": "Adams, Anthony",
+				"title": "Computer User Support, Computer Technician",
+				"ext": "5533",
+				"location": "KCHE305",
+				"email": "awadams@northeaststate.edu",
+				"phone": "423.354.5533"
+		},
+		{
+				"id": "803",
+				"name": "Adcox, John",
+				"title": "Veteran's Affairs Specialist",
+				"ext": "3328",
+				"location": "A102",
+				"email": "jmadcox@northeaststate.edu",
+				"phone": "423.354.2528"
+		},
+		{
+				"id": "732",
+				"name": "Addington, Donna",
+				"title": "Program Specialist\/Advisor, TRiO Student Support Services",
+				"ext": "5227",
+				"location": "E110",
+				"email": "dpaddington@northeaststate.edu",
+				"phone": ""
+		},
+		{
+				"id": "7",
+				"name": "Adjunct Faculty Office",
+				"title": "",
+				"ext": "3267",
+				"location": "T101 C",
+				"email": "",
+				"phone": "423.354.2467"
+		},
+		{
+				"id": "1009",
+				"name": "Administrative Services",
+				"title": "",
+				"ext": "2464",
+				"location": "P305",
+				"email": "",
+				"phone": "423.354.2464"
+		},
+		{
+				"id": "9",
+				"name": "Admissions & Records",
+				"title": "",
+				"ext": "3692",
+				"location": "P204",
+				"email": "1.800.836.7822",
+				"phone": "423.279.3692"
+		},
+		{
+				"id": "1010",
+				"name": "Adult Education Office",
+				"title": "",
+				"ext": "",
+				"location": "JC1045",
+				"email": "",
+				"phone": "844.637.5697 (Toll Free)"
+		},
+		{
+				"id": "1011",
+				"name": "Advanced Technologies",
+				"title": "",
+				"ext": "7639",
+				"location": "A216",
+				"email": "",
+				"phone": "423.279.7639"
+		},
+		{
+				"id": "10",
+				"name": "Albright, Kathy",
+				"title": "Secretary, Testing Services",
+				"ext": "3287",
+				"location": "C2101",
+				"email": "kralbright@northeaststate.edu",
+				"phone": "423.354.2587"
+		},
+		{
+				"id": "1047",
+				"name": "Allen, April",
+				"title": "Financial Aid Specialist",
+				"ext": "5360",
+				"location": "C2406",
+				"email": "aaallen@northeaststate.edu",
+				"phone": "423.354.5360"
+		},
+		{
+				"id": "780",
+				"name": "Allen, Ray",
+				"title": "Instructor, Mechanical",
+				"ext": "3435",
+				"location": "T107A",
+				"email": "wrallen@northeaststate.edu",
+				"phone": "423.354.2435"
+		},
+		{
+				"id": "908",
+				"name": "Almaroad, Megan",
+				"title": "Financial Management Analyst",
+				"ext": "5208",
+				"location": "P308",
+				"email": "mlalmaroad@northeaststate.edu",
+				"phone": "423.354.5208"
+		},
+		{
+				"id": "1012",
+				"name": "Alumni Relations",
+				"title": "",
+				"ext": "5296",
+				"location": "L303A",
+				"email": "wtharrison@northeaststate.edu",
+				"phone": "423.354.5296"
+		},
+		{
+				"id": "13",
+				"name": "Anders, Bill",
+				"title": "Clinical Coordinator, EMT\/AEMT\/Paramedic",
+				"ext": "3373",
+				"location": "RCHP114",
+				"email": "wbanders@northeaststate.edu",
+				"phone": "423.354.2573"
+		},
+		{
+				"id": "14",
+				"name": "Anderson, Allan",
+				"title": "Associate Professor, Computer and Information Sciences",
+				"ext": "3398",
+				"location": "F213",
+				"email": "aranderson@northeaststate.edu",
+				"phone": "423.354.2598"
+		},
+		{
+				"id": "1058",
+				"name": "Anderson, Clancy",
+				"title": "Military PLA Credentials Coordinator",
+				"ext": "5373",
+				"location": "P204",
+				"email": "cranderson@northeaststate.edu",
+				"phone": "423.354.5373"
+		},
+		{
+				"id": "15",
+				"name": "Anderson, Lynn",
+				"title": "Dept Head\/Associate Professor, Accounting",
+				"ext": "3379",
+				"location": "F210",
+				"email": "rlanderson@northeaststate.edu",
+				"phone": "423.354.2579"
+		},
+		{
+				"id": "16",
+				"name": "Archer, Josh",
+				"title": "Associate Professor, English",
+				"ext": "3357",
+				"location": "H121",
+				"email": "jaarcher@northeaststate.edu",
+				"phone": "423.354.2557"
+		},
+		{
+				"id": "784",
+				"name": "Armstrong, Wesley",
+				"title": "Director of Financial Aid",
+				"ext": "3233",
+				"location": "C2402",
+				"email": "wrarmstrong@northeaststate.edu",
+				"phone": "423.323.0233"
+		},
+		{
+				"id": "18",
+				"name": "Arwood, Jason A.",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "jaarwood@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "959",
+				"name": "Austin, Gerald",
+				"title": "SEELC Welding ATF Specialist",
+				"ext": "",
+				"location": "S101",
+				"email": "graustin@northeaststate.edu",
+				"phone": ""
+		},
+		{
+				"id": "19",
+				"name": "Bacon, Daryl",
+				"title": "Computer User Support, Computer Technician",
+				"ext": "3440",
+				"location": "P220",
+				"email": "dgbacon@northeaststate.edu",
+				"phone": "423.354.2440"
+		},
+		{
+				"id": "218",
+				"name": "Baghetti, Amy",
+				"title": "Librarian",
+				"ext": "3321",
+				"location": "L311",
+				"email": "acbaghetti@northeaststate.edu",
+				"phone": "423.354.2421"
+		},
+		{
+				"id": "1045",
+				"name": "Bailey, Chad",
+				"title": "Chief Financial Officer",
+				"ext": "5370",
+				"location": "P316A",
+				"email": "cmbailey@northeaststate.edu",
+				"phone": "423.354.5370"
+		},
+		{
+				"id": "773",
+				"name": "Baker, Sandy",
+				"title": "Secretary II Evening Services",
+				"ext": "5109",
+				"location": "T101",
+				"email": "sdbaker@northeaststate.edu",
+				"phone": "423.354.5109"
+		},
+		{
+				"id": "23",
+				"name": "Barnes, Lee Ann",
+				"title": "Assistant Director, Financial Aid Office",
+				"ext": "5150",
+				"location": "C2406B",
+				"email": "labarnes@northeaststate.edu",
+				"phone": "423.354.5150"
+		},
+		{
+				"id": "761",
+				"name": "Barnett, Jessica",
+				"title": "Training and Development Coordinator",
+				"ext": "3289",
+				"location": "P313",
+				"email": "jlbarnett@northeaststate.edu",
+				"phone": "423.354.2589"
+		},
+		{
+				"id": "24",
+				"name": "Barnett, Laura",
+				"title": "Professor, Speech",
+				"ext": "3356",
+				"location": "H206",
+				"email": "ltbarnett@northeaststate.edu",
+				"phone": "423.354.2556"
+		},
+		{
+				"id": "26",
+				"name": "Bartlett, Tammy",
+				"title": "Director of Evening Services",
+				"ext": "3468",
+				"location": "T101",
+				"email": "tdbartlett@northeaststate.edu",
+				"phone": "423.354.2468"
+		},
+		{
+				"id": "987",
+				"name": "Beare Edmunds, Jessica",
+				"title": "Lead Teacher, Adult Education",
+				"ext": "5318",
+				"location": "JC1046",
+				"email": "jjbeareedmunds@northeaststate.edu",
+				"phone": "423.354.5318"
+		},
+		{
+				"id": "733",
+				"name": "Beaty, Mark",
+				"title": "Director of Student Life",
+				"ext": "5241",
+				"location": "A215",
+				"email": "mabeaty@northeaststate.edu",
+				"phone": "423.354.5241"
+		},
+		{
+				"id": "1013",
+				"name": "Behavioral and Social Sciences Division",
+				"title": "",
+				"ext": "3457",
+				"location": "H229",
+				"email": "",
+				"phone": "423.354.2457"
+		},
+		{
+				"id": "921",
+				"name": "Bennett, Rebecca",
+				"title": "Payroll Coordinator",
+				"ext": "3285",
+				"location": "P101D",
+				"email": "rdbennett@northeaststate.edu",
+				"phone": "423.354.2485"
+		},
+		{
+				"id": "33",
+				"name": "Black, Ricky",
+				"title": "Instructor, HVAC\/Mechanical",
+				"ext": "3465",
+				"location": "T106",
+				"email": "rablack@northeaststate.edu",
+				"phone": "423.354.2402"
+		},
+		{
+				"id": "817",
+				"name": "Blair, David",
+				"title": "Department Head \/ Assistant Professor, Computer and Information Sciences",
+				"ext": "5269",
+				"location": "F218",
+				"email": "dlblair@northeaststate.edu",
+				"phone": "423.354.5269"
+		},
+		{
+				"id": "861",
+				"name": "Blair, Patricia",
+				"title": "Instructor, Computer and Information Sciences",
+				"ext": "3376",
+				"location": "F215",
+				"email": "plblair@northeaststate.edu",
+				"phone": "423.354.2576"
+		},
+		{
+				"id": "37",
+				"name": "Blazier Wilson Hall",
+				"title": "",
+				"ext": "2525",
+				"location": "",
+				"email": "",
+				"phone": "423.354.2525"
+		},
+		{
+				"id": "38",
+				"name": "Blessing, Andy",
+				"title": "Plant Operations and Maintenance, Mail and Inventory Clerk",
+				"ext": "3230",
+				"location": "M100",
+				"email": "jablessing@northeaststate.edu",
+				"phone": "423.323.0230"
+		},
+		{
+				"id": "40",
+				"name": "Blevins, Erin",
+				"title": "Director of Scholarship Programs",
+				"ext": "3307",
+				"location": "C2107",
+				"email": "ecblevins@northeaststate.edu",
+				"phone": "423.354.2507"
+		},
+		{
+				"id": "862",
+				"name": "Blevins, Richard",
+				"title": "Aviation Dept Head\/Instructor",
+				"ext": "5179",
+				"location": "Gray",
+				"email": "rablevins@northeaststate.edu",
+				"phone": "423.354.5179"
+		},
+		{
+				"id": "44",
+				"name": "BOOKSTORE",
+				"title": "",
+				"ext": "3314",
+				"location": "A218",
+				"email": "",
+				"phone": "423.279.3340"
+		},
+		{
+				"id": "47",
+				"name": "Bowers, Patsy",
+				"title": "Director of Computer User Support Services \/ Assistant Professor, Computer and Information Sciences",
+				"ext": "3387",
+				"location": "P216C",
+				"email": "psbowers@northeaststate.edu",
+				"phone": "423.354.2409"
+		},
+		{
+				"id": "835",
+				"name": "Bradley, Aaron",
+				"title": "Technician RCPA",
+				"ext": "5204",
+				"location": "L117",
+				"email": "ajbradley@northeaststate.edu",
+				"phone": "423.354.5204"
+		},
+		{
+				"id": "734",
+				"name": "Bradley, Dusty",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "dhbradley@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "50",
+				"name": "Bragg, Johnny",
+				"title": "Associate Professor, Speech",
+				"ext": "5163",
+				"location": "H224",
+				"email": "jrbragg@northeaststate.edu",
+				"phone": "423.354.5163"
+		},
+		{
+				"id": "51",
+				"name": "Bray, Sheila",
+				"title": "Admissions Specialist",
+				"ext": "5245",
+				"location": "E 102B",
+				"email": "ssbray@northeaststate.edu",
+				"phone": "423.354.5245"
+		},
+		{
+				"id": "962",
+				"name": "Breeding, James",
+				"title": "Evening Receptionist",
+				"ext": "3248",
+				"location": "RCHP102",
+				"email": "jrbreeding@northeaststate.edu",
+				"phone": ""
+		},
+		{
+				"id": "1053",
+				"name": "Brewer, Shannon",
+				"title": "Instructor of Mathematics",
+				"ext": "3364",
+				"location": "F232",
+				"email": "slbrewer@northeaststate.edu",
+				"phone": "423.279.3685"
+		},
+		{
+				"id": "805",
+				"name": "Brickey, Melissa",
+				"title": "Federal Funds Coordinator",
+				"ext": "5153",
+				"location": "C2402",
+				"email": "mgbrickey@northeaststate.edu",
+				"phone": "423.354.5153"
+		},
+		{
+				"id": "52",
+				"name": "Broadwater, Ron",
+				"title": "Technical Coordinator - RCAM",
+				"ext": "5543",
+				"location": "RCAM106",
+				"email": "rlbroadwater@northeaststate.edu",
+				"phone": "423.354.5543"
+		},
+		{
+				"id": "782",
+				"name": "Brown, Amy",
+				"title": "Assistant Professor, Nursing",
+				"ext": "5503",
+				"location": "RCHP242",
+				"email": "albrown@northeaststate.edu",
+				"phone": "423.354.5503"
+		},
+		{
+				"id": "916",
+				"name": "Browne, Elvin",
+				"title": "Director of Transfer and International Recruitment",
+				"ext": "5171",
+				"location": "A203",
+				"email": "eabrowne@king.edu",
+				"phone": "423.383.4760"
+		},
+		{
+				"id": "59",
+				"name": "Bryant, David",
+				"title": "EMT Paramedic Program Director \/ Associate Professor",
+				"ext": "3335",
+				"location": "RCHP113",
+				"email": "dlbryant@northeaststate.edu",
+				"phone": "423.354.2535"
+		},
+		{
+				"id": "60",
+				"name": "Bryant, Jeremy",
+				"title": "Telecommunications Manager",
+				"ext": "3538",
+				"location": "P216B",
+				"email": "jsbryant@northeaststate.edu",
+				"phone": "423.354.2418"
+		},
+		{
+				"id": "726",
+				"name": "Bryant, Miriam",
+				"title": "Assistant Professor, Speech",
+				"ext": "5221",
+				"location": "H208",
+				"email": "msbryant@northeaststate.edu",
+				"phone": "423.354.5221"
+		},
+		{
+				"id": "61",
+				"name": "Buchanan, Lisa",
+				"title": "Assistant Professor, English",
+				"ext": "5189",
+				"location": "H225",
+				"email": "labuchanan@northeaststate.edu",
+				"phone": "423.354.5189"
+		},
+		{
+				"id": "62",
+				"name": "Burleson, Brandon",
+				"title": "Media Services Technician",
+				"ext": "3317",
+				"location": "L109",
+				"email": "bhburleson@northeaststate.edu",
+				"phone": "423.354.2517"
+		},
+		{
+				"id": "65",
+				"name": "Business Office",
+				"title": "",
+				"ext": "3310",
+				"location": "P105",
+				"email": "",
+				"phone": "423.354.2510"
+		},
+		{
+				"id": "1014",
+				"name": "Business Technologies Divison",
+				"title": "",
+				"ext": "3420",
+				"location": "F211",
+				"email": "",
+				"phone": "423.354.2420"
+		},
+		{
+				"id": "718",
+				"name": "Byington, Roger",
+				"title": "Instructor, Auto Body",
+				"ext": "5211",
+				"location": "RCAP107",
+				"email": "rmbyington@northeaststate.edu",
+				"phone": "423.354.5211"
+		},
+		{
+				"id": "68",
+				"name": "Byrd, Robin",
+				"title": "Grants Manager",
+				"ext": "3313",
+				"location": "P106A",
+				"email": "rrbyrd@northeaststate.edu",
+				"phone": "423.354.2513"
+		},
+		{
+				"id": "69",
+				"name": "Byrne, Robin",
+				"title": "Associate Professor, Astronomy",
+				"ext": "3504",
+				"location": "B104D",
+				"email": "rlbyrne@northeaststate.edu",
+				"phone": "423.354.2504"
+		},
+		{
+				"id": "71",
+				"name": "Cain, Robin",
+				"title": "Computer User Support, Computer Technician",
+				"ext": "3304",
+				"location": "P220",
+				"email": "rmcain@northeaststate.edu",
+				"phone": "423.354.2404"
+		},
+		{
+				"id": "74",
+				"name": "Calvert, Linda",
+				"title": "Executive Director of Grant Development",
+				"ext": "3222",
+				"location": "P317",
+				"email": "lwcalvert@northeaststate.edu",
+				"phone": "423.323.0222"
+		},
+		{
+				"id": "894",
+				"name": "Campbell, Anita",
+				"title": "Programs & Services Coordinator",
+				"ext": "5275",
+				"location": "RCAM 103A",
+				"email": "amcampbell@northeaststate.edu",
+				"phone": "423.354.5275"
+		},
+		{
+				"id": "1048",
+				"name": "Campbell, Judy",
+				"title": "Buyer, Purchasing",
+				"ext": "3207",
+				"location": "P106",
+				"email": "jacampbell@northeaststate.edu",
+				"phone": "423.323.0207"
+		},
+		{
+				"id": "76",
+				"name": "Campbell, Steve",
+				"title": "Assistant Professor, Accounting",
+				"ext": "5196",
+				"location": "F209",
+				"email": "srcampbell@northeaststate.edu",
+				"phone": "423.354.5196"
+		},
+		{
+				"id": "1015",
+				"name": "Campus Activities",
+				"title": "",
+				"ext": "3416",
+				"location": "A212",
+				"email": "",
+				"phone": "423.354.2416"
+		},
+		{
+				"id": "991",
+				"name": "Campus Information",
+				"title": "",
+				"ext": "3243",
+				"location": "P201",
+				"email": "",
+				"phone": "423.323.0243"
+		},
+		{
+				"id": "1006",
+				"name": "Campus Operator\/General Inquiries",
+				"title": "",
+				"ext": "0",
+				"location": "",
+				"email": "",
+				"phone": "423.323.3191 or 423.282.0800"
+		},
+		{
+				"id": "79",
+				"name": "Campus Police Emergency Phone",
+				"title": "",
+				"ext": "",
+				"location": "Welcome Center",
+				"email": "",
+				"phone": "423.677.7927"
+		},
+		{
+				"id": "78",
+				"name": "Campus Police Non Emergency Phone",
+				"title": "",
+				"ext": "3255",
+				"location": "Welcome Center",
+				"email": "NST_SECURITY",
+				"phone": "423.323.0255"
+		},
+		{
+				"id": "80",
+				"name": "Canedo, Francis",
+				"title": "Dean of Humanities \/ Associate Professor, Spanish",
+				"ext": "3341",
+				"location": "H132",
+				"email": "ffcanedo@northeaststate.edu",
+				"phone": "423.354.2541"
+		},
+		{
+				"id": "992",
+				"name": "Career Services",
+				"title": "",
+				"ext": "5229",
+				"location": "C2418",
+				"email": "",
+				"phone": "423.354.5229"
+		},
+		{
+				"id": "83",
+				"name": "Carpenter, Robert",
+				"title": "Director of Community Relations",
+				"ext": "3259",
+				"location": "L301B",
+				"email": "rccarpenter@northeaststate.edu",
+				"phone": "423.323.0259"
+		},
+		{
+				"id": "84",
+				"name": "Carriger, Misty",
+				"title": "Associate Professor, Biology",
+				"ext": "3511",
+				"location": "F112",
+				"email": "mdcarriger@northeaststate.edu",
+				"phone": "423.354.2450"
+		},
+		{
+				"id": "744",
+				"name": "Carter, Dawn",
+				"title": "Student Services and Industry Relations Coordinator",
+				"ext": "2530",
+				"location": "BWH",
+				"email": "adcarter@northeaststate.edu",
+				"phone": "423.354.2530"
+		},
+		{
+				"id": "85",
+				"name": "Cartwright, Vicky",
+				"title": "Administrative Assistant, Kingsport Center for Higher Education",
+				"ext": "5159",
+				"location": "KCHE103",
+				"email": "vjcartwright@northeaststate.edu",
+				"phone": "423.354.5159"
+		},
+		{
+				"id": "974",
+				"name": "Cassel, Erin",
+				"title": "Instructor, Cardiovascular Technology, Non-Invasive",
+				"ext": "3369",
+				"location": "RCHP150",
+				"email": "ercassel@northeaststate.edu",
+				"phone": ""
+		},
+		{
+				"id": "87",
+				"name": "Cassell, Tonya",
+				"title": "TRiO Student Support Services, Transfer Coordinator",
+				"ext": "3340",
+				"location": "C1110",
+				"email": "tscassell@northeaststate.edu",
+				"phone": "423.354.2540"
+		},
+		{
+				"id": "88",
+				"name": "Center for Disabilities",
+				"title": "",
+				"ext": "3276",
+				"location": "C1102",
+				"email": "memask@northeaststate.edu",
+				"phone": "423.354.2476"
+		},
+		{
+				"id": "885",
+				"name": "Chacon, Roberto",
+				"title": "Police Officer II",
+				"ext": "3255",
+				"location": "Welcome Center",
+				"email": "rgchacon@northeaststate.edu",
+				"phone": "423.323.0255"
+		},
+		{
+				"id": "776",
+				"name": "Chapman-Rambo, Caitlin",
+				"title": "Instructor, English",
+				"ext": "3358",
+				"location": "H105",
+				"email": "cechapmanrambo@northeaststate.edu",
+				"phone": "423.354.2558"
+		},
+		{
+				"id": "1057",
+				"name": "Childress, Traci",
+				"title": "Instructor, Nursing",
+				"ext": "5513",
+				"location": "RCHP 245",
+				"email": "tlchildress@northeaststate.edu",
+				"phone": "423.354.5513"
+		},
+		{
+				"id": "93",
+				"name": "Christian, Cindy",
+				"title": "Executive Assistant to the President",
+				"ext": "3201",
+				"location": "P303",
+				"email": "cschristian@northeaststate.edu",
+				"phone": "423.323.0201"
+		},
+		{
+				"id": "94",
+				"name": "Christian, Phillip",
+				"title": "Plant Operations and Maintenance, Custodian\/Mechanic",
+				"ext": "5526",
+				"location": "KCHE129",
+				"email": "pdchristian@northeaststate.edu",
+				"phone": "423.354.5526"
+		},
+		{
+				"id": "95",
+				"name": "Church, Nelle",
+				"title": "Associate Professor, Mathematics",
+				"ext": "3453",
+				"location": "F241 \/ Eliz.",
+				"email": "cnchurch@northeaststate.edu",
+				"phone": "423.547.8450"
+		},
+		{
+				"id": "903",
+				"name": "Clark, Karen",
+				"title": "AB&T",
+				"ext": "2434",
+				"location": "F109",
+				"email": "kmclark@northeaststate.edu",
+				"phone": ""
+		},
+		{
+				"id": "97",
+				"name": "CLASS",
+				"title": "",
+				"ext": "3697",
+				"location": "A212C",
+				"email": "CLASS_NSTCC",
+				"phone": "423.279.3697"
+		},
+		{
+				"id": "834",
+				"name": "Close, Deidra",
+				"title": "Registrar",
+				"ext": "3270",
+				"location": "P205",
+				"email": "dlclose@northeaststate.edu",
+				"phone": "423.354.2405"
+		},
+		{
+				"id": "99",
+				"name": "Coalson, Jeff",
+				"title": "Program Director\/Instructor, Surgical Technology",
+				"ext": "3681",
+				"location": "RCHP244",
+				"email": "jdcoalson@northeaststate.edu",
+				"phone": "423.279.3681"
+		},
+		{
+				"id": "101",
+				"name": "Cole, Carol",
+				"title": "Professor, Business",
+				"ext": "3424",
+				"location": "F214",
+				"email": "cscole@northeaststate.edu",
+				"phone": "423.354.2424"
+		},
+		{
+				"id": "103",
+				"name": "Coleman, Don",
+				"title": "Associate Professor, College and Lifelong Learning",
+				"ext": "3333",
+				"location": "H216",
+				"email": "dscoleman@northeaststate.edu",
+				"phone": "423.354.2533"
+		},
+		{
+				"id": "104",
+				"name": "Coleman, Kathy",
+				"title": "Dean of Student Services",
+				"ext": "3414",
+				"location": "C2410",
+				"email": "kwcoleman@northeaststate.edu",
+				"phone": "423.354.2414"
+		},
+		{
+				"id": "979",
+				"name": "Collins, Mike",
+				"title": "Academic Computing Manager",
+				"ext": "3388",
+				"location": "H134",
+				"email": "mwcollins@northeaststate.edu",
+				"phone": "423.212.3552"
+		},
+		{
+				"id": "1016",
+				"name": "Community Relations",
+				"title": "",
+				"ext": "3259",
+				"location": "L301B",
+				"email": "",
+				"phone": "423.323.0259"
+		},
+		{
+				"id": "109",
+				"name": "Cook, David",
+				"title": "Instructor, Physics",
+				"ext": "3374",
+				"location": "B104B",
+				"email": "decook@northeaststate.edu",
+				"phone": "423.354.2574"
+		},
+		{
+				"id": "111",
+				"name": "Cooke, Jennifer",
+				"title": "Instructional Lab Assistant, Biology",
+				"ext": "3503",
+				"location": "B104C",
+				"email": "jkcooke@northeaststate.edu",
+				"phone": "423.354.2441"
+		},
+		{
+				"id": "724",
+				"name": "Cookson, Jon",
+				"title": "Assistant Professor, Welding\/Metal Fab",
+				"ext": "5148",
+				"location": "RCAM144",
+				"email": "jjcookson@northeaststate.edu",
+				"phone": "423.354.5148"
+		},
+		{
+				"id": "917",
+				"name": "Cooper, Cherie",
+				"title": "Library Assistant II",
+				"ext": "3554",
+				"location": "L209",
+				"email": "cscooper@northeaststate.edu",
+				"phone": "423.354.2454"
+		},
+		{
+				"id": "796",
+				"name": "Copas, Tyra",
+				"title": "Executive Director of Human Resources & Organizational Effectiveness",
+				"ext": "5259",
+				"location": "P315A",
+				"email": "tlcopas@northeaststate.edu",
+				"phone": "423.354.5259"
+		},
+		{
+				"id": "843",
+				"name": "Cope, Darla",
+				"title": "Administrative Assistant, Academic Affairs",
+				"ext": "3543",
+				"location": "F106",
+				"email": "dlcope@northeaststate.edu",
+				"phone": "423.354.5138"
+		},
+		{
+				"id": "112",
+				"name": "Cope, Fred",
+				"title": "Associate Professor, Electrical\/Electromechanical",
+				"ext": "3442",
+				"location": "T102A",
+				"email": "fmcope@northeaststate.edu",
+				"phone": "423.354.2442"
+		},
+		{
+				"id": "846",
+				"name": "Cordero, Mary Vicki",
+				"title": "Financial Aid Specialist",
+				"ext": "3266",
+				"location": "C2402",
+				"email": "mvcordero@northeaststate.edu",
+				"phone": "423.354.2466"
+		},
+		{
+				"id": "800",
+				"name": "Corey, Dottie",
+				"title": "Human Resources Records Specialist",
+				"ext": "3204",
+				"location": "P311",
+				"email": "dmcorey@northeaststate.edu",
+				"phone": "423.323.0204"
+		},
+		{
+				"id": "938",
+				"name": "Cornett, Thomas",
+				"title": "Police Officer",
+				"ext": "3255",
+				"location": "Welcome Center",
+				"email": "tacornett@northeaststate.edu",
+				"phone": "423.323.0255"
+		},
+		{
+				"id": "994",
+				"name": "Counseling Services",
+				"title": "",
+				"ext": "3287",
+				"location": "C2101",
+				"email": "",
+				"phone": "423.354.2587"
+		},
+		{
+				"id": "1049",
+				"name": "Cox, Colin",
+				"title": "Instructor of English, Humanities",
+				"ext": "5118",
+				"location": "H113",
+				"email": "cacox@northeaststate.edu",
+				"phone": "423.354.5118"
+		},
+		{
+				"id": "115",
+				"name": "Cox, Kathy",
+				"title": "Executive Assistant, Office of Academic Affairs",
+				"ext": "7632",
+				"location": "F106",
+				"email": "klcox@northeaststate.edu",
+				"phone": "423.279.7632"
+		},
+		{
+				"id": "117",
+				"name": "Crawford, Carl",
+				"title": "Network Manager",
+				"ext": "3302",
+				"location": "P218B",
+				"email": "cwcrawford@northeaststate.edu",
+				"phone": "423.354.2403"
+		},
+		{
+				"id": "118",
+				"name": "Crawford, Tricia",
+				"title": "Associate Professor, Sociology",
+				"ext": "5117",
+				"location": "H212",
+				"email": "tscrawford@northeaststate.edu",
+				"phone": "423.354.5117"
+		},
+		{
+				"id": "120",
+				"name": "Crowder, Josh",
+				"title": "Director of Computing Technologies",
+				"ext": "3687",
+				"location": "N111",
+				"email": "jecrowder@northeaststate.edu",
+				"phone": "423.279.3687"
+		},
+		{
+				"id": "887",
+				"name": "Crusenberry, Virginia (Marie)",
+				"title": "Account Clerk-Accounts Payable, Accounting Services",
+				"ext": "3308",
+				"location": "P102",
+				"email": "vmcrusenberry@northeaststate.edu",
+				"phone": "423.354.2408"
+		},
+		{
+				"id": "89",
+				"name": "Ctr Teaching Excellence",
+				"title": "",
+				"ext": "5162",
+				"location": "L204",
+				"email": "",
+				"phone": "423.354.5162"
+		},
+		{
+				"id": "121",
+				"name": "Cullop, Glenna",
+				"title": "Administrative Assistant, Behavioral and Social Sciences",
+				"ext": "3457",
+				"location": "H229",
+				"email": "gmcullop@northeaststate.edu",
+				"phone": "423.354.2457"
+		},
+		{
+				"id": "123",
+				"name": "Dabney, Dawn",
+				"title": "Associate Professor, Mathematics",
+				"ext": "3348",
+				"location": "F242",
+				"email": "drdabney@northeaststate.edu",
+				"phone": "423.354.2548"
+		},
+		{
+				"id": "125",
+				"name": "Daniel, Mitzi",
+				"title": "Center for Students with Disabilities, Secretary",
+				"ext": "7640",
+				"location": "C1102",
+				"email": "madaniel@northeaststate.edu",
+				"phone": "423.279.7640"
+		},
+		{
+				"id": "985",
+				"name": "Darden, Anne",
+				"title": "Instructor, English",
+				"ext": "3694",
+				"location": "H107",
+				"email": "asdarden@northeaststate.edu",
+				"phone": "423.279.3694"
+		},
+		{
+				"id": "920",
+				"name": "Davis, Paulette",
+				"title": "Secretary II, Elizabethton Campus",
+				"ext": "3417",
+				"location": "E108",
+				"email": "pwdavis@northeaststate.edu",
+				"phone": "423.547.8450"
+		},
+		{
+				"id": "919",
+				"name": "Davis, Roy",
+				"title": "Custodian, 3rd Shift - Plant Operations and Maintenance",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "rldavis@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "128",
+				"name": "Davison, John",
+				"title": "Assistant Professor, Psychology",
+				"ext": "5185",
+				"location": "H213",
+				"email": "jldavison@northeaststate.edu",
+				"phone": "423.354.5185"
+		},
+		{
+				"id": "132",
+				"name": "Delozier, Matt",
+				"title": "Vice President for Student Affairs",
+				"ext": "3231",
+				"location": "F104B",
+				"email": "jmdelozier@northeaststate.edu",
+				"phone": "423.323.0231"
+		},
+		{
+				"id": "133",
+				"name": "Demas, Chris",
+				"title": "Dean of the Library",
+				"ext": "3288",
+				"location": "L206",
+				"email": "cddemas@northeaststate.edu",
+				"phone": "423.354.2588"
+		},
+		{
+				"id": "139",
+				"name": "Dickson, Louise",
+				"title": "Associate Professor, English",
+				"ext": "3257",
+				"location": "H101",
+				"email": "lbdickson@northeaststate.edu",
+				"phone": "423.323.0257"
+		},
+		{
+				"id": "140",
+				"name": "Dobbs, Teressa",
+				"title": "Instructor, College and Lifelong Learning",
+				"ext": "5299",
+				"location": "H203",
+				"email": "tadobbs@northeaststate.edu",
+				"phone": "423.354.5299"
+		},
+		{
+				"id": "900",
+				"name": "Drinnon, Amy",
+				"title": "Administrative Assistant, Elizabethton Campus",
+				"ext": "3530",
+				"location": "E132",
+				"email": "ardrinnon@northeaststate.edu",
+				"phone": "423.547.8450"
+		},
+		{
+				"id": "142",
+				"name": "Dugger, Roberta",
+				"title": "Grant Development, Secretary",
+				"ext": "5206",
+				"location": "P317",
+				"email": "rpdugger@northeaststate.edu",
+				"phone": "423.354.5206"
+		},
+		{
+				"id": "144",
+				"name": "Dykes, Julie",
+				"title": "Academic Advisor\/Completion Coach",
+				"ext": "5111",
+				"location": "C2412",
+				"email": "jldykes@northeaststate.edu",
+				"phone": "423.354.5111"
+		},
+		{
+				"id": "146",
+				"name": "Eades, Tracy",
+				"title": "Dept. Head\/Associate Professor, Administrative Professional Technology",
+				"ext": "3375",
+				"location": "F205",
+				"email": "tmeades@northeaststate.edu",
+				"phone": "423.354.2575"
+		},
+		{
+				"id": "783",
+				"name": "East, Judi",
+				"title": "Instructor, Nursing",
+				"ext": "5266",
+				"location": "RCHP212",
+				"email": "jceast@northeaststate.edu",
+				"phone": "423.354.5266"
+		},
+		{
+				"id": "1017",
+				"name": "Economic and Workforce Development",
+				"title": "",
+				"ext": "5516",
+				"location": "RCAM 141",
+				"email": "",
+				"phone": "423.354.5516"
+		},
+		{
+				"id": "147",
+				"name": "Edens, John",
+				"title": "Chief of Police",
+				"ext": "3355",
+				"location": "P312B",
+				"email": "jeedens@northeaststate.edu",
+				"phone": "423.279.7655"
+		},
+		{
+				"id": "1031",
+				"name": "Elizabethton Campus",
+				"title": "",
+				"ext": "3417",
+				"location": "",
+				"email": "",
+				"phone": "423.547.8450"
+		},
+		{
+				"id": "995",
+				"name": "Enrollment Services",
+				"title": "",
+				"ext": "3229",
+				"location": "P201B",
+				"email": "",
+				"phone": "423.323.0229"
+		},
+		{
+				"id": "1018",
+				"name": "Equity and Compliance (Title IX)",
+				"title": "",
+				"ext": "5296",
+				"location": "L303A",
+				"email": "equityofficer@northeaststate.edu",
+				"phone": "423.354.5296"
+		},
+		{
+				"id": "969",
+				"name": "ETSU at KCHE",
+				"title": "",
+				"ext": "5200",
+				"location": "KCHE111",
+				"email": "",
+				"phone": "423.354.5200"
+		},
+		{
+				"id": "947",
+				"name": "Farrell, Donna",
+				"title": "Assistant Professor, Computer and Information Sciences",
+				"ext": "3384",
+				"location": "F216",
+				"email": "dsfarrell@northeaststate.edu",
+				"phone": "423.354.2407"
+		},
+		{
+				"id": "725",
+				"name": "Ferris, Erin",
+				"title": "Assistant Professor, Sociology\/Anthropology",
+				"ext": "5222",
+				"location": "H209",
+				"email": "ejferris@northeaststate.edu",
+				"phone": "423.354.5222"
+		},
+		{
+				"id": "849",
+				"name": "Fields, Angie",
+				"title": "Account Clerk II",
+				"ext": "3312",
+				"location": "BWH107",
+				"email": "alfields@northeaststate.edu",
+				"phone": "423.354.2512"
+		},
+		{
+				"id": "156",
+				"name": "Fields, Jessica",
+				"title": "Executive Secretary Office of Student Affairs",
+				"ext": "3329",
+				"location": "F104",
+				"email": "jmfields@northeaststate.edu",
+				"phone": "423.354.2529"
+		},
+		{
+				"id": "929",
+				"name": "Fillers, Deborah",
+				"title": "Lead Teacher, Adult Education",
+				"ext": "5318",
+				"location": "JC1046",
+				"email": "djfillers@northeaststate.edu",
+				"phone": "423.354.5318"
+		},
+		{
+				"id": "1019",
+				"name": "Finance",
+				"title": "",
+				"ext": "3205",
+				"location": "P307",
+				"email": "",
+				"phone": "423.323.0205"
+		},
+		{
+				"id": "157",
+				"name": "Financial Aid",
+				"title": "",
+				"ext": "",
+				"location": "C2406",
+				"email": "",
+				"phone": "423.323.0252"
+		},
+		{
+				"id": "158",
+				"name": "Fish, Eric",
+				"title": "Associate Professor\/Coordinator, English",
+				"ext": "3462",
+				"location": "H118",
+				"email": "erfish@northeaststate.edu",
+				"phone": "423.354.2400"
+		},
+		{
+				"id": "160",
+				"name": "Fitzpatrick, Susan",
+				"title": "Associate Professor, Mathematics",
+				"ext": "3366",
+				"location": "F233",
+				"email": "sfitzpatrick@northeaststate.edu",
+				"phone": "423.354.2566"
+		},
+		{
+				"id": "808",
+				"name": "Fleming, Mark",
+				"title": "Printing Technician",
+				"ext": "3196",
+				"location": "N113",
+				"email": "mtfleming@northeaststate.edu",
+				"phone": "423.323.0256"
+		},
+		{
+				"id": "161",
+				"name": "Flint, Maggie",
+				"title": "Associate Professor, Mathematics",
+				"ext": "3391",
+				"location": "F240",
+				"email": "mrflint@northeaststate.edu",
+				"phone": "423.354.2591"
+		},
+		{
+				"id": "163",
+				"name": "Forbes, Klenard",
+				"title": "Associate Professor, Physical Education",
+				"ext": "3269",
+				"location": "H202",
+				"email": "kmforbes@northeaststate.edu",
+				"phone": "423.354.2469"
+		},
+		{
+				"id": "1020",
+				"name": "Foundation Office",
+				"title": "",
+				"ext": "7630",
+				"location": "P316",
+				"email": "",
+				"phone": "423.279.7630"
+		},
+		{
+				"id": "1051",
+				"name": "Francisco, Haley",
+				"title": "Program Director\/Instructor of Dental Assisting",
+				"ext": "5501",
+				"location": "RCHP123",
+				"email": "hafrancisco@northeaststate.edu",
+				"phone": "423.354.5501"
+		},
+		{
+				"id": "483",
+				"name": "Frye, Andrea",
+				"title": "Associate Professor, English",
+				"ext": "3319",
+				"location": "H124",
+				"email": "akfrye@northeaststate.edu",
+				"phone": "423.354.2519"
+		},
+		{
+				"id": "169",
+				"name": "Frye, Stuart",
+				"title": "Associate Professor, History",
+				"ext": "5113",
+				"location": "H110",
+				"email": "smfrye@northeaststate.edu",
+				"phone": "423.354.5113"
+		},
+		{
+				"id": "171",
+				"name": "Fulton, Lori",
+				"title": "Plant Operations and Maintenance, Assistant Director",
+				"ext": "3282",
+				"location": "M101C",
+				"email": "lafulton@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "925",
+				"name": "Gant, Kimberly",
+				"title": "Institutional Effectiveness Officer",
+				"ext": "3271",
+				"location": "N108",
+				"email": "kbgant@northeaststate.edu",
+				"phone": "423.354.2471"
+		},
+		{
+				"id": "789",
+				"name": "Gardner, Teresa",
+				"title": "Instructor, Mathematics",
+				"ext": "3513",
+				"location": "F230",
+				"email": "tlgardner@northeaststate.edu",
+				"phone": "423.354.2459"
+		},
+		{
+				"id": "174",
+				"name": "Garman, Tabetha",
+				"title": "Assistant Professor, History",
+				"ext": "5180",
+				"location": "H114",
+				"email": "tjgarman@northeaststate.edu",
+				"phone": "423.354.5180"
+		},
+		{
+				"id": "175",
+				"name": "Gibbs, Rayma",
+				"title": "Technical Clerk, Scholarship Programs",
+				"ext": "7637",
+				"location": "C2107",
+				"email": "rjgibbs@northeaststate.edu",
+				"phone": "423.279.7637"
+		},
+		{
+				"id": "178",
+				"name": "Glass, Michele",
+				"title": "Assistant Professor, Biology",
+				"ext": "2496",
+				"location": "B104F",
+				"email": "pmglass@northeaststate.edu",
+				"phone": "423.354.2496"
+		},
+		{
+				"id": "182",
+				"name": "Grant, Dianne",
+				"title": "Plant Operations and Maintenance, Secretary",
+				"ext": "3206",
+				"location": "M101",
+				"email": "dggrant@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "183",
+				"name": "Grau, Garry",
+				"title": "Professor, Business",
+				"ext": "3389",
+				"location": "F212",
+				"email": "glgrau@northeaststate.edu",
+				"phone": "423.354.2489"
+		},
+		{
+				"id": "865",
+				"name": "Gray, Aaron",
+				"title": "Instructor, Mathematics",
+				"ext": "3428",
+				"location": "E108B",
+				"email": "adgray@northeaststate.edu",
+				"phone": "423.547.8450"
+		},
+		{
+				"id": "981",
+				"name": "Grayson, Kim",
+				"title": "Library Assistant III",
+				"ext": "5539",
+				"location": "KCHE331",
+				"email": "kjgrayson@northeaststate.edu",
+				"phone": "423.354.5539"
+		},
+		{
+				"id": "930",
+				"name": "Greene, Jennifer",
+				"title": "Lead Teacher, Adult Education",
+				"ext": "5366",
+				"location": "",
+				"email": "jlgreene@northeaststate.edu",
+				"phone": "844.637.5697"
+		},
+		{
+				"id": "719",
+				"name": "Grieshaber, Larena",
+				"title": "Assistant Professor, Administrative Professional Technology",
+				"ext": "3326",
+				"location": "F204",
+				"email": "legrieshaber@northeaststate.edu",
+				"phone": "423.354.2526"
+		},
+		{
+				"id": "188",
+				"name": "Grindstaff, Jeff",
+				"title": "Printing and Publications Pressroom Supervisor",
+				"ext": "3256",
+				"location": "N113",
+				"email": "jdgrindstaff@northeaststate.edu",
+				"phone": "423.323.0256"
+		},
+		{
+				"id": "190",
+				"name": "Grubb, John",
+				"title": "Director of Planning and Assessment",
+				"ext": "5144",
+				"location": "N101",
+				"email": "jmgrubb@northeaststate.edu",
+				"phone": "423.354.5144"
+		},
+		{
+				"id": "982",
+				"name": "Guinn, Tarah",
+				"title": "Assistant Professor, Reading",
+				"ext": "3362",
+				"location": "H220",
+				"email": "tlguinn@northeaststate.edu",
+				"phone": "423.354.2562"
+		},
+		{
+				"id": "191",
+				"name": "Haga, David",
+				"title": "Instructor, Mathematics",
+				"ext": "3351",
+				"location": "F228",
+				"email": "dehaga@northeaststate.edu",
+				"phone": "423.354.2551"
+		},
+		{
+				"id": "192",
+				"name": "Hagaman, Bernice",
+				"title": "Purchasing Coordinator",
+				"ext": "3208",
+				"location": "P106",
+				"email": "bdhagaman@northeaststate.edu",
+				"phone": "423.323.0208"
+		},
+		{
+				"id": "737",
+				"name": "Hale, Joel",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "jmhale@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "888",
+				"name": "Hale, Melody T.",
+				"title": "Account Clerk III - Accounts Payable",
+				"ext": "7634",
+				"location": "P102",
+				"email": "mthale@northeaststate.edu",
+				"phone": "423.279.7634"
+		},
+		{
+				"id": "193",
+				"name": "Hale, Tempi",
+				"title": "Associate Professor, English",
+				"ext": "3394",
+				"location": "H102",
+				"email": "thhale@northeaststate.edu",
+				"phone": "423.354.2594"
+		},
+		{
+				"id": "73",
+				"name": "Hall, Robin",
+				"title": "Plant Operations and Maintenance, Custodial Supervisor",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "rchall@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "197",
+				"name": "Hamilton, Linda",
+				"title": "Transfer Advisor",
+				"ext": "3342",
+				"location": "C2108",
+				"email": "lfhamilton@northeaststate.edu",
+				"phone": "423.354.2542"
+		},
+		{
+				"id": "884",
+				"name": "Hammock, Perri",
+				"title": "Finance Secretary",
+				"ext": "3412",
+				"location": "P101",
+				"email": "pehammock@northeaststate.edu",
+				"phone": "423.354.2412"
+		},
+		{
+				"id": "984",
+				"name": "Hammonds, Terry",
+				"title": "Instructor, Chemistry",
+				"ext": "3695",
+				"location": "F115",
+				"email": "tdhammonds@northeaststate.edu",
+				"phone": "423.279.3695"
+		},
+		{
+				"id": "200",
+				"name": "Harris, Tamra",
+				"title": "Assistant Database Administrator",
+				"ext": "5182",
+				"location": "P218",
+				"email": "taharris@northeaststate.edu",
+				"phone": "423.354.5182"
+		},
+		{
+				"id": "201",
+				"name": "Harrison, Diana",
+				"title": "Secretary, Workforce Solutions",
+				"ext": "5520",
+				"location": "C2301",
+				"email": "dlharrison@northeaststate.edu",
+				"phone": "423.354.5520"
+		},
+		{
+				"id": "202",
+				"name": "Harrison, Kevin",
+				"title": "Plant Operations and Maintenance Mechanic",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "kiharrison@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "858",
+				"name": "Harrison, Tim",
+				"title": "Director of Equity & Compliance",
+				"ext": "5296",
+				"location": "P310",
+				"email": "wtharrison@northeaststate.edu",
+				"phone": "423.354.5296"
+		},
+		{
+				"id": "768",
+				"name": "Hatfield, Larry",
+				"title": "Director - Auxiliary Services & Sustainability",
+				"ext": "5224",
+				"location": "P312A",
+				"email": "ldhatfield@northeaststate.edu",
+				"phone": "423.354.5224"
+		},
+		{
+				"id": "951",
+				"name": "Haworth, Carol",
+				"title": "Instructor, Nursing",
+				"ext": "5504",
+				"location": "RCHP243",
+				"email": "cshaworth@northeaststate.edu",
+				"phone": "423.354.5504"
+		},
+		{
+				"id": "1021",
+				"name": "Health Professions Division",
+				"title": "",
+				"ext": "3238",
+				"location": "RCHP109",
+				"email": "",
+				"phone": "423.323.0238"
+		},
+		{
+				"id": "206",
+				"name": "Henrichs, Jim",
+				"title": "Director of Enrollment Services and Campus Information",
+				"ext": "3275",
+				"location": "P202",
+				"email": "jahenrichs@northeaststate.edu",
+				"phone": "423.354.2481"
+		},
+		{
+				"id": "207",
+				"name": "Hensley, Christal",
+				"title": "Associate Professor, Art",
+				"ext": "3395",
+				"location": "H120",
+				"email": "cmhensley@northeaststate.edu",
+				"phone": "423.354.2595"
+		},
+		{
+				"id": "209",
+				"name": "Henson, Jimmy",
+				"title": "Associate Professor, Reading\/College and Lifelong Learning",
+				"ext": "3411",
+				"location": "H222",
+				"email": "jrhenson@northeaststate.edu",
+				"phone": "423.354.2411"
+		},
+		{
+				"id": "958",
+				"name": "Herbert, Miranda",
+				"title": "Account Clerk 1",
+				"ext": "3310",
+				"location": "P105",
+				"email": "mgherbert@northeaststate.edu",
+				"phone": "423.354.2510"
+		},
+		{
+				"id": "210",
+				"name": "Hiortdahl, Sandy",
+				"title": "Associate Professor, English",
+				"ext": "5176",
+				"location": "H122",
+				"email": "smhiortdahl@northeaststate.edu",
+				"phone": "423.354.5176"
+		},
+		{
+				"id": "211",
+				"name": "Hitechew, Chris",
+				"title": "Director of Northeast State at Elizabethton",
+				"ext": "7651",
+				"location": "E128",
+				"email": "clhitechew@northeaststate.edu",
+				"phone": "423.279.7651"
+		},
+		{
+				"id": "212",
+				"name": "Hodges, Chris",
+				"title": "Plant Operations and Maintenance, Equipment Mechanic",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "jchodges@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "213",
+				"name": "Hogan, Pashia",
+				"title": "Assistant Vice President, Multi-Campus Programs",
+				"ext": "3469",
+				"location": "F100C",
+				"email": "phhogan@northeaststate.edu",
+				"phone": "423.354.2425"
+		},
+		{
+				"id": "980",
+				"name": "Hohrein, Margaret",
+				"title": "Secretary 3, Humanities",
+				"ext": "3218",
+				"location": "H129",
+				"email": "mahohrein@northeaststate.edu",
+				"phone": "423.323.0218"
+		},
+		{
+				"id": "216",
+				"name": "Honeycutt, Jane",
+				"title": "Associate Professor, Women's Studies",
+				"ext": "3396",
+				"location": "L303A",
+				"email": "jbhoneycutt@northeaststate.edu",
+				"phone": "423.354.2596"
+		},
+		{
+				"id": "1023",
+				"name": "Honors Program",
+				"title": "",
+				"ext": "3396",
+				"location": "H203",
+				"email": "",
+				"phone": "423.354.2596"
+		},
+		{
+				"id": "818",
+				"name": "Hooker, Sandra",
+				"title": "Instructor, Nursing",
+				"ext": "5123",
+				"location": "RCHP211",
+				"email": "sghooker@northeaststate.edu",
+				"phone": "423.354.5123"
+		},
+		{
+				"id": "886",
+				"name": "Hoss, Betty",
+				"title": "Payroll Technical Clerk",
+				"ext": "3682",
+				"location": "P101C",
+				"email": "bbhoss@northeaststate.edu",
+				"phone": "423.279.3682"
+		},
+		{
+				"id": "220",
+				"name": "Hubbard, Kevin",
+				"title": "Network Technical Operations Manager",
+				"ext": "3260",
+				"location": "P216D",
+				"email": "kshubbard@northeaststate.edu",
+				"phone": "423.354.2447"
+		},
+		{
+				"id": "1022",
+				"name": "Human Resources and Organizational Effectiveness",
+				"title": "",
+				"ext": "5183",
+				"location": "P315",
+				"email": "HROffice@northeaststate.edu",
+				"phone": "423.354.5183"
+		},
+		{
+				"id": "1024",
+				"name": "Humanities Division",
+				"title": "",
+				"ext": "3218",
+				"location": "H129",
+				"email": "",
+				"phone": "423.323.0218"
+		},
+		{
+				"id": "722",
+				"name": "Hurt, Latosha",
+				"title": "Account Clerk 3, Business Office",
+				"ext": "5310",
+				"location": "JC1003",
+				"email": "ldhurt@northeaststate.edu",
+				"phone": "423.354.5310"
+		},
+		{
+				"id": "840",
+				"name": "Hyder, Chris",
+				"title": "Director of Internal Audit",
+				"ext": "5286",
+				"location": "L201D",
+				"email": "clhyder@northeaststate.edu",
+				"phone": "423.354.5286"
+		},
+		{
+				"id": "1025",
+				"name": "I.T. Help Desk",
+				"title": "",
+				"ext": "5103",
+				"location": "P216A",
+				"email": "",
+				"phone": "423.354.5103"
+		},
+		{
+				"id": "232",
+				"name": "Jackson, Sheila",
+				"title": "Administrative Assistant, Enrollment Services",
+				"ext": "3229",
+				"location": "P201B",
+				"email": "skjackson@northeaststate.edu",
+				"phone": "423.323.0229"
+		},
+		{
+				"id": "869",
+				"name": "JC Business Office",
+				"title": "",
+				"ext": "5310",
+				"location": "JC1003",
+				"email": "",
+				"phone": "423.354.5310"
+		},
+		{
+				"id": "867",
+				"name": "JC Evening Coordinator",
+				"title": "",
+				"ext": "5307",
+				"location": "JC1003",
+				"email": "",
+				"phone": "423.354.5307"
+		},
+		{
+				"id": "872",
+				"name": "JC Faculty Workroom",
+				"title": "",
+				"ext": "5330",
+				"location": "JC1108",
+				"email": "",
+				"phone": "423.354.5330"
+		},
+		{
+				"id": "870",
+				"name": "JC Security",
+				"title": "",
+				"ext": "5313",
+				"location": "JC1006",
+				"email": "",
+				"phone": "423.354.5313"
+		},
+		{
+				"id": "1032",
+				"name": "Johnson City Campus",
+				"title": "",
+				"ext": "",
+				"location": "",
+				"email": "",
+				"phone": "423.354.5300"
+		},
+		{
+				"id": "233",
+				"name": "Johnson, Brian",
+				"title": "Deputy Chief",
+				"ext": "5119",
+				"location": "C2401",
+				"email": "bdjohnson@northeaststate.edu",
+				"phone": "423.354.5119"
+		},
+		{
+				"id": "752",
+				"name": "Johnson, Joshua",
+				"title": "Coordinator of County and State Scholarships",
+				"ext": "5235",
+				"location": "C2107",
+				"email": "jajohnson@northeaststate.edu",
+				"phone": "423.354.5235"
+		},
+		{
+				"id": "883",
+				"name": "Johnson, Karen",
+				"title": "Administrative Assistant, President's Office",
+				"ext": "7633",
+				"location": "P301",
+				"email": "krjohnson@northeaststate.edu",
+				"phone": "423.279.7633"
+		},
+		{
+				"id": "895",
+				"name": "Johnson, Paula",
+				"title": "Account Clerk 3",
+				"ext": "3311",
+				"location": "P105",
+				"email": "pjjohnson@northeaststate.edu",
+				"phone": "423.354.2511"
+		},
+		{
+				"id": "90",
+				"name": "Jones, Heather",
+				"title": "Administrative Assistant, Enrollment Management",
+				"ext": "3210",
+				"location": "P205C",
+				"email": "hcjones@northeaststate.edu",
+				"phone": "423.323.0210"
+		},
+		{
+				"id": "236",
+				"name": "Jones, Laura",
+				"title": "LPN to RN Program Coordinator, Nursing",
+				"ext": "5512",
+				"location": "RCHP212",
+				"email": "lrjones@northeaststate.edu",
+				"phone": "423.354.5512"
+		},
+		{
+				"id": "238",
+				"name": "Jones, Megan",
+				"title": "Director of Human Resources Records",
+				"ext": "3226",
+				"location": "P311A",
+				"email": "majones@northeaststate.edu",
+				"phone": "423.323.0226"
+		},
+		{
+				"id": "767",
+				"name": "Jones, Robert (Rusty)",
+				"title": "Maintenance Utility Helper",
+				"ext": "5205",
+				"location": "KCHE129",
+				"email": "rrjones@northeaststate.edu",
+				"phone": "423.354.5526"
+		},
+		{
+				"id": "779",
+				"name": "Jones, Sherri",
+				"title": "Assistant Professor, Health",
+				"ext": "3520",
+				"location": "F114",
+				"email": "sljones@northeaststate.edu",
+				"phone": "423.354.2555"
+		},
+		{
+				"id": "763",
+				"name": "Joyner, Beau",
+				"title": "Police Officer",
+				"ext": "3255",
+				"location": "Welcome Center",
+				"email": "bfjoyner@northeaststate.edu",
+				"phone": "423.323.0255"
+		},
+		{
+				"id": "245",
+				"name": "Kelly, Jim",
+				"title": "Associate Professor, History",
+				"ext": "7669",
+				"location": "H108",
+				"email": "jpkelly@northeaststate.edu",
+				"phone": "423.279.7669"
+		},
+		{
+				"id": "246",
+				"name": "Kelso, Jessica",
+				"title": "Director of Veterans Affairs",
+				"ext": "3327",
+				"location": "A102",
+				"email": "jlkelso@northeaststate.edu",
+				"phone": "423.354.2527"
+		},
+		{
+				"id": "247",
+				"name": "Kendrick, Jennifer",
+				"title": "Career Specialist, Career Services",
+				"ext": "5167",
+				"location": "C2418",
+				"email": "jdkendrick@northeaststate.edu",
+				"phone": "423.354.5167"
+		},
+		{
+				"id": "248",
+				"name": "Kersey, Jessica",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "jlkersey@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "250",
+				"name": "Kincaid, Linda",
+				"title": "Administrative Assistant, Humanities",
+				"ext": "3294",
+				"location": "H129",
+				"email": "lbkincaid@northeaststate.edu",
+				"phone": "423.354.2494"
+		},
+		{
+				"id": "811",
+				"name": "King University",
+				"title": "",
+				"ext": "5171",
+				"location": "A203",
+				"email": "",
+				"phone": "423.354.5171"
+		},
+		{
+				"id": "972",
+				"name": "King, James",
+				"title": "President",
+				"ext": "3201",
+				"location": "P304",
+				"email": "jdking@northeaststate.edu",
+				"phone": "423.323.0201"
+		},
+		{
+				"id": "252",
+				"name": "Kingsport Higher Ed",
+				"title": "",
+				"ext": "5521",
+				"location": "KCHE101",
+				"email": "",
+				"phone": "423.354.5521"
+		},
+		{
+				"id": "855",
+				"name": "Kitzmiller, Matthew",
+				"title": "Director of Budgeting & Grants",
+				"ext": "3318",
+				"location": "P308",
+				"email": "mdkitzmiller@northeaststate.edu",
+				"phone": "423.354.2518"
+		},
+		{
+				"id": "254",
+				"name": "Kraft, Dawn",
+				"title": "Library Assistant III",
+				"ext": "3556",
+				"location": "L215",
+				"email": "dbkraft@northeaststate.edu",
+				"phone": "423.354.2456"
+		},
+		{
+				"id": "914",
+				"name": "Kyle, Shayna",
+				"title": "ETSU Transfer Advisor",
+				"ext": "5287",
+				"location": "A204",
+				"email": "kyless@etsu.edu",
+				"phone": "423.354.5287"
+		},
+		{
+				"id": "256",
+				"name": "Lane, Cheryl",
+				"title": "Switchboard Operator PT",
+				"ext": "0",
+				"location": "F105A",
+				"email": "crlane@northeaststate.edu",
+				"phone": "423.323.3191"
+		},
+		{
+				"id": "259",
+				"name": "Lawson, Danny",
+				"title": "Dean of Business Technologies\/Associate Professor, Computer and Information Sciences",
+				"ext": "3234",
+				"location": "F211",
+				"email": "dllawson@northeaststate.edu",
+				"phone": "423.323.0234"
+		},
+		{
+				"id": "260",
+				"name": "Lawson, Deborah",
+				"title": "Secretary III, Nursing",
+				"ext": "5108",
+				"location": "RCHP208",
+				"email": "dalawson@northeaststate.edu",
+				"phone": "423.354.5108"
+		},
+		{
+				"id": "261",
+				"name": "Lawson, Sherry",
+				"title": "Curriculum Specialist",
+				"ext": "5178",
+				"location": "F108",
+				"email": "sllawson@northeaststate.edu",
+				"phone": "423.354.5178"
+		},
+		{
+				"id": "262",
+				"name": "Lay, Rita",
+				"title": "TRiO Student Support Services, Secretary",
+				"ext": "3216",
+				"location": "C1107",
+				"email": "rwlay@northeaststate.edu",
+				"phone": "423.323.0216"
+		},
+		{
+				"id": "263",
+				"name": "Lazarova, Kristin",
+				"title": "Associate Professor, Psychology",
+				"ext": "3354",
+				"location": "H207",
+				"email": "kmlazarova@northeaststate.edu",
+				"phone": "423.354.2554"
+		},
+		{
+				"id": "1026",
+				"name": "Leadership Programs",
+				"title": "",
+				"ext": "3416",
+				"location": "A212",
+				"email": "",
+				"phone": "423.354.2416"
+		},
+		{
+				"id": "264",
+				"name": "Learning Center",
+				"title": "",
+				"ext": "5112",
+				"location": "L103",
+				"email": "cnperry@northeaststate.edu",
+				"phone": "423.354.5112"
+		},
+		{
+				"id": "1027",
+				"name": "Learning Support Program",
+				"title": "",
+				"ext": "3219",
+				"location": "F234",
+				"email": "",
+				"phone": "423.323.0219"
+		},
+		{
+				"id": "823",
+				"name": "Leavitt, Caitlin",
+				"title": "Administrative Assistant, Health Professions",
+				"ext": "3238",
+				"location": "RCHP109",
+				"email": "cjleavitt@northeaststate.edu",
+				"phone": "423.323.0238"
+		},
+		{
+				"id": "266",
+				"name": "Ledford, Dale",
+				"title": "Assistant Professor, Biology",
+				"ext": "5191",
+				"location": "B204E",
+				"email": "dpledford@northeaststate.edu",
+				"phone": "423.354.5191"
+		},
+		{
+				"id": "269",
+				"name": "Leonard, Beverly",
+				"title": "Student Life, Secretary",
+				"ext": "3416",
+				"location": "A212B",
+				"email": "baleonard@northeaststate.edu",
+				"phone": "423.354.2416"
+		},
+		{
+				"id": "271",
+				"name": "Lester, Margaret",
+				"title": "Director of Computer Services",
+				"ext": "3202",
+				"location": "P218A",
+				"email": "mclester@northeaststate.edu",
+				"phone": "423.323.0202"
+		},
+		{
+				"id": "272",
+				"name": "Lewenczuk, Janice",
+				"title": "Assistant Professor, Mathematics",
+				"ext": "3349",
+				"location": "F229",
+				"email": "jglewenczuk@northeaststate.edu",
+				"phone": "423.354.2549"
+		},
+		{
+				"id": "274",
+				"name": "Lewis, Fred",
+				"title": "Vice President of Administrative Services",
+				"ext": "7665",
+				"location": "P306",
+				"email": "fdlewis@northeaststate.edu",
+				"phone": "423.279.7665"
+		},
+		{
+				"id": "276",
+				"name": "Library",
+				"title": "",
+				"ext": "3429\/3551",
+				"location": "L203",
+				"email": "",
+				"phone": "423.354.2429"
+		},
+		{
+				"id": "277",
+				"name": "Library Reference Desk",
+				"title": "",
+				"ext": "3558",
+				"location": "L301",
+				"email": "",
+				"phone": "423.354.2458"
+		},
+		{
+				"id": "279",
+				"name": "Lincoln Memorial University",
+				"title": "",
+				"ext": "5522",
+				"location": "KCHE108",
+				"email": "",
+				"phone": "423.354.5522"
+		},
+		{
+				"id": "760",
+				"name": "Lippo, Amy",
+				"title": "Librarian",
+				"ext": "5242",
+				"location": "L312",
+				"email": "aslippo@northeaststate.edu",
+				"phone": "423.354.5242"
+		},
+		{
+				"id": "874",
+				"name": "Litvack, Merle",
+				"title": "Administrative Assistant, Mathematics",
+				"ext": "3219",
+				"location": "F234",
+				"email": "mlitvack@northeaststate.edu",
+				"phone": "423.323.0219"
+		},
+		{
+				"id": "281",
+				"name": "Livingston, Ruth",
+				"title": "Professor, Speech",
+				"ext": "7657",
+				"location": "H214",
+				"email": "rclivingston@northeaststate.edu",
+				"phone": "423.279.7657"
+		},
+		{
+				"id": "283",
+				"name": "Lockhart, Brent",
+				"title": "Associate Professor, Biology",
+				"ext": "3689",
+				"location": "B204D",
+				"email": "belockhart@northeaststate.edu",
+				"phone": "423.279.3689"
+		},
+		{
+				"id": "284",
+				"name": "Long, Kyle",
+				"title": "",
+				"ext": "5143",
+				"location": "N110",
+				"email": "kblong@northeaststate.edu",
+				"phone": "423.354.5143"
+		},
+		{
+				"id": "287",
+				"name": "Loveday, Bob",
+				"title": "Plant Operations and Maintenance, HVAC Mechanic",
+				"ext": "3241",
+				"location": "M101A",
+				"email": "beloveday@northeaststate.edu",
+				"phone": "423.323.0241"
+		},
+		{
+				"id": "288",
+				"name": "Loving, Wayne",
+				"title": "Associate Professor, Economics",
+				"ext": "3460",
+				"location": "H223",
+				"email": "lwloving@northeaststate.edu",
+				"phone": "423.354.2460"
+		},
+		{
+				"id": "289",
+				"name": "Lowe, Wendell",
+				"title": "Counselor\/Coordinator, Workforce Investment Act Assistance Program",
+				"ext": "3344",
+				"location": "C2411",
+				"email": "wdlowe@northeaststate.edu",
+				"phone": "423.354.2544"
+		},
+		{
+				"id": "942",
+				"name": "Lyle, Suzanne",
+				"title": "Instructor, Mathematics",
+				"ext": "3506",
+				"location": "F226",
+				"email": "smlyle@northeaststate.edu",
+				"phone": "423.354.2506"
+		},
+		{
+				"id": "293",
+				"name": "Lynch, Kevin",
+				"title": "Associate Professor, Mathematics",
+				"ext": "3501",
+				"location": "F237",
+				"email": "krlynch@northeaststate.edu",
+				"phone": "423.354.2501"
+		},
+		{
+				"id": "1052",
+				"name": "MacMorran, Will",
+				"title": "Dept. Head\/Instructor of Entertainment Technology",
+				"ext": "5216",
+				"location": "F217",
+				"email": "wsmacmorran@northeaststate.edu",
+				"phone": "423.354.5216"
+		},
+		{
+				"id": "296",
+				"name": "Maldon, David",
+				"title": "Professor \/ Coordinator, Biology",
+				"ext": "3488",
+				"location": "B204F",
+				"email": "djmaldon@northeaststate.edu",
+				"phone": "423.354.2488"
+		},
+		{
+				"id": "297",
+				"name": "Malone, Holly",
+				"title": "Assistant Director, Financial Aid",
+				"ext": "3337",
+				"location": "C2406A",
+				"email": "hmmalone@northeaststate.edu",
+				"phone": "423.354.2537"
+		},
+		{
+				"id": "786",
+				"name": "Manz-Young, Nichole",
+				"title": "Coordinator, Advanced Technologies",
+				"ext": "5253",
+				"location": "F110",
+				"email": "lnmanzyoung@northeaststate.edu",
+				"phone": "423.354.5253"
+		},
+		{
+				"id": "1028",
+				"name": "Marketing",
+				"title": "",
+				"ext": "5143",
+				"location": "L301A",
+				"email": "",
+				"phone": "423.354.5143"
+		},
+		{
+				"id": "299",
+				"name": "Marshall, Connie",
+				"title": "Dean of Health Professions",
+				"ext": "3680",
+				"location": "RCHP110",
+				"email": "cmarshall@northeaststate.edu",
+				"phone": "423.279.3680"
+		},
+		{
+				"id": "300",
+				"name": "Mask, Betty",
+				"title": "Director of Center for Students with Disabilities",
+				"ext": "3276",
+				"location": "C1102A",
+				"email": "memask@northeaststate.edu",
+				"phone": "423.354.2476"
+		},
+		{
+				"id": "302",
+				"name": "Mason, Logan",
+				"title": "IT Service Center Coordinator",
+				"ext": "5103",
+				"location": "P216A",
+				"email": "lbmason@northeaststate.edu",
+				"phone": "423.354.5103"
+		},
+		{
+				"id": "304",
+				"name": "Math Lab",
+				"title": "",
+				"ext": "3345",
+				"location": "C1115A",
+				"email": "",
+				"phone": "423.354.2545"
+		},
+		{
+				"id": "1029",
+				"name": "Mathematics Division",
+				"title": "",
+				"ext": "3219",
+				"location": "F234",
+				"email": "",
+				"phone": "423.323.0219"
+		},
+		{
+				"id": "826",
+				"name": "McConnell, Janie",
+				"title": "Grounds\/Equipment Maintenance Worker",
+				"ext": "3206",
+				"location": "M100",
+				"email": "jlmcconnell@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "311",
+				"name": "McCord, Jeff",
+				"title": "Vice President for Economic and Workforce Development",
+				"ext": "5207",
+				"location": "RCAM142",
+				"email": "jdmccord@northeaststate.edu",
+				"phone": "423.354.5207"
+		},
+		{
+				"id": "312",
+				"name": "McCracken, Carolyn",
+				"title": "Dean of Science Division \/ Professor, Biology",
+				"ext": "3514",
+				"location": "B108A",
+				"email": "cgmccracken@northeaststate.edu",
+				"phone": "423.354.2509"
+		},
+		{
+				"id": "819",
+				"name": "McKenzie, Bradley",
+				"title": "Instructor, Theatre",
+				"ext": "3363",
+				"location": "D181",
+				"email": "bwmckenzie@northeaststate.edu",
+				"phone": "423.354.2563"
+		},
+		{
+				"id": "70",
+				"name": "McKenzie, Shelby",
+				"title": "Coordinator of University Parallel Dual Enrollment",
+				"ext": "5186",
+				"location": "F103",
+				"email": "swmckenzie@northeaststate.edu",
+				"phone": "423.354.5186"
+		},
+		{
+				"id": "168",
+				"name": "McMillian, Heath",
+				"title": "RCAM Director",
+				"ext": "5544",
+				"location": "RCAM103B",
+				"email": "hrmcmillian@northeaststate.edu",
+				"phone": "423.354.5544"
+		},
+		{
+				"id": "829",
+				"name": "McMurray, Daniel",
+				"title": "",
+				"ext": "5277",
+				"location": "RCAM144",
+				"email": "dkmcmurray@northeaststate.edu",
+				"phone": ""
+		},
+		{
+				"id": "320",
+				"name": "McNeil, Tom",
+				"title": "Associate Professor, Biology",
+				"ext": "3454",
+				"location": "E136",
+				"email": "tsmcneil@northeaststate.edu",
+				"phone": "423.547.8450"
+		},
+		{
+				"id": "321",
+				"name": "McNutt, Linda",
+				"title": "Administrative Assistant, Business Technologies",
+				"ext": "3420",
+				"location": "F211",
+				"email": "lemcnutt@northeaststate.edu",
+				"phone": "423.354.2420"
+		},
+		{
+				"id": "922",
+				"name": "McPheron, Karrianne",
+				"title": "High School Coordinator \/ CTE",
+				"ext": "5297",
+				"location": "F208",
+				"email": "khmcpheron@northeaststate.edu",
+				"phone": "423.354.5297"
+		},
+		{
+				"id": "848",
+				"name": "Meade, Michele",
+				"title": "Police Officer",
+				"ext": "3255",
+				"location": "Welcome Center",
+				"email": "mlmeade@northeaststate.edu",
+				"phone": "423.323.0255"
+		},
+		{
+				"id": "322",
+				"name": "Melendez, John",
+				"title": "Associate Professor, Mathematics",
+				"ext": "5327",
+				"location": "J1096",
+				"email": "jwmelendez@northeaststate.edu",
+				"phone": "423.354.5327"
+		},
+		{
+				"id": "295",
+				"name": "Mellons, Heidi",
+				"title": "Student Records Specialist, Admissions & Records",
+				"ext": "5283",
+				"location": "P205G",
+				"email": "hjmellons@northeaststate.edu",
+				"phone": "423.354.5283"
+		},
+		{
+				"id": "323",
+				"name": "Merritt, Richard",
+				"title": "Professor, Speech",
+				"ext": "3691",
+				"location": "H215",
+				"email": "rcmerritt@northeaststate.edu",
+				"phone": "423.279.3691"
+		},
+		{
+				"id": "429",
+				"name": "Miller, Amanda",
+				"title": "Secretary, Student Services and Advising Resource Center",
+				"ext": "3214",
+				"location": "C2407",
+				"email": "anmiller@northeaststate.edu",
+				"phone": "423.323.0214"
+		},
+		{
+				"id": "325",
+				"name": "Miller, Pete",
+				"title": "Director of Plant Operations and Maintenance",
+				"ext": "2448",
+				"location": "M101",
+				"email": "pwmiller@northeaststate.edu",
+				"phone": "423.354.2448"
+		},
+		{
+				"id": "924",
+				"name": "Mitchell, Geraldine (Geri)",
+				"title": "Admissions Specialist",
+				"ext": "3330",
+				"location": "P204",
+				"email": "glmitchell@northeaststate.edu",
+				"phone": "423.354.2430"
+		},
+		{
+				"id": "1044",
+				"name": "Mitchell, Logan",
+				"title": "Technical Clerk, RCAM",
+				"ext": "2438",
+				"location": "RCAM136 - Testing Center",
+				"email": "lbmitchell@northeaststate.edu",
+				"phone": "423.354.2438"
+		},
+		{
+				"id": "765",
+				"name": "Mitchem, Andrew",
+				"title": "Police Officer",
+				"ext": "3255",
+				"location": "Welcome Center",
+				"email": "admitchem@northeaststate.edu",
+				"phone": "423.323.0255"
+		},
+		{
+				"id": "825",
+				"name": "Montgomery, Paul",
+				"title": "Vice President for Access and Advancement",
+				"ext": "5255",
+				"location": "P307B",
+				"email": "pwmontgomery@northeaststate.edu",
+				"phone": "423.354.5255"
+		},
+		{
+				"id": "905",
+				"name": "Moody, Rebecca",
+				"title": "Coordinator of Workforce Solutions",
+				"ext": "5353",
+				"location": "C2301A",
+				"email": "rzmoody@northeaststate.edu",
+				"phone": "423.354.5353"
+		},
+		{
+				"id": "328",
+				"name": "Moore, Jonathan",
+				"title": "Computer Programmer\/Analyst",
+				"ext": "5547",
+				"location": "P218F",
+				"email": "jgmoore@northeaststate.edu",
+				"phone": "423.354.5547"
+		},
+		{
+				"id": "329",
+				"name": "Morefield, Shirley",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "samorefield@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "330",
+				"name": "Morelock, Ernie",
+				"title": "Instructor, Automotive\/Motor Sports",
+				"ext": "3463",
+				"location": "S102",
+				"email": "elmorelock@northeaststate.edu",
+				"phone": "423.354.2401"
+		},
+		{
+				"id": "956",
+				"name": "Morrison, Nikki",
+				"title": "Grant Researcher\/Writer, Grant Development",
+				"ext": "5170",
+				"location": "P318",
+				"email": "snmorrison@northeaststate.edu",
+				"phone": "423.354.5170"
+		},
+		{
+				"id": "332",
+				"name": "Morritt, Eric",
+				"title": "Media and Theater Services Manager",
+				"ext": "5173",
+				"location": "D160",
+				"email": "ewmorritt@northeaststate.edu",
+				"phone": "423.354.5173"
+		},
+		{
+				"id": "333",
+				"name": "Mott, Sherry",
+				"title": "Executive Assistant, Administrative Services",
+				"ext": "2464",
+				"location": "P305",
+				"email": "slmott@northeaststate.edu",
+				"phone": "423.354.2464"
+		},
+		{
+				"id": "335",
+				"name": "Mullins, Teresa",
+				"title": "Administrative Assistant, Multi-Campus Programs",
+				"ext": "5223",
+				"location": "F100",
+				"email": "trmullins@northeaststate.edu",
+				"phone": "423.354.5223"
+		},
+		{
+				"id": "148",
+				"name": "Multi-Campus Programs",
+				"title": "",
+				"ext": "3221",
+				"location": "F100B",
+				"email": "",
+				"phone": "423.323.0221"
+		},
+		{
+				"id": "854",
+				"name": "Murray, Julie",
+				"title": "Career Development Coordinator",
+				"ext": "5229",
+				"location": "C2418",
+				"email": "jamurray@northeaststate.edu",
+				"phone": "423.354.5229"
+		},
+		{
+				"id": "1041",
+				"name": "Neal, Mike",
+				"title": "Financial Aid Specialist",
+				"ext": "5289",
+				"location": "C2406",
+				"email": "mjneal@northeaststate.edu",
+				"phone": "423.354.5289"
+		},
+		{
+				"id": "966",
+				"name": "Necessary, Cindy",
+				"title": "Industry Training & Credentialing Coordinator",
+				"ext": "5276",
+				"location": "RCAM-A106",
+				"email": "csnecessary@northeaststate.edu",
+				"phone": "423.354.5276"
+		},
+		{
+				"id": "339",
+				"name": "Neeley, Mitzi",
+				"title": "Associate Professor, Early Childhood Education",
+				"ext": "3350",
+				"location": "H204",
+				"email": "mineeley@northeaststate.edu",
+				"phone": "423.354.2550"
+		},
+		{
+				"id": "342",
+				"name": "Neubrander, Johanna",
+				"title": "Director of Nursing \/ Associate Professor, Nursing",
+				"ext": "5106",
+				"location": "RCHP209",
+				"email": "jlneubrander@northeaststate.edu",
+				"phone": "423.354.5106"
+		},
+		{
+				"id": "343",
+				"name": "Nickols, Steve",
+				"title": "Computer Systems Analyst",
+				"ext": "3547",
+				"location": "P218D",
+				"email": "msnickols@northeaststate.edu",
+				"phone": "423.354.2492"
+		},
+		{
+				"id": "814",
+				"name": "Nidiffer, Teresa",
+				"title": "Fiscal Services Coordinator",
+				"ext": "5319",
+				"location": "J1047",
+				"email": "tlnidiffer@northeaststate.edu",
+				"phone": "423.354.5319"
+		},
+		{
+				"id": "344",
+				"name": "Noonkester, Jeannie",
+				"title": "Bursar",
+				"ext": "3258",
+				"location": "P105",
+				"email": "jsnoonkester@northeaststate.edu",
+				"phone": "423.323.0258"
+		},
+		{
+				"id": "347",
+				"name": "Nunn, Kim",
+				"title": "Associate Professor, Mathematics",
+				"ext": "3353",
+				"location": "F227",
+				"email": "kpnunn@northeaststate.edu",
+				"phone": "423.354.2553"
+		},
+		{
+				"id": "1034",
+				"name": "Nursing Division",
+				"title": "",
+				"ext": "5108",
+				"location": "RCHP208",
+				"email": "",
+				"phone": "423.354.5108"
+		},
+		{
+				"id": "766",
+				"name": "O'Connor, Susan",
+				"title": "Administrative Assistant, Nursing",
+				"ext": "5509",
+				"location": "RCHP210",
+				"email": "sfoconnor@northeaststate.edu",
+				"phone": "423.354.5509"
+		},
+		{
+				"id": "923",
+				"name": "Orten, Olivia",
+				"title": "Admissions Specialist",
+				"ext": "5201",
+				"location": "P204",
+				"email": "oaorten@northeaststate.edu",
+				"phone": "423.354.5201"
+		},
+		{
+				"id": "350",
+				"name": "Osborne, Ed",
+				"title": "Professor, Chemistry",
+				"ext": "3690",
+				"location": "B104E",
+				"email": "ceosborne@northeaststate.edu",
+				"phone": "423.279.3690"
+		},
+		{
+				"id": "351",
+				"name": "Osborne, Greg",
+				"title": "Associate Professor, Physics",
+				"ext": "5190",
+				"location": "F111",
+				"email": "geosborne@northeaststate.edu",
+				"phone": "423.354.5190"
+		},
+		{
+				"id": "901",
+				"name": "Osborne, Teresa",
+				"title": "Custodian, 3rd Shift - Plant Operations and Maintenance",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "tdosborne@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "740",
+				"name": "Owens, Kenneth",
+				"title": "Plant Operations and Maintenance, Electrician",
+				"ext": "3315",
+				"location": "M101",
+				"email": "kaowens@northeaststate.edu",
+				"phone": "423.354.2515"
+		},
+		{
+				"id": "354",
+				"name": "Pagel, Michael",
+				"title": "Assistant Professor, English",
+				"ext": "3331",
+				"location": "H115",
+				"email": "mapagel@northeaststate.edu",
+				"phone": "423.354.2431"
+		},
+		{
+				"id": "355",
+				"name": "Parton, Pamela",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "plparton@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "357",
+				"name": "Patrick, Sherman",
+				"title": "Associate Professor, History",
+				"ext": "2493",
+				"location": "H111",
+				"email": "slpatrick@northeaststate.edu",
+				"phone": "423.354.2493"
+		},
+		{
+				"id": "1035",
+				"name": "Payroll",
+				"title": "",
+				"ext": "3412",
+				"location": "P101",
+				"email": "",
+				"phone": "423.354.2412"
+		},
+		{
+				"id": "918",
+				"name": "Penix, Terry",
+				"title": "Custodian, Plant Operations and Maintenance",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "tlpenix@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "742",
+				"name": "Penwell, Jason",
+				"title": "Library Assistant II",
+				"ext": "5152",
+				"location": "L212",
+				"email": "jepenwell@northeaststate.edu",
+				"phone": "423.354.5152"
+		},
+		{
+				"id": "753",
+				"name": "Perry, Cindy",
+				"title": "Instructional Assistant, Learning Center",
+				"ext": "5112",
+				"location": "L103",
+				"email": "cnperry@northeaststate.edu",
+				"phone": "423.354.5112"
+		},
+		{
+				"id": "361",
+				"name": "Perry, Dan",
+				"title": "Associate Professor, Computer and Information Sciences",
+				"ext": "3381",
+				"location": "F201",
+				"email": "dhperry@northeaststate.edu",
+				"phone": "423.354.2581"
+		},
+		{
+				"id": "362",
+				"name": "Peters, Audrey",
+				"title": "Assistant Professor, English",
+				"ext": "3397",
+				"location": "H123",
+				"email": "adpeters@northeaststate.edu",
+				"phone": "423.354.2417"
+		},
+		{
+				"id": "772",
+				"name": "Phillips, Cathy",
+				"title": "Financial Aid Process Specialist",
+				"ext": "3684",
+				"location": "C2406",
+				"email": "cbphillips@northeaststate.edu",
+				"phone": "423.279.3684"
+		},
+		{
+				"id": "365",
+				"name": "Phillips, Danny",
+				"title": "Lead Computer Technician",
+				"ext": "5510",
+				"location": "RCHP245B",
+				"email": "djphillips@northeaststate.edu",
+				"phone": "423.354.5510"
+		},
+		{
+				"id": "368",
+				"name": "Pierce, Ashley",
+				"title": "Technical Clerk, Multi-Campus Programs KCHE",
+				"ext": "5521",
+				"location": "KCHE101",
+				"email": "anpierce@northeaststate.edu",
+				"phone": "423.354.5521"
+		},
+		{
+				"id": "372",
+				"name": "Poole, Lisa",
+				"title": "Associate Professor, Psychology",
+				"ext": "3486",
+				"location": "H205",
+				"email": "llpoole@northeaststate.edu",
+				"phone": "423.354.2486"
+		},
+		{
+				"id": "375",
+				"name": "Potter, Gary",
+				"title": "Associate Professor, Speech\/Mass Communications",
+				"ext": "3528",
+				"location": "L110",
+				"email": "gwpotter@northeaststate.edu",
+				"phone": "423.354.2428"
+		},
+		{
+				"id": "1036",
+				"name": "President's Office",
+				"title": "",
+				"ext": "3201",
+				"location": "P303",
+				"email": "",
+				"phone": "423.323.0201"
+		},
+		{
+				"id": "376",
+				"name": "Presley, Dianna",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "dlpresley@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "891",
+				"name": "Price, Vanessa",
+				"title": "Nontraditional Pathways Specialist, CTE",
+				"ext": "5198",
+				"location": "F200",
+				"email": "vgprice@northeaststate.edu",
+				"phone": "423.354.5198"
+		},
+		{
+				"id": "932",
+				"name": "Prudhomme, Karla",
+				"title": "Lead Teacher, Adult Education",
+				"ext": "5366",
+				"location": "",
+				"email": "krprudhomme@northeaststate.edu",
+				"phone": "844.637.5697"
+		},
+		{
+				"id": "730",
+				"name": "Puckett, Jennifer",
+				"title": "Director of Northeast State at Johnson City",
+				"ext": "5302",
+				"location": "JC1103",
+				"email": "jmpuckett@northeaststate.edu",
+				"phone": "423.354.5302"
+		},
+		{
+				"id": "1037",
+				"name": "Purchasing",
+				"title": "",
+				"ext": "3208",
+				"location": "P106",
+				"email": "",
+				"phone": "423.323.0208"
+		},
+		{
+				"id": "978",
+				"name": "Ramey, J. Michael",
+				"title": "Evening Coordinator, KCHE",
+				"ext": "5541",
+				"location": "KCHE106",
+				"email": "rameyjm@northeaststate.edu",
+				"phone": "423.354.5541"
+		},
+		{
+				"id": "381",
+				"name": "Ramsey, Melissa",
+				"title": "Testing Services Specialist",
+				"ext": "5358",
+				"location": "C2101",
+				"email": "mmramsey@northeaststate.edu",
+				"phone": "423.354.5358"
+		},
+		{
+				"id": "383",
+				"name": "Ray, Rickey",
+				"title": "Professor, Philosophy",
+				"ext": "3393",
+				"location": "H119",
+				"email": "rjray@northeaststate.edu",
+				"phone": "423.354.2593"
+		},
+		{
+				"id": "755",
+				"name": "Reed, Virginia",
+				"title": "Director of TRiO Student Support Services",
+				"ext": "3291",
+				"location": "C1108",
+				"email": "vrreed@northeaststate.edu",
+				"phone": "423.354.2491"
+		},
+		{
+				"id": "384",
+				"name": "Regional Center for Advanced Manufacturing",
+				"title": "",
+				"ext": "5149",
+				"location": "RCAM",
+				"email": "rcam@northeaststate.edu",
+				"phone": "423.354.5149"
+		},
+		{
+				"id": "1033",
+				"name": "Regional Center for Automotive Programs",
+				"title": "",
+				"ext": "5211",
+				"location": "RCAP",
+				"email": "",
+				"phone": "423.354.5211"
+		},
+		{
+				"id": "385",
+				"name": "Regional Center for Health Professions",
+				"title": "",
+				"ext": "3238",
+				"location": "RCHP109",
+				"email": "jastarling@northeaststate.edu",
+				"phone": "423.323.0238"
+		},
+		{
+				"id": "996",
+				"name": "Registrar's Office",
+				"title": "",
+				"ext": "3270",
+				"location": "P205",
+				"email": "",
+				"phone": "423.354.2405"
+		},
+		{
+				"id": "960",
+				"name": "Remington, Phoebe",
+				"title": "Lead Teacher, Adult Education",
+				"ext": "5363",
+				"location": "BWH122",
+				"email": "pmremington@northeaststate.edu",
+				"phone": "423.354.5363"
+		},
+		{
+				"id": "1038",
+				"name": "Research, Analytics and Planning",
+				"title": "",
+				"ext": "3545",
+				"location": "N109",
+				"email": "",
+				"phone": "423.354.2445"
+		},
+		{
+				"id": "728",
+				"name": "Riddle, Sharon",
+				"title": "Assistant Professor, Administrative Professional Technology",
+				"ext": "3380",
+				"location": "F206",
+				"email": "striddle@northeaststate.edu",
+				"phone": "423.354.2480"
+		},
+		{
+				"id": "812",
+				"name": "Roberts, Cindy",
+				"title": "Director of Fiscal Services",
+				"ext": "3283",
+				"location": "P101B",
+				"email": "cydroberts@northeaststate.edu",
+				"phone": "423.354.2406"
+		},
+		{
+				"id": "750",
+				"name": "Rockney, Alissa",
+				"title": "Instructor, Mathematics",
+				"ext": "3321",
+				"location": "F235",
+				"email": "aarockney@northeaststate.edu",
+				"phone": "423.354.2421"
+		},
+		{
+				"id": "790",
+				"name": "Rose, Chelsea",
+				"title": "Director of Career & Technical Education",
+				"ext": "5166",
+				"location": "F207",
+				"email": "cdrose@northeaststate.edu",
+				"phone": "423.354.5166"
+		},
+		{
+				"id": "395",
+				"name": "Rowell, Sam",
+				"title": "Vice President for Academic Affairs",
+				"ext": "7632",
+				"location": "F106",
+				"email": "ssrowell@northeaststate.edu",
+				"phone": "423.279.7632"
+		},
+		{
+				"id": "954",
+				"name": "Rowland, Lisa",
+				"title": "Computer Programmer \/ Analyst",
+				"ext": "3300",
+				"location": "P218",
+				"email": "ljrowland@northeaststate.edu",
+				"phone": "423.354.2500"
+		},
+		{
+				"id": "396",
+				"name": "Rowlett, Samantha",
+				"title": "Graduation Specialist, Admissions & Records",
+				"ext": "3473",
+				"location": "P205G",
+				"email": "sfrowlett@northeaststate.edu",
+				"phone": "423.354.2419"
+		},
+		{
+				"id": "399",
+				"name": "Sabri, Mahmood",
+				"title": "Associate Professor, Computer and Information Sciences",
+				"ext": "3372",
+				"location": "F203",
+				"email": "masabri@northeaststate.edu",
+				"phone": "423.354.2572"
+		},
+		{
+				"id": "997",
+				"name": "Safe Northeast",
+				"title": "",
+				"ext": "3329",
+				"location": "C2108",
+				"email": "",
+				"phone": "423.354.2529"
+		},
+		{
+				"id": "400",
+				"name": "Salmon, Virginia",
+				"title": "Librarian",
+				"ext": "3323",
+				"location": "L304",
+				"email": "vlsalmon@northeaststate.edu",
+				"phone": "423.354.2523"
+		},
+		{
+				"id": "769",
+				"name": "Salyers, Randy",
+				"title": "Maintenance Utility Helper",
+				"ext": "3206",
+				"location": "M102",
+				"email": "rgsalyers@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "998",
+				"name": "Scholarship Programs",
+				"title": "",
+				"ext": "7637",
+				"location": "C2107",
+				"email": "",
+				"phone": "423.279.7637"
+		},
+		{
+				"id": "1039",
+				"name": "Science Division",
+				"title": "",
+				"ext": "3508",
+				"location": "B108",
+				"email": "",
+				"phone": "423.354.2508"
+		},
+		{
+				"id": "403",
+				"name": "SECURITY",
+				"title": "",
+				"ext": "3255",
+				"location": "C2401",
+				"email": "nst_security@northeaststate.edu",
+				"phone": "423.323.0255"
+		},
+		{
+				"id": "405",
+				"name": "Shafer, Shawna",
+				"title": "Academic Advisor",
+				"ext": "5352",
+				"location": "C2409",
+				"email": "skshafer@northeaststate.edu",
+				"phone": "423.354.5352"
+		},
+		{
+				"id": "928",
+				"name": "Sheehan, Jane",
+				"title": "Paraprofessional, Adult Education",
+				"ext": "5317",
+				"location": "JC1045",
+				"email": "jhsheehan@northeaststate.edu",
+				"phone": "423.354.5317"
+		},
+		{
+				"id": "741",
+				"name": "Shelton, Jerry",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "jlshelton@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "407",
+				"name": "Shepherd, Nona",
+				"title": "Associate Professor, English",
+				"ext": "3686",
+				"location": "H104",
+				"email": "nmshepherd@northeaststate.edu",
+				"phone": "423.279.3686"
+		},
+		{
+				"id": "408",
+				"name": "Shrum, Angela",
+				"title": "Administrative Assistant, Science",
+				"ext": "3508",
+				"location": "B108",
+				"email": "adshrum@northeaststate.edu",
+				"phone": "423.354.2508"
+		},
+		{
+				"id": "1055",
+				"name": "Simpson, Regina",
+				"title": "Instructor of Nursing",
+				"ext": "5239",
+				"location": "RCHP 236",
+				"email": "rgsimpson@northeaststate.edu",
+				"phone": "423-354-5239"
+		},
+		{
+				"id": "410",
+				"name": "Sloan, Elizabeth",
+				"title": "Associate Professor, Theatre",
+				"ext": "3279",
+				"location": "H106",
+				"email": "emsloan@northeaststate.edu",
+				"phone": "423.354.2479"
+		},
+		{
+				"id": "758",
+				"name": "Slone, Angela",
+				"title": "Program Director \/ Instructor, Cardiovascular Technology Invasive",
+				"ext": "5505",
+				"location": "RCHP149",
+				"email": "alslone@northeaststate.edu",
+				"phone": "423.354.5505"
+		},
+		{
+				"id": "1054",
+				"name": "Slone, Chris",
+				"title": "Instructor of Advanced Technologies",
+				"ext": "3399",
+				"location": "S100A",
+				"email": "crslone@northeaststate.edu",
+				"phone": ""
+		},
+		{
+				"id": "414",
+				"name": "Smith, Johnny",
+				"title": "Plant Operations and Maintenance, Electrician",
+				"ext": "3315",
+				"location": "M101C",
+				"email": "jnsmith@northeaststate.edu",
+				"phone": "423.354.2515"
+		},
+		{
+				"id": "989",
+				"name": "Smith, Sandra",
+				"title": "Instructor, Nursing",
+				"ext": "5514",
+				"location": "RCHP221",
+				"email": "sjsmith@northeaststate.edu",
+				"phone": "423.354.5514"
+		},
+		{
+				"id": "416",
+				"name": "Smith, Steve",
+				"title": "Instructor, Electrical\/Electromechanical",
+				"ext": "3472",
+				"location": "T104A",
+				"email": "srsmith@northeaststate.edu",
+				"phone": "423.354.2410"
+		},
+		{
+				"id": "1043",
+				"name": "Sommer, Erin",
+				"title": "Instructor, Nursing",
+				"ext": "3507",
+				"location": "RCHP222",
+				"email": "ecsommer@northeaststate.edu",
+				"phone": "423.354.2446"
+		},
+		{
+				"id": "852",
+				"name": "Soriano, Romarico",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "rgsoriano@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "418",
+				"name": "Spangler Rose M.",
+				"title": "Program Director \/ Assistant Professor, Medical Laboratory Technology",
+				"ext": "5500",
+				"location": "RCHP124",
+				"email": "rmspangler@northeaststate.edu",
+				"phone": "423.354.5500"
+		},
+		{
+				"id": "419",
+				"name": "Spriggs, Sherrita",
+				"title": "Admissions Specialist",
+				"ext": "3688",
+				"location": "P204",
+				"email": "saspriggs@northeaststate.edu",
+				"phone": "423.279.3688"
+		},
+		{
+				"id": "910",
+				"name": "Stanley, Cheri Michelle",
+				"title": "Admissions Specialist",
+				"ext": "3436",
+				"location": "P204",
+				"email": "cmstanley@northeaststate.edu",
+				"phone": "423.354.2436"
+		},
+		{
+				"id": "976",
+				"name": "Stanton, Eric",
+				"title": "Instructor, Criminal Justice",
+				"ext": "5351",
+				"location": "H218",
+				"email": "esstanton@northeaststate.edu",
+				"phone": "423.354.5351"
+		},
+		{
+				"id": "420",
+				"name": "Starling, Jennifer",
+				"title": "Dean of Enrollment Management",
+				"ext": "7635",
+				"location": "P205A",
+				"email": "jgstarling@northeaststate.edu",
+				"phone": "423.279.7635"
+		},
+		{
+				"id": "721",
+				"name": "Starling, Jo A.",
+				"title": "Executive Assistant, Economic & Workforce Development",
+				"ext": "5516",
+				"location": "RCAM141",
+				"email": "jastarling@northeaststate.edu",
+				"phone": "423.354.5516"
+		},
+		{
+				"id": "949",
+				"name": "Starnes, Scott",
+				"title": "Coordinator\/Instructor, EMT \/ AEMT",
+				"ext": "3334",
+				"location": "RCHP112",
+				"email": "sastarnes@northeaststate.edu",
+				"phone": "423.354.2534"
+		},
+		{
+				"id": "422",
+				"name": "Steward, Raylene",
+				"title": "Assistant Director of TRiO Student Support Services \/ Tutor Coordinator",
+				"ext": "3415",
+				"location": "C1113",
+				"email": "rsteward@northeaststate.edu",
+				"phone": "423.354.2415"
+		},
+		{
+				"id": "983",
+				"name": "Stokes, Stacey",
+				"title": "Instructor, Nursing",
+				"ext": "5267",
+				"location": "RCHP 213A",
+				"email": "slstokes@northeaststate.edu",
+				"phone": "423.354.5267"
+		},
+		{
+				"id": "425",
+				"name": "Strain, Catherine",
+				"title": "Associate Professor, English",
+				"ext": "3427",
+				"location": "H112",
+				"email": "cbstrain@northeaststate.edu",
+				"phone": "423.354.2427"
+		},
+		{
+				"id": "842",
+				"name": "Street, Debbie",
+				"title": "Executive Assistant- Foundation",
+				"ext": "7630",
+				"location": "P307A",
+				"email": "dkstreet@northeaststate.edu",
+				"phone": "423.279.7630"
+		},
+		{
+				"id": "426",
+				"name": "Stroud, Kim",
+				"title": "Instructional Lab Assistant, Biology",
+				"ext": "5546",
+				"location": "KCHE315",
+				"email": "kastroud@northeaststate.edu",
+				"phone": "423.354.5546"
+		},
+		{
+				"id": "999",
+				"name": "Student Affairs Office",
+				"title": "",
+				"ext": "3329",
+				"location": "C2108",
+				"email": "",
+				"phone": "423.354.2529"
+		},
+		{
+				"id": "1000",
+				"name": "Student Development",
+				"title": "",
+				"ext": "5120",
+				"location": "C2110",
+				"email": "",
+				"phone": "423.354.5120"
+		},
+		{
+				"id": "1001",
+				"name": "Student Life",
+				"title": "",
+				"ext": "3416",
+				"location": "A212",
+				"email": "",
+				"phone": "423.354.2416"
+		},
+		{
+				"id": "1002",
+				"name": "Student Needs",
+				"title": "",
+				"ext": "7637",
+				"location": "C2107",
+				"email": "",
+				"phone": "423.279.7637"
+		},
+		{
+				"id": "1003",
+				"name": "Student Support Services",
+				"title": "",
+				"ext": "3216",
+				"location": "C1107",
+				"email": "",
+				"phone": "423.323.0216"
+		},
+		{
+				"id": "430",
+				"name": "Student Traffic Court",
+				"title": "",
+				"ext": "3697",
+				"location": "A212B",
+				"email": "trafficcourt@northeaststate.edu",
+				"phone": "423.279.3697"
+		},
+		{
+				"id": "756",
+				"name": "Stufflestreet, Bradley",
+				"title": "Instructor, Machine Tool\/Manufacturing",
+				"ext": "5195",
+				"location": "T105A",
+				"email": "bastufflestreet@northeaststate.edu",
+				"phone": "423.354.5195"
+		},
+		{
+				"id": "432",
+				"name": "Subway",
+				"title": "",
+				"ext": "323-8973",
+				"location": "",
+				"email": "",
+				"phone": ""
+		},
+		{
+				"id": "934",
+				"name": "Tabor, Debi",
+				"title": "Dean, Adult Education",
+				"ext": "5306",
+				"location": "JC1047",
+				"email": "dktabor@northeaststate.edu",
+				"phone": "423.354.5306"
+		},
+		{
+				"id": "435",
+				"name": "Tauscher, Cindy",
+				"title": "Director of Workforce Solutions",
+				"ext": "3370",
+				"location": "C2301B",
+				"email": "cmtauscher@northeaststate.edu",
+				"phone": "423.354.2570"
+		},
+		{
+				"id": "851",
+				"name": "Taylor, Jackie",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "jltaylor@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "436",
+				"name": "Taylor, Mark",
+				"title": "Associate Professor, Mathematics",
+				"ext": "3502",
+				"location": "F239",
+				"email": "mctaylor@northeaststate.edu",
+				"phone": "423.354.2502"
+		},
+		{
+				"id": "774",
+				"name": "Taylor, Wendy",
+				"title": "Adult Success Coach",
+				"ext": "3346",
+				"location": "C2407",
+				"email": "wltaylor@northeaststate.edu",
+				"phone": "423.354.2546"
+		},
+		{
+				"id": "441",
+				"name": "Teague, Tawana",
+				"title": "Associate Professor, Music",
+				"ext": "5164",
+				"location": "H117",
+				"email": "tcteague@northeaststate.edu",
+				"phone": "423.354.5164"
+		},
+		{
+				"id": "944",
+				"name": "Teresa Krause",
+				"title": "Office Assistant, Advanced Technologies",
+				"ext": "5355",
+				"location": "A216",
+				"email": "tgkrause@northeaststate.edu",
+				"phone": "423.354.5355"
+		},
+		{
+				"id": "1004",
+				"name": "Testing Services",
+				"title": "",
+				"ext": "3287",
+				"location": "C2101",
+				"email": "",
+				"phone": "423.354.2587"
+		},
+		{
+				"id": "442",
+				"name": "Thacker, Derrick",
+				"title": "Associate Professor, Mathematics \/ Coordinator, Collegiate Mathematics",
+				"ext": "3347",
+				"location": "F236",
+				"email": "dwthacker@northeaststate.edu",
+				"phone": "423.354.2547"
+		},
+		{
+				"id": "443",
+				"name": "Thacker, Jennifer",
+				"title": "Director of Kingsport Center for Higher Education",
+				"ext": "5151",
+				"location": "KCHE104",
+				"email": "jgthacker@northeaststate.edu",
+				"phone": "423.354.5151"
+		},
+		{
+				"id": "494",
+				"name": "Tipton, Kimberly",
+				"title": "Administrative Assistant, Advanced Technologies",
+				"ext": "7639",
+				"location": "A216",
+				"email": "kmtipton@northeaststate.edu",
+				"phone": "423.279.7639"
+		},
+		{
+				"id": "836",
+				"name": "Tittle, Keith",
+				"title": "Interim Assistant Dean of Advanced Technologies",
+				"ext": "3382",
+				"location": "A216",
+				"email": "gktittle@northeaststate.edu",
+				"phone": "423.354.2582"
+		},
+		{
+				"id": "452",
+				"name": "Tittle, Marquita",
+				"title": "Director of Career Services",
+				"ext": "5160",
+				"location": "C2418",
+				"email": "mbtittle@northeaststate.edu",
+				"phone": "423.354.5160"
+		},
+		{
+				"id": "453",
+				"name": "Toye, David",
+				"title": "Professor, History",
+				"ext": "3361",
+				"location": "H103",
+				"email": "dltoye@northeaststate.edu",
+				"phone": "423.354.2561"
+		},
+		{
+				"id": "454",
+				"name": "Trent, Malissa",
+				"title": "Dean of Mathematics \/ Director of Learning Support",
+				"ext": "3515",
+				"location": "F234",
+				"email": "mbtrent@northeaststate.edu",
+				"phone": "423.354.2521"
+		},
+		{
+				"id": "1056",
+				"name": "Vaughn, Ashley",
+				"title": "Financial Aid Specialist",
+				"ext": "3251",
+				"location": "C2406",
+				"email": "anvaughn@northeaststate.edu",
+				"phone": "423.323.0252"
+		},
+		{
+				"id": "940",
+				"name": "Velasco, Shirley",
+				"title": "Director of Payroll & Accounts Payable",
+				"ext": "3534",
+				"location": "P101E",
+				"email": "scvelasco@northeaststate.edu",
+				"phone": "423.354.2470"
+		},
+		{
+				"id": "1005",
+				"name": "Veterans Information",
+				"title": "",
+				"ext": "3328",
+				"location": "A102",
+				"email": "",
+				"phone": "423.354.2528"
+		},
+		{
+				"id": "460",
+				"name": "Walker, Denise",
+				"title": "Director of Testing and Counseling",
+				"ext": "3211",
+				"location": "C2101",
+				"email": "dpwalker@northeaststate.edu",
+				"phone": "423.323.0211"
+		},
+		{
+				"id": "462",
+				"name": "Walters, Greg",
+				"title": "Dean of Student Development",
+				"ext": "5120",
+				"location": "C2110",
+				"email": "gnwalters@northeaststate.edu",
+				"phone": "423.354.5120"
+		},
+		{
+				"id": "463",
+				"name": "Wang, Xiaoping",
+				"title": "Dean of Behavioral and Social Sciences \/ Professor, English",
+				"ext": "3352",
+				"location": "H232",
+				"email": "xpwang@northeaststate.edu",
+				"phone": "423.354.2552"
+		},
+		{
+				"id": "464",
+				"name": "Ward, Jessica",
+				"title": "Plant Operations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "jdward@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "973",
+				"name": "Watson, Jennifer",
+				"title": "Switchboard Operator PT",
+				"ext": "0",
+				"location": "F105A",
+				"email": "jlwatson@northeaststate.edu",
+				"phone": "423.323.3191"
+		},
+		{
+				"id": "873",
+				"name": "Waugh, Carson",
+				"title": "Creative Producer",
+				"ext": "5359",
+				"location": "L301F",
+				"email": "scwaugh@northeaststate.edu",
+				"phone": "423.354.5359"
+		},
+		{
+				"id": "936",
+				"name": "Waugh, Jessi",
+				"title": "Personnel Assistant, HR\/OE",
+				"ext": "5183",
+				"location": "P315",
+				"email": "jwwaugh@northeaststate.edu",
+				"phone": "423.354.5183"
+		},
+		{
+				"id": "939",
+				"name": "Weber, Nathan",
+				"title": "Instructor, Biology",
+				"ext": "5131",
+				"location": "B204A",
+				"email": "noweber@NortheastState.edu",
+				"phone": "423.354.5131"
+		},
+		{
+				"id": "466",
+				"name": "Weber, Terry",
+				"title": "Computer Technician PT",
+				"ext": "5181",
+				"location": "P216",
+				"email": "tvweber@northeaststate.edu",
+				"phone": "423.354.5181"
+		},
+		{
+				"id": "468",
+				"name": "Weems, Carol",
+				"title": "Administrative Assistant, Police Department",
+				"ext": "5357",
+				"location": "P312",
+				"email": "cdweems@northeaststate.edu",
+				"phone": "423.354.5357"
+		},
+		{
+				"id": "469",
+				"name": "Welcome Center",
+				"title": "",
+				"ext": "5119",
+				"location": "",
+				"email": "",
+				"phone": "423.354.5119"
+		},
+		{
+				"id": "472",
+				"name": "Whitehead, Steve",
+				"title": "Plant Operations and Maintenance, Maintenance Mechanic",
+				"ext": "3315",
+				"location": "M101C",
+				"email": "smwhitehead@northeaststate.edu",
+				"phone": "423.354.2515"
+		},
+		{
+				"id": "474",
+				"name": "Widener, Dennis",
+				"title": "Plant Operations and Maintenance, Maintenance Utility Helper",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "dwwidener@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "475",
+				"name": "Widner, Gwen",
+				"title": "Director of University Parallel Dual Enrollment",
+				"ext": "3286",
+				"location": "F103A",
+				"email": "jgwidner@northeaststate.edu",
+				"phone": "423.354.2586"
+		},
+		{
+				"id": "476",
+				"name": "Willis, Joan",
+				"title": "Administrative Coordinator",
+				"ext": "3221",
+				"location": "F100B",
+				"email": "jfwillis@northeaststate.edu",
+				"phone": "423.323.0221"
+		},
+		{
+				"id": "477",
+				"name": "Willison, David",
+				"title": "PlantOperations and Maintenance, Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "dlwillison@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "478",
+				"name": "Wilson, Bob",
+				"title": "Instructor, Electromechanical",
+				"ext": "5254",
+				"location": "RCAM-A203",
+				"email": "rjwilson@northeaststate.edu",
+				"phone": "423.354.5254"
+		},
+		{
+				"id": "480",
+				"name": "Wilson, Thomas",
+				"title": "Community Relations, Publications Editor",
+				"ext": "3268",
+				"location": "301D",
+				"email": "tdwilson@northeaststate.edu",
+				"phone": "423.279.7668"
+		},
+		{
+				"id": "778",
+				"name": "Wilt, Donna",
+				"title": "Assistant Professor, Art",
+				"ext": "5250",
+				"location": "L303C",
+				"email": "dmwilt@northeaststate.edu",
+				"phone": "423.354.5250"
+		},
+		{
+				"id": "1040",
+				"name": "Workforce Solutions",
+				"title": "",
+				"ext": "5520",
+				"location": "C2301",
+				"email": "",
+				"phone": "423.354.5520"
+		},
+		{
+				"id": "487",
+				"name": "Wright, Bill",
+				"title": "Associate Professor, Biology",
+				"ext": "3510",
+				"location": "B204B",
+				"email": "whwright@northeaststate.edu",
+				"phone": "423.354.2449"
+		},
+		{
+				"id": "743",
+				"name": "Wright, Summer",
+				"title": "1st Shift Custodian",
+				"ext": "3206",
+				"location": "M101C",
+				"email": "slwright@northeaststate.edu",
+				"phone": "423.323.0206"
+		},
+		{
+				"id": "489",
+				"name": "Wyatt, Michelle",
+				"title": "Librarian",
+				"ext": "3479",
+				"location": "L214",
+				"email": "mrwyatt@northeaststate.edu",
+				"phone": "423.354.2422"
+		},
+		{
+				"id": "491",
+				"name": "Young, Keith",
+				"title": "Assistant Professor, English",
+				"ext": "5212",
+				"location": "RCAP106",
+				"email": "ckyoung@northeaststate.edu",
+				"phone": "423.354.5212"
+		},
+		{
+				"id": "493",
+				"name": "Zimmerman, Michael",
+				"title": "Associate Professor, Biology",
+				"ext": "5165",
+				"location": "F113",
+				"email": "mlzimmerman@northeaststate.edu",
+				"phone": "423.354.5165"
+		}
+	]
+}
