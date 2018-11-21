@@ -15,15 +15,10 @@ var app = new Vue({
 	},
 	methods: {
 		getStaff() {
-			var vm = this
-			axios.get('./data.json')
-				.then(function (res) {
-					vm.staffDir = JSON.parse(JSON.stringify(res.data.staff))
-					vm.renderPage = true
-				})
-				.catch(function (err) {
-					console.log(err)
-				})
+			this.$http.get('http://apps.northeaststate.edu/webservices/faculty_staff_directory/index.php?callback=?&format=json')
+				.then(res => {
+					this.staffDir = res.data;
+				});
 		},
 		selectStaff(id) {
 			console.log(id);

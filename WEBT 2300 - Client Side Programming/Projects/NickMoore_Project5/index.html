@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Nick Moore | Project 4</title>
+	<title>Nick Moore | Project 5</title>
 	<meta charset="UTF-8">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -10,8 +10,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 
-	<!-- Axios Library -->
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<!-- Vue-Resource Library -->
+	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
 
 	<!-- TailwindCSS Library-->
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 	<div id="app" class="flex text-grey">
 		<div class="leftCol p-4 w-1/4 fixed min-h-screen flex-col items-stretch">
 			<div class="header text-center">
-				<h1 class="font-sans font-thin text-center">WEBT-2300 Project 4 <br />Nick Moore</h1>
+				<h1 class="font-sans font-thin text-center">WEBT-2300 Project 5 <br />Nick Moore</h1>
 			</div>
 			<template v-if="staffSelect">
 				<div class="staffInfo items-center bg-grey rounded p-5 mr-5 mt-5">
@@ -47,11 +47,11 @@
 					<button class="bg-transparent hover:bg-blue text-blue-dark hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded ml-32 mt-5 text-light" @click="staffSelect = !staffSelect">Close</button>
 				</div>
 			</template>
-			<templat v-else>
+			<template v-else>
 				<div class="staffInfo items-center bg-grey rounded p-5 mr-5 mt-5">
 					<h4 class="text-blue-darker font-sans font-light text-md text-center">Click on a Staff Name to see their info card</h4>
 				</div>
-			</templat>
+			</template>
 		</div>
 		<div class="tableContainer w-3/4 rounded mt-3">
 			<table class="table-auto myTable font-sans font-light">
