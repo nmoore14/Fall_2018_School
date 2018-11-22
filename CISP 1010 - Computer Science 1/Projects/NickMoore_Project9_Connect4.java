@@ -23,7 +23,7 @@ public class NickMoore_Project9_Connect4
 		{
 			for(int j = 0; j < 7; j++)
 			{
-				if(board[i][j] != 'R') {
+				if(board[i][j] != 'R' && board[i][j] != 'Y') {
 					board[i][j] = '.';
 				}
 				System.out.print("[ " + board[i][j] + " ]");
@@ -47,10 +47,17 @@ public class NickMoore_Project9_Connect4
 		return keepGoing;
 	}
 
-	public static char[][] dropDisk(String dropSelect, char[][] board)
+	public static char[][] dropDisk(String dropSelect, char[][] board, int playerTurn)
 	{
 		char a = dropSelect.charAt(0);
 		int b = a;
+
+		char disk = 'R';
+
+		if(playerTurn % 2 == 0)
+		{
+			disk = 'Y';
+		}
 
 		if(b <= 48 || b > 55)
 		{
@@ -63,11 +70,20 @@ public class NickMoore_Project9_Connect4
 			{
 				if(board[v][rowPos] == '.')
 				{
-					board[v][rowPos] = 'R';
+					board[v][rowPos] = disk;
 					System.out.println(rowPos + " - " + v);
 					System.out.println(board[rowPos][v]);
 					break;
 				}
+			}
+
+			if(disk == 'R')
+			{
+				System.out.println("Player 2's turn");
+			}
+			else
+			{
+				System.out.println("Player 1's turn");
 			}
 		}
 		return board;
@@ -81,6 +97,9 @@ public class NickMoore_Project9_Connect4
 		char[][] board = new char[6][7];
 
 		boolean keepGoing = true;
+
+		// Set up a counter for player turn
+		int playerTurn = 1;
 
 		// Display the initial empty board
 		displayBoard(board);
@@ -101,7 +120,8 @@ public class NickMoore_Project9_Connect4
 				keepGoing = goingCheck(dropSelect);
 				if(keepGoing)
 				{
-					board = dropDisk(dropSelect, board);
+					board = dropDisk(dropSelect, board, playerTurn);
+					playerTurn++;
 					System.out.println("");
 					displayBoard(board);
 					System.out.println("");
