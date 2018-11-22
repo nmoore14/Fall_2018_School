@@ -18,12 +18,14 @@ public class NickMoore_Project9_Connect4
 {
 	public static void displayBoard(char[][] board)
 	{
-		System.out.println("  1   2   3   4   5   6   7");
+		System.out.println("  1    2    3    4    5    6    7");
 		for(int i = 0; i < 6; i++)
 		{
 			for(int j = 0; j < 7; j++)
 			{
-				board[i][j] = 'x';
+				if(board[i][j] != 'R') {
+					board[i][j] = '.';
+				}
 				System.out.print("[ " + board[i][j] + " ]");
 			}
 			System.out.println("");
@@ -59,13 +61,13 @@ public class NickMoore_Project9_Connect4
 			int rowPos = Integer.parseInt(dropSelect) - 1;
 			for(int v = 5; v >= 0; v--)
 			{
-				if(board[rowPos][v] == 'x')
+				if(board[v][rowPos] == '.')
 				{
-					board[rowPos][v] = '0';
+					board[v][rowPos] = 'R';
+					System.out.println(rowPos + " - " + v);
+					System.out.println(board[rowPos][v]);
 					break;
 				}
-				System.out.println(rowPos + " - " + v);
-				System.out.println(board[rowPos][v]);
 			}
 		}
 		return board;
