@@ -72,7 +72,7 @@ public class NickMoore_Project9_Connect4
 				{
 					board[v][rowPos] = disk;
 					System.out.println(rowPos + " - " + v);
-					System.out.println(board[rowPos][v]);
+					System.out.println(board[v][rowPos]);
 					break;
 				}
 			}
