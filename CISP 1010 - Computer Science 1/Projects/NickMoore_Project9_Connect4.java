@@ -20,14 +20,14 @@ public class NickMoore_Project9_Connect4
 	public static void displayBoard(char[][] board)
 	{
 		System.out.println("  1    2    3    4    5    6    7");
-		for(int i = 0; i < 6; i++)
+		for(int row = 0; row < 6; row++)
 		{
-			for(int j = 0; j < 7; j++)
+			for(int col = 0; col < 7; col++)
 			{
-				if(board[i][j] != 'R' && board[i][j] != 'Y') {
-					board[i][j] = '.';
+				if(board[row][col] != 'R' && board[row][col] != 'Y') {
+					board[row][col] = '.';
 				}
-				System.out.print("[ " + board[i][j] + " ]");
+				System.out.print("[ " + board[row][col] + " ]");
 			}
 			System.out.println("");
 		}
@@ -54,9 +54,9 @@ public class NickMoore_Project9_Connect4
 	{
 		boolean isFull = false;
 		int totalCells = 42;
-		for (int i = 0; i < 6; i++) {
-			for (int j = 0; j < 7; j++) {
-				if (board[i][j] == 'R' || board[i][j] == 'Y') {
+		for (int row = 0; row < 6; row++) {
+			for (int col = 0; col < 7; col++) {
+				if (board[row][col] == 'R' || board[row][col] == 'Y') {
 					totalCells--;
 				}
 			}
@@ -95,14 +95,14 @@ public class NickMoore_Project9_Connect4
 		}
 		else
 		{
-			int rowPos = Integer.parseInt(dropSelect) - 1;
-			for(int v = 5; v >= 0; v--)
+			int colPos = Integer.parseInt(dropSelect) - 1;
+			for(int row = 5; row >= 0; row--)
 			{
-				if(board[v][rowPos] == '.')
+				if(board[row][colPos] == '.')
 				{
-					board[v][rowPos] = disk;
-					System.out.println(rowPos + " - " + v);
-					System.out.println(board[v][rowPos]);
+					board[row][colPos] = disk;
+					System.out.println(colPos + " - " + row);
+					System.out.println(board[row][colPos]);
 					break;
 				}
 			}
@@ -133,17 +133,17 @@ public class NickMoore_Project9_Connect4
 			discCheck = 'Y';
 		}
 
-		for(int row = 5; row >= 0; row--)
+		for(int col = 0; col < 6; col++)
 		{
-			for(int col = 0; col < 7; col++)
+			for(int row = 5; row >= 0; row--)
 			{
 				if(board[row][col] == discCheck)
 				{
 					discCount++;
 					if(discCount == 4)
 					{
+						System.out.printf("The winner is: %s (%s)\n", player.toUpperCase(), discCheck);
 						isWinner = true;
-						System.out.printf("The winner is: %s\n", player.toUpperCase());
 					}
 				}
 				else
@@ -173,7 +173,7 @@ public class NickMoore_Project9_Connect4
 		// Display the initial empty board
 		displayBoard(board);
 
-		while(keepGoing && !isFull)
+		while(keepGoing)
 		{
 			System.out.println("Please select a column to drop your disk (1-7).");
 			System.out.println("'D' or 'd' to exit the game");
@@ -192,16 +192,22 @@ public class NickMoore_Project9_Connect4
 					if(!isFull)
 					{
 						board = dropDisk(dropSelect, board, playerTurn);
-						playerTurn++;
-						System.out.println("");
 						displayBoard(board);
 						isWinner(board, playerTurn);
 						if(isWinner)
 						{
 							keepGoing = false;
 						}
-						System.out.println("");
-						isFull = isFull(board);
+						else
+						{
+							playerTurn++;
+							System.out.println("");
+							isFull = isFull(board);
+						}
+					}
+					else
+					{
+						keepGoing = false;
 					}
 				}
 			}
