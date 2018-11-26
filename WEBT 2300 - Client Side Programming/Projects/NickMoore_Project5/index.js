@@ -1,3 +1,9 @@
+// $(document).ready(function () {
+// 	function hideRow(event) {
+// 		$(event.target || event.srcElement).parents('tr').hide();
+// 	}
+// });
+
 var app = new Vue({
 	el: "#app",
 	data: {
@@ -11,7 +17,8 @@ var app = new Vue({
 		staffPhone: ''
 	},
 	mounted() {
-		this.getStaff()
+		this.getStaff(),
+		this.addShow(this.staffDir)
 	},
 	methods: {
 		getStaff() {
@@ -35,10 +42,11 @@ var app = new Vue({
 			this.staffEmail = this.staffDir[id].email;
 			this.staffPhone = this.staffDir[id].phone;
 
+		},
+		addShow(staffDir) {
+			for (var i = 0; i < staffDir.length; i++) {
+				jsonObj[this.staffDir[i].show] = true;
+			}
 		}
 	}
 })
-
-$(document).ready(function () {
-	$(event.target || event.srcElement).parents('tr').hide();
-});

@@ -60,7 +60,7 @@
 			<table class="table-auto myTable font-sans font-light">
 				<thead>
 					<tr>
-						<th class="pl-1 text-left font-sans font-normal text-md">Hide</th>
+						<th class="pl-1 text-left font-sans font-normal text-md"></th>
 						<th class="p-3 text-center font-sans font-normal text-2xl">Name</a></th>
 						<th class="p-3 text-center font-sans font-normal text-2xl">Title</th>
 						<th class="p-3 text-center font-sans font-normal text-2xl">Ext</th>
@@ -70,14 +70,18 @@
 					</tr>
 				</thead>
 				<tbody id="faculty_staff_directory">
-					<tr v-for="(staff, index) in staffDir" :key="index" @click="selectStaff(index)" class="cursor-pointer hover:text-blue">
-						<td class="p-1"><a href="#" onclick="hideRow(event)">Hide</a></td>
-						<td class="p-2 ">{{ staff.name}}</td>
-						<td class="p-2">{{ staff.title}}</td>
-						<td class="p-2 text-center">{{ staff.ext}}</td>
-						<td class="p-2 text-center">{{ staff.location}}</td>
-						<td class="p-2 text-center">{{ staff.email}}</td>
-						<td class="p-2 text-center">{{ staff.phone}}</td>
+					<tr v-for="(staff, index) in staffDir" :key="index" class="cursor-pointer hover:text-blue">
+					<td class="p-1">
+						<button class="bg-orange-light hover:bg-orange-dark text-white font-thin text-sm py-1 px-2 rounded-full" @click="show = !show">
+							Hide
+						</button>
+					</td>
+						<td class="p-2" @click="selectStaff(index)">{{ staff.name}}</td>
+						<td class="p-2" @click="selectStaff(index)">{{ staff.title}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.ext}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.location}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.email}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.phone}}</td>
 					</tr>
 				</tbody>
 				<tfoot>
