@@ -115,6 +115,42 @@ public class NickMoore_Project9_Connect4
 		return board;
 	}
 
+	public static boolean isWinner(char[][] board, int playerTurn)
+	{
+		boolean isWinner = false;
+		String player = "Player 1";
+		char discCheck = 'R';
+		int discCount = 0;
+
+		if(playerTurn % 2 == 0)
+		{
+			player = "Player 2";
+			discCheck = 'Y';
+		}
+
+		for(int row = 5; row >= 0; row--)
+		{
+			for(int col = 0; col < 7; col++)
+			{
+				if(board[row][col] == discCheck)
+				{
+					discCount++;
+					if(discCount == 4)
+					{
+						isWinner = true;
+						System.out.printf("The winner is: %s\n", player.toUpperCase());
+					}
+				}
+				else
+				{
+					discCount = 0;
+				}
+			}
+		}
+
+		return isWinner;
+	}
+
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);
@@ -124,6 +160,7 @@ public class NickMoore_Project9_Connect4
 
 		boolean keepGoing = true;
 		boolean isFull = false;
+		boolean isWinner = false;
 
 		// Set up a counter for player turn
 		int playerTurn = 1;
@@ -153,6 +190,11 @@ public class NickMoore_Project9_Connect4
 						playerTurn++;
 						System.out.println("");
 						displayBoard(board);
+						isWinner(board, playerTurn);
+						if(isWinner)
+						{
+							keepGoing = false;
+						}
 						System.out.println("");
 						isFull = isFull(board);
 					}
