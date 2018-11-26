@@ -16,6 +16,7 @@ import java.util.*;
 
 public class NickMoore_Project9_Connect4
 {
+	// Display the board.
 	public static void displayBoard(char[][] board)
 	{
 		System.out.println("  1    2    3    4    5    6    7");
@@ -32,6 +33,7 @@ public class NickMoore_Project9_Connect4
 		}
 	}
 
+	// Check to see if the user has entered the escape character.
 	public static boolean goingCheck(String dropSelect)
 	{
 		boolean keepGoing = true;
@@ -47,6 +49,7 @@ public class NickMoore_Project9_Connect4
 		return keepGoing;
 	}
 
+	// Check to see if the board is full.
 	public static boolean isFull(char[][] board)
 	{
 		boolean isFull = false;
@@ -73,6 +76,7 @@ public class NickMoore_Project9_Connect4
 		return isFull;
 	}
 
+	// Drop the disc where the player has selected and put the proper character for player turn.
 	public static char[][] dropDisk(String dropSelect, char[][] board, int playerTurn)
 	{
 		char a = dropSelect.charAt(0);
@@ -115,6 +119,7 @@ public class NickMoore_Project9_Connect4
 		return board;
 	}
 
+	// Check to see if there is a winner either across or vertical.
 	public static boolean isWinner(char[][] board, int playerTurn)
 	{
 		boolean isWinner = false;
