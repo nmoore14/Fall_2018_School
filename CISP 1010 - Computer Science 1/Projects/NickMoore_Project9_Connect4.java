@@ -47,6 +47,32 @@ public class NickMoore_Project9_Connect4
 		return keepGoing;
 	}
 
+	public static boolean isFull(char[][] board)
+	{
+		boolean isFull = false;
+		int totalCells = 42;
+		for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < 7; j++) {
+				if (board[i][j] == 'R' || board[i][j] == 'Y') {
+					totalCells--;
+				}
+			}
+		}
+
+		if (totalCells > 0)
+		{
+			isFull = false;
+			System.out.printf("Remaining cells: %s\n", totalCells);
+		}
+		else
+		{
+			isFull = true;
+			System.out.printf("Board is Full!\n");
+		}
+
+		return isFull;
+	}
+
 	public static char[][] dropDisk(String dropSelect, char[][] board, int playerTurn)
 	{
 		char a = dropSelect.charAt(0);
@@ -97,6 +123,7 @@ public class NickMoore_Project9_Connect4
 		char[][] board = new char[6][7];
 
 		boolean keepGoing = true;
+		boolean isFull = false;
 
 		// Set up a counter for player turn
 		int playerTurn = 1;
@@ -104,7 +131,7 @@ public class NickMoore_Project9_Connect4
 		// Display the initial empty board
 		displayBoard(board);
 
-		while(keepGoing)
+		while(keepGoing && !isFull)
 		{
 			System.out.println("Please select a column to drop your disk (1-7).");
 			System.out.println("'D' or 'd' to exit the game");
@@ -120,11 +147,15 @@ public class NickMoore_Project9_Connect4
 				keepGoing = goingCheck(dropSelect);
 				if(keepGoing)
 				{
-					board = dropDisk(dropSelect, board, playerTurn);
-					playerTurn++;
-					System.out.println("");
-					displayBoard(board);
-					System.out.println("");
+					if(!isFull)
+					{
+						board = dropDisk(dropSelect, board, playerTurn);
+						playerTurn++;
+						System.out.println("");
+						displayBoard(board);
+						System.out.println("");
+						isFull = isFull(board);
+					}
 				}
 			}
 		}
