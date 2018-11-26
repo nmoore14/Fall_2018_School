@@ -193,7 +193,7 @@ public class NickMoore_Project9_Connect4
 					{
 						board = dropDisk(dropSelect, board, playerTurn);
 						displayBoard(board);
-						isWinner(board, playerTurn);
+						isWinner = isWinner(board, playerTurn);
 						if(isWinner)
 						{
 							keepGoing = false;
