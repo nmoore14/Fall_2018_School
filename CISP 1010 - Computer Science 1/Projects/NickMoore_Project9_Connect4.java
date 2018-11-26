@@ -133,25 +133,46 @@ public class NickMoore_Project9_Connect4
 			discCheck = 'Y';
 		}
 
-		for(int col = 0; col < 6; col++)
+		if(!isWinner)
 		{
-			for(int row = 5; row >= 0; row--)
+			for (int col = 0; col < 6; col++) 
 			{
-				if(board[row][col] == discCheck)
+				for (int row = 5; row >= 0; row--) 
 				{
-					discCount++;
-					if(discCount == 4)
+					if (board[row][col] == discCheck) 
 					{
-						System.out.printf("The winner is: %s (%s)\n", player.toUpperCase(), discCheck);
-						isWinner = true;
+						discCount++;
+						if (discCount == 4) 
+						{
+							System.out.printf("The winner is: %s (%s)\n", player.toUpperCase(), discCheck);
+							isWinner = true;
+						}
+					} else 
+					{
+						discCount = 0;
 					}
 				}
-				else
+			}
+
+			for (int row = 5; row >= 0; row--) 
+			{
+				for (int col = 0; col < 6; col++) 
 				{
-					discCount = 0;
+					if (board[row][col] == discCheck) 
+					{
+						discCount++;
+						if (discCount == 4) 
+						{
+							System.out.printf("The winner is: %s (%s)\n", player.toUpperCase(), discCheck);
+							isWinner = true;
+						}
+					} else {
+						discCount = 0;
+					}
 				}
 			}
 		}
+		
 
 		return isWinner;
 	}
