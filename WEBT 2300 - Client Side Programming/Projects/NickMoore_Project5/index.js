@@ -38,3 +38,7 @@ var app = new Vue({
 		}
 	}
 })
+
+$(document).ready(function () {
+	$(event.target || event.srcElement).parents('tr').hide();
+});
