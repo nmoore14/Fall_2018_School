@@ -159,7 +159,7 @@ public class NickMoore_Project9_Connect4
 				}
 			}
 		}
-		System.out.println("Thank you for playing.");
+		System.out.println("Thank you for playing.\n");
 		input.close();
 	} 
 }
