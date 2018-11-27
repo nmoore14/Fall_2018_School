@@ -72,7 +72,7 @@
 				<tbody id="faculty_staff_directory">
 					<tr v-for="(staff, index) in staffDir" :key="index" class="cursor-pointer hover:text-blue">
 					<td class="p-1">
-						<button class="bg-orange-light hover:bg-orange-dark text-white font-thin text-sm py-1 px-2 rounded-full" @click="show = !show">
+						<button class="bg-orange-light hover:bg-orange-dark text-white font-thin text-sm py-1 px-2 rounded-full" @click="staff[index].show = !show">
 							Hide
 						</button>
 					</td>

@@ -42,11 +42,6 @@ var app = new Vue({
 			this.staffEmail = this.staffDir[id].email;
 			this.staffPhone = this.staffDir[id].phone;
 
-		},
-		addShow(staffDir) {
-			for (var i = 0; i < staffDir.length; i++) {
-				jsonObj[this.staffDir[i].show] = true;
-			}
 		}
 	}
 })
