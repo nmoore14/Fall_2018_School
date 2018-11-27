@@ -35,7 +35,6 @@ var app = new Vue({
 				})
 		},
 		selectStaff(id) {
-			console.log(id);
 			this.staffSelect = true;
 			this.staffName = this.staffDir[id].name;
 			this.staffTitle = this.staffDir[id].title;
@@ -52,7 +51,6 @@ var app = new Vue({
 			$('th:nth-child(' + id + ')').hide();
 			$('td:nth-child(' + id + ')').hide();
 			this.hiddenCols.push(id);
-			console.log(this.hidden);
 		},
 		showColumns() {
 			for(i = 0; i < this.hiddenCols.length; i++) {
