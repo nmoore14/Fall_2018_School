@@ -3,11 +3,13 @@ import json
 my_dictionary = []
 temp_dict = []
 
-with open('staff-index.json') as json_file:
+with open('data.json') as json_file:
 	data = json.load(json_file)
 	for p in data['staff']:
-		print(p)
-		# temp_dict['id'] = p['id']
+		for i in range (0, 493):
+			# print(p)
+			temp_dict[i] = p
+			my_dictionary.append(temp_dict)
 		# temp_dict['name'] = p['name']
 		# temp_dict['title'] = p['title']
 		# temp_dict['ext'] = p['ext']
@@ -15,13 +17,12 @@ with open('staff-index.json') as json_file:
 		# temp_dict['email'] = p['email']
 		# temp_dict['phone'] = p['phone']
 		# temp_dict['show'] = 'true'
-		temp_dict.append(p)
 
 # with open('new-staff.json', 'w') as outfile:
 #     json.dump(my_dictionary, outfile)
 
-# print(json.dumps(temp_dict, indent=2))
+print(json.dumps(my_dictionary, indent=2))
 
-print temp_dict[0]
+# print temp_dict[0]
 
 
