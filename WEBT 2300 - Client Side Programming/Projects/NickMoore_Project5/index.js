@@ -1,10 +1,3 @@
-// $(document).ready(function () {
-// 	function hideColumn(column) {
-// 		$('th:nth-child(' + column + ')').hide();
-// 		$('td:nth-child(' + column + ')').hide();
-// 	}
-// });
-
 var app = new Vue({
 	el: "#app",
 	data: {
