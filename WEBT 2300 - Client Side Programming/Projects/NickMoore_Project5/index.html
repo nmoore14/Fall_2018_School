@@ -60,28 +60,36 @@
 			<table class="table-auto myTable font-sans font-light">
 				<thead>
 					<tr>
-						<th class="pl-1 text-left font-sans font-normal text-md"></th>
-						<th class="p-3 text-center font-sans font-normal text-2xl">Name</a></th>
-						<th class="p-3 text-center font-sans font-normal text-2xl">Title</th>
-						<th class="p-3 text-center font-sans font-normal text-2xl">Ext</th>
-						<th class="p-3 text-center font-sans font-normal text-2xl">Location</th>
-						<th class="p-3 text-center font-sans font-normal text-2xl">Email</th>
-						<th class="p-3 text-center font-sans font-normal text-2xl">Phone</th>
+						<th class="pl-1 text-left font-sans font-normal text-md cursor-pointer" @click="showColumns()">&nbsp;</th>
+						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(2)">Name</a></th>
+						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(3)">Title</a></th>
+						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(4)">Ext</a></th>
+						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(5)">Location</a></th>
+						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(6)">Email</a></th>
+						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(7)">Phone</a></th>
 					</tr>
 				</thead>
 				<tbody id="faculty_staff_directory">
 					<tr v-for="(staff, index) in staffDir" :key="index" class="cursor-pointer hover:text-blue">
 					<td class="p-1">
-						<button class="bg-orange-light hover:bg-orange-dark text-white font-thin text-sm py-1 px-2 rounded-full" @click="staff[index].show = !show">
-							Hide
+						<template v-if="staff.show">
+							<button class="bg-orange-light hover:bg-orange-dark text-white font-thin text-sm py-1 px-2 rounded-full" @click="hide(index)">
+								Hide
+							</button>
+							</template>
+							<template v-else>
+								<button class="bg-orange-light hover:bg-orange-dark text-white font-thin text-sm py-1 px-2 rounded-full" @click="hide(index)">
+									Show
+								</button>
+							</template>
 						</button>
 					</td>
-						<td class="p-2" @click="selectStaff(index)">{{ staff.name}}</td>
-						<td class="p-2" @click="selectStaff(index)">{{ staff.title}}</td>
-						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.ext}}</td>
-						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.location}}</td>
-						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.email}}</td>
-						<td class="p-2 text-center" @click="selectStaff(index)">{{ staff.phone}}</td>
+						<td class="p-2" @click="selectStaff(index)" v-if="staff.show">{{ staff.name}}</td>
+						<td class="p-2" @click="selectStaff(index)" v-if="staff.show">{{ staff.title}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)" v-if="staff.show">{{ staff.ext}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)" v-if="staff.show">{{ staff.location}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)" v-if="staff.show">{{ staff.email}}</td>
+						<td class="p-2 text-center" @click="selectStaff(index)" v-if="staff.show">{{ staff.phone}}</td>
 					</tr>
 				</tbody>
 				<tfoot>

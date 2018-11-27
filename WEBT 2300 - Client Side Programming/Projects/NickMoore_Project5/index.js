@@ -1,6 +1,7 @@
 // $(document).ready(function () {
-// 	function hideRow(event) {
-// 		$(event.target || event.srcElement).parents('tr').hide();
+// 	function hideColumn(column) {
+// 		$('th:nth-child(' + column + ')').hide();
+// 		$('td:nth-child(' + column + ')').hide();
 // 	}
 // });
 
@@ -14,11 +15,11 @@ var app = new Vue({
 		staffEct: '',
 		staffLocation: '',
 		staffEmail: '',
-		staffPhone: ''
+		staffPhone: '',
+		hidden: []
 	},
 	mounted() {
-		this.getStaff(),
-		this.addShow(this.staffDir)
+		this.getStaff()
 	},
 	methods: {
 		getStaff() {
@@ -41,7 +42,22 @@ var app = new Vue({
 			this.staffLocation = this.staffDir[id].location;
 			this.staffEmail = this.staffDir[id].email;
 			this.staffPhone = this.staffDir[id].phone;
-
+		},
+		hide(index) {
+			this.staffDir[index].show = !this.staffDir[index].show;
+		},
+		hideColumn(id) {
+			$('th:nth-child(' + id + ')').hide();
+			$('td:nth-child(' + id + ')').hide();
+			this.hidden.push(id);
+			console.log(this.hidden);
+		},
+		showColumns() {
+			for(i = 0; i < this.hidden.length; i++) {
+				$('th:nth-child(' + this.hidden[i] + ')').show();
+				$("td:nth-child(" + this.hidden[i] + ")").show();
+			}
+			this.hidden = [];
 		}
 	}
 })
