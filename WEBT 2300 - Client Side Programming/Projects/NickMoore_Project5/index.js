@@ -16,7 +16,8 @@ var app = new Vue({
 		staffLocation: '',
 		staffEmail: '',
 		staffPhone: '',
-		hidden: []
+		hiddenCols: [],
+		hiddenRows: []
 	},
 	mounted() {
 		this.getStaff()
@@ -45,19 +46,26 @@ var app = new Vue({
 		},
 		hide(index) {
 			this.staffDir[index].show = !this.staffDir[index].show;
+			this.hiddenRows.push(index);
 		},
 		hideColumn(id) {
 			$('th:nth-child(' + id + ')').hide();
 			$('td:nth-child(' + id + ')').hide();
-			this.hidden.push(id);
+			this.hiddenCols.push(id);
 			console.log(this.hidden);
 		},
 		showColumns() {
-			for(i = 0; i < this.hidden.length; i++) {
-				$('th:nth-child(' + this.hidden[i] + ')').show();
-				$("td:nth-child(" + this.hidden[i] + ")").show();
+			for(i = 0; i < this.hiddenCols.length; i++) {
+				$('th:nth-child(' + this.hiddenCols[i] + ')').show();
+				$("td:nth-child(" + this.hiddenCols[i] + ")").show();
 			}
-			this.hidden = [];
+			this.hiddenCols = [];
+		},
+		showAllRows() {
+			for (i = 0; i < this.hiddenRows.length; i++) {
+				this.staffDir[this.hiddenRows[i]].show = true;
+			}
+			this.hiddenRows = [];
 		}
 	}
 })

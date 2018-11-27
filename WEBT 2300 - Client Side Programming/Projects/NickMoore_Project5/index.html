@@ -55,12 +55,23 @@
 					<h4 class="text-blue-darker font-sans font-light text-md text-center">Click on a Staff Name to see their info card</h4>
 				</div>
 			</template>
+			<template v-if="hiddenRows.length > 0">
+				<button class="bg-transparent hover:bg-purple-dark text-purple-dark hover:text-white py-2 px-4 border border-purple-dark hover:border-transparent rounded ml-auto mt-5 text-light"
+				@click="showAllRows()">
+					Show All Rows
+				</button>
+			</template>
 		</div>
 		<div class="tableContainer w-3/4 rounded mt-3">
 			<table class="table-auto myTable font-sans font-light">
 				<thead>
 					<tr>
-						<th class="pl-1 text-left font-sans font-normal text-md cursor-pointer" @click="showColumns()">&nbsp;</th>
+							<template v-if="hiddenCols.length == 0">
+								<th class="pl-1 text-left font-sans font-normal text-md cursor-pointer">&nbsp;</th>
+							</template>
+							<template v-else>
+								<th class="pl-1 text-left font-sans font-thin text-sm cursor-pointer" @click="showColumns()">Show Columns</th>
+							</template>
 						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(2)">Name</a></th>
 						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(3)">Title</a></th>
 						<th class="p-3 text-center font-sans font-normal text-2xl cursor-pointer" @click="hideColumn(4)">Ext</a></th>
