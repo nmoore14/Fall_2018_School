@@ -11,11 +11,27 @@
  * 
  */
 
-public class box
+class Box 
 {
-    public static void main(String[] args) 
-    {
-        
-    }
-    
+	int h = 0;
+	int l = 0;
+	int w = 0;
+
+	Box(int height, int width, int length)
+	{
+		h = height;
+		w = width;
+		l = length;
+	}
+
+	int calculatedVolume()
+	{
+		return l * w * h;
+	}
+
+	int calculatedSurfaceArea()
+	{
+		return 2 * (l * h + l * w + w * h);
+	}
+
 }
